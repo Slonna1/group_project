@@ -1,0 +1,1095 @@
+---
+title: "R Notebook"
+output: 
+  html_document:
+    keep_md: yes
+    toc: true
+    toc_float: true
+    number_sections: true
+    df_print: paged
+    theme: cerulean #flatly #journal #cosmo
+  pdf_document: default
+---
+
+
+# Intro
+
+This markdown describes the data cleaning/wrangling steps to process, visualise and extract statistics from the bed data sampling distribution comprising the years between 2016 and 2019.
+
+
+# Preamble
+
+## Call libraries
+```{r}
+library(tidyverse)
+library(janitor)
+library(here)
+library(lubridate)
+library(ggthemes)
+library(infer)
+```
+
+
+## Set up colour palette
+```{r}
+# The palette as per SF:
+phs_palette <- c("#99DAF5", "#004785", "#C027B9", "#82BB25")
+
+# # To use for fills, add
+#   scale_fill_manual(values = phs_palette)
+# 
+# # To use for line and point colors, add
+#   scale_colour_manual(values = phs_palette)
+```
+
+
+# Number of beds - Data Wrangling
+
+## View bed data
+```{r}
+beds <- read_csv("data/beds_by_nhs_board_of_treatment_and_specialty.csv") 
+
+
+glimpse(beds)
+```
+
+### Check of out of scope quarters
+```{r}
+beds %>% 
+  distinct(Quarter)
+```
+
+
+### Check data  for NA values
+```{r}
+quarters_out_of_scope <- c("2016Q3", "2016Q4", "2017Q1", "2017Q2", "2017Q3",
+                           "2017Q4", "2018Q1", "2018Q2", "2018Q3", "2018Q4", 
+                           "2019Q1", "2019Q2", "2019Q3", "2019Q4")
+
+beds %>%
+  filter(Quarter %in% quarters_out_of_scope) %>%
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+### Keep data related to our time frame of interest 
+```{r}
+quarters_out_of_scope <- c("2016Q3", "2016Q4", "2017Q1", "2017Q2", "2017Q3",
+                           "2017Q4", "2018Q1", "2018Q2", "2018Q3", "2018Q4", 
+                           "2019Q1", "2019Q2", "2019Q3", "2019Q4")
+```
+
+
+```{r}
+beds_oos <- beds %>%
+  filter(Quarter %in% quarters_out_of_scope)
+```
+
+
+
+```{r}
+glimpse(beds_oos)
+```
+
+
+
+### How many HB items do we have?
+```{r}
+beds_oos %>%
+  distinct(HB)
+```
+
+
+### Keep SpecialtyName == All Acute for the analysis
+```{r}
+beds_oos <- beds_oos %>%
+  filter(SpecialtyName == "All Acute")
+```
+
+
+## View health board data
+```{r}
+health_board_labels <- read_csv("data/hb14_hb19.csv") 
+
+glimpse(health_board_labels)
+```
+
+### View all HB values
+```{r}
+health_board_labels %>% 
+  distinct(HB, HBName, HBDateEnacted)
+```
+
+
+
+### Remove junk
+```{r}
+health_board_labels <- health_board_labels %>% 
+  select(HB, HBName)
+  
+
+glimpse(health_board_labels)
+```
+
+
+
+## View special health board data
+
+**Note:** I had to use the following arguments to read the csv file, because the "The Golden Jubilee National Hospital" in the SHName column had a special Unicode character that I couldn't get rid off (if I kept the unicode character, I couldn't ``glimpse`` the data).
+```{r}
+shb_labels <- read_csv("data/special-health-boards_19022021.csv", locale = locale(encoding = "ASCII")) 
+
+glimpse(shb_labels)
+```
+
+### View all SHB values
+```{r}
+shb_labels %>% 
+  distinct(SHB, SHBName)
+```
+
+### Remove junk
+```{r}
+shb_labels <- shb_labels %>% 
+  select(SHB, SHBName)
+  
+
+glimpse(shb_labels)
+```
+
+
+
+### View country label data
+```{r}
+country_labels <- read_csv("data/geography_codes_and_labels_country.csv") 
+
+
+glimpse(country_labels)
+```
+
+
+# Join tables 
+
+## Join bed & special health board
+```{r}
+beds_oos <- beds_oos %>%
+  left_join(shb_labels, by = c("HB" = "SHB"))
+
+glimpse(beds_oos)
+```
+
+```{r}
+beds_oos %>%
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+
+
+## Joint bed & health board
+```{r}
+beds_oos <- beds_oos %>%
+  left_join(health_board_labels, "HB")
+
+glimpse(beds_oos)
+```
+
+```{r}
+beds_oos %>%
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+
+
+## Join bed & country labels
+```{r}
+beds_oos <- beds_oos %>%
+  left_join(country_labels, by = c("HB" = "Country"))
+
+glimpse(beds_oos)
+```
+
+
+
+```{r}
+beds_oos %>%
+  # filter(Quarter %in% quarters_in_scope) %>%
+  # filter(SpecialtyName == "All Acute") %>% 
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+##  Tidy up finalised bed_oos table
+```{r}
+beds_oos <- beds_oos %>%
+  clean_names()
+
+glimpse(beds_oos)
+```
+
+
+**Sanity Check - There should be on average 13,270 available staffed beds in Scotland during quarter ending December 2019 (PHS report)**
+```{r}
+beds_oos %>%
+  # filter(hb_name == "NHS Borders")
+  filter(country_name == "Scotland")
+
+```
+
+
+
+# KPI plots (Scotland: 2016Q3 - 2019Q4)
+
+
+## Selected Geography: Scotland
+```{r}
+beds_oos %>%
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = quarter, y = total_occupied_beds, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+
+beds_oos %>%
+  filter(country_name == "Scotland") %>%
+  ggplot() +
+  aes(x = quarter, y = average_available_staffed_beds, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+
+beds_oos %>%
+  filter(country_name == "Scotland") %>%
+  ggplot() +
+  aes(x = quarter, y = average_occupied_beds, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+beds_oos %>%
+  filter(country_name == "Scotland") %>%
+  ggplot() +
+  aes(x = quarter, y = percentage_occupancy, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+```
+
+### Sanity check No. 1. 
+
+Check if I pick the aggregated results of value S08000031 for NHS Greater Glasgow and S08000020 for Grampian in the location column
+```{r}
+beds_oos %>%
+  # filter(hb_name == "NHS Greater Glasgow and Clyde") %>% 
+  filter(hb_name == "NHS Grampian") %>% 
+  filter(location == hb) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy))
+```
+
+
+
+```{r}
+beds_oos %>%
+  # filter(hb_name == "NHS Greater Glasgow and Clyde" ) %>% 
+  filter(hb_name == "NHS Grampian" ) %>% 
+  group_by(location) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy)) 
+```
+
+## Selected Geography: NHS Board
+```{r}
+beds_oos %>%
+  filter(hb_name == "NHS Ayrshire and Arran") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = total_occupied_beds, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+
+beds_oos %>%
+  filter(hb_name == "NHS Ayrshire and Arran") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = average_available_staffed_beds, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+
+beds_oos %>%
+  filter(hb_name == "NHS Ayrshire and Arran") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = average_occupied_beds, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+beds_oos %>%
+  filter(hb_name == "NHS Ayrshire and Arran") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = percentage_occupancy, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+```
+
+
+### Sanity check No. 2.
+Check to see if I pick the aggregated results of value SB0801 in the location column
+```{r}
+beds_oos %>%
+  # filter(hb_name == "NHS Greater Glasgow and Clyde" ) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital" ) %>% 
+  group_by(location) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy)) 
+```
+
+```{r}
+beds_oos %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy))
+```
+
+
+
+## Selected Geography: Special Health Board
+```{r}
+beds_oos %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = total_occupied_beds, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+
+beds_oos %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = average_available_staffed_beds, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+
+beds_oos %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = average_occupied_beds, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+
+beds_oos %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = percentage_occupancy, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA)) +
+  theme(axis.text.x = element_text(angle = 30, vjust = +1, hjust = 1))
+```
+
+
+# Save cleaned data
+
+<!-- Write updated beds_oos data to a CSV file. -->
+<!-- ```{r} -->
+<!--  write_csv(beds_oos, here("beds_oos_clean.csv")) -->
+<!-- ``` -->
+
+
+
+# Investigate distribution of NHS data for Scotland
+
+## Histogram
+```{r}
+beds_oos %>%
+  select(total_occupied_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = total_occupied_beds) +
+  geom_histogram(col = "white", binwidth = 10000)
+
+
+beds_oos %>%
+  select(average_available_staffed_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = average_available_staffed_beds) +
+  geom_histogram(col = "white", binwidth = 200)
+
+
+beds_oos %>%
+  select(average_occupied_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = average_occupied_beds) +
+  geom_histogram(col = "white", binwidth = 200)
+
+
+beds_oos %>%
+  select(percentage_occupancy, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = percentage_occupancy) +
+  geom_histogram(col = "white", binwidth = 1)
+```
+## Box Plots
+```{r}
+beds_oos %>%
+  select(total_occupied_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = total_occupied_beds) +
+  geom_boxplot()
+
+
+beds_oos %>%
+  select(average_available_staffed_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = average_available_staffed_beds) +
+  geom_boxplot()
+
+
+beds_oos %>%
+  select(average_occupied_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = average_occupied_beds) +
+  geom_boxplot()
+
+
+beds_oos %>%
+  select(percentage_occupancy, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = percentage_occupancy) +
+  geom_boxplot()
+```
+
+## Boostrap Sampling distribution & 99.9% CI calculation
+
+```{r}
+# Create a bootstrap sampling distribution (total_occupied_beds)
+set.seed(42)
+bootstrap_distn_tob <- beds_oos %>%
+  select(total_occupied_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  specify(response = total_occupied_beds) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_tob %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(total_occupied_beds)``, and visualise it on the distribution
+
+tob_ci999 <- bootstrap_distn_tob %>%
+  get_ci(level = 0.999, type = "percentile")
+tob_ci999
+
+
+bootstrap_distn_tob %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = tob_ci999)
+
+
+############################################4#######################
+
+
+# Create a bootstrap sampling distribution (average_available_staffed_beds)
+set.seed(42)
+bootstrap_distn_aasb <- beds_oos %>%
+  select(average_available_staffed_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  specify(response = average_available_staffed_beds) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_aasb %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(average_available_staffed_beds)``, and visualise it on the distribution
+
+aasb_ci999 <- bootstrap_distn_aasb %>%
+  get_ci(level = 0.999, type = "percentile")
+aasb_ci999
+
+
+bootstrap_distn_aasb %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = aasb_ci999)
+
+
+############################################4#######################
+
+
+# Create a bootstrap sampling distribution (average_occupied_beds)
+set.seed(42)
+bootstrap_distn_aob <- beds_oos %>%
+  select(average_occupied_beds, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  specify(response = average_occupied_beds) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_aob %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(average_occupied_beds)``, and visualise it on the distribution
+
+aob_ci999 <- bootstrap_distn_aob %>%
+  get_ci(level = 0.999, type = "percentile")
+aob_ci999
+
+
+bootstrap_distn_aob %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = aob_ci999)
+
+
+############################################4#######################
+
+
+# Create a bootstrap sampling distribution (percentage_occupancy)
+set.seed(42)
+bootstrap_distn_po <- beds_oos %>%
+  select(percentage_occupancy, country_name) %>% 
+  filter(country_name == "Scotland") %>% 
+  specify(response = percentage_occupancy) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_po %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(percentage_occupancy)``, and visualise it on the distribution
+
+po_ci999 <- bootstrap_distn_po %>%
+  get_ci(level = 0.999, type = "percentile")
+po_ci999
+
+
+bootstrap_distn_po %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = po_ci999)
+
+```
+
+
+## Gather all confidence intervals in one tibble
+```{r}
+
+# results <- tibble(country_labels, tob_ci999)
+results_country <- tibble(
+  country_labels, 
+  lower_tob_ci999 = tob_ci999 %>%
+    pull(lower_ci),
+  upper_tob_ci999 = tob_ci999 %>%
+    pull(upper_ci), 
+  lower_aasb_ci999 = aasb_ci999 %>%
+    pull(lower_ci),
+  upper_aasb_ci999 = aasb_ci999 %>%
+    pull(upper_ci), 
+  lower_aob_ci999 = aob_ci999 %>%
+    pull(lower_ci),
+  upper_aob_ci999 = aob_ci999 %>%
+    pull(upper_ci), 
+  lower_po_ci999 = po_ci999 %>%
+    pull(lower_ci),
+  upper_po_ci999 = po_ci999 %>%
+    pull(upper_ci)
+  )
+
+```
+
+
+
+
+
+# Investigate distribution of SHB data for ``The Golden Jubilee National Hospital``
+
+## Histogram
+```{r}
+beds_oos %>%
+  select(total_occupied_beds, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  ggplot() +
+  aes(x = total_occupied_beds) +
+  geom_histogram(col = "white", binwidth = 100)
+
+
+beds_oos %>%
+  select(average_available_staffed_beds, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  ggplot() +
+  aes(x = average_available_staffed_beds) +
+  geom_histogram(col = "white", binwidth = 2)
+
+
+beds_oos %>%
+  select(average_occupied_beds, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  ggplot() +
+  aes(x = average_occupied_beds) +
+  geom_histogram(col = "white", binwidth = 2)
+
+
+beds_oos %>%
+  select(percentage_occupancy, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  ggplot() +
+  aes(x = percentage_occupancy) +
+  geom_histogram(col = "white", binwidth = 1)
+```
+
+
+## Boostrap Sampling distribution & 99.9% CI calculation
+
+```{r}
+# Create a bootstrap sampling distribution (total_occupied_beds)
+set.seed(42)
+bootstrap_distn_tob <- beds_oos %>%
+  select(total_occupied_beds, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  specify(response = total_occupied_beds) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_tob %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(total_occupied_beds)``, and visualise it on the distribution
+
+tob_ci999 <- bootstrap_distn_tob %>%
+  get_ci(level = 0.999, type = "percentile")
+tob_ci999
+
+
+bootstrap_distn_tob %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = tob_ci999)
+
+
+############################################4#######################
+
+
+# Create a bootstrap sampling distribution (average_available_staffed_beds)
+set.seed(42)
+bootstrap_distn_aasb <- beds_oos %>%
+  select(average_available_staffed_beds, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  specify(response = average_available_staffed_beds) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_aasb %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(average_available_staffed_beds)``, and visualise it on the distribution
+
+aasb_ci999 <- bootstrap_distn_aasb %>%
+  get_ci(level = 0.999, type = "percentile")
+aasb_ci999
+
+
+bootstrap_distn_aasb %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = aasb_ci999)
+
+
+############################################4#######################
+
+
+# Create a bootstrap sampling distribution (average_occupied_beds)
+set.seed(42)
+bootstrap_distn_aob <- beds_oos %>%
+  select(average_occupied_beds, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>% 
+  specify(response = average_occupied_beds) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_aob %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(average_occupied_beds)``, and visualise it on the distribution
+
+aob_ci999 <- bootstrap_distn_aob %>%
+  get_ci(level = 0.999, type = "percentile")
+aob_ci999
+
+
+bootstrap_distn_aob %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = aob_ci999)
+
+
+############################################4#######################
+
+
+# Create a bootstrap sampling distribution (percentage_occupancy)
+set.seed(42)
+bootstrap_distn_po <- beds_oos %>%
+  select(percentage_occupancy, shb_name) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%  
+  specify(response = percentage_occupancy) %>%
+  generate(reps = 10000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+bootstrap_distn_po %>%
+  visualise(binwidth = 10000)
+
+# Calculate a 99.9% CI for ``mean(percentage_occupancy)``, and visualise it on the distribution
+
+po_ci999 <- bootstrap_distn_po %>%
+  get_ci(level = 0.999, type = "percentile")
+po_ci999
+
+
+bootstrap_distn_po %>%
+  visualise(bins = 30) +
+  shade_ci(endpoints = po_ci999)
+
+```
+
+## Gather all confidence intervals in one tibble
+```{r}
+
+# results <- tibble(country_labels, tob_ci999)
+results_shb <- tibble(
+  shb_labels[1, ], 
+  lower_tob_ci999 = tob_ci999 %>%
+    pull(lower_ci),
+  upper_tob_ci999 = tob_ci999 %>%
+    pull(upper_ci), 
+  lower_aasb_ci999 = aasb_ci999 %>%
+    pull(lower_ci),
+  upper_aasb_ci999 = aasb_ci999 %>%
+    pull(upper_ci), 
+  lower_aob_ci999 = aob_ci999 %>%
+    pull(lower_ci),
+  upper_aob_ci999 = aob_ci999 %>%
+    pull(upper_ci), 
+  lower_po_ci999 = po_ci999 %>%
+    pull(lower_ci),
+  upper_po_ci999 = po_ci999 %>%
+    pull(upper_ci)
+  )
+
+```
+
+
+# Investigate distribution of all NHB data 
+
+## View all HB values
+```{r}
+beds_hbs_names <- beds_oos %>% 
+  distinct(hb, hb_name)
+```
+
+## Histogram
+```{r}
+
+this_nhb <- beds_hbs_names[[6,1]]
+
+beds_oos %>%
+  select(total_occupied_beds, location) %>%
+  filter(location == this_nhb) %>% 
+  ggplot() +
+  aes(x = total_occupied_beds) +
+  geom_histogram(col = "white", binwidth = 1000)
+
+
+beds_oos %>%
+  select(average_available_staffed_beds, location) %>%
+  filter(location == this_nhb) %>% 
+  ggplot() +
+  aes(x = average_available_staffed_beds) +
+  geom_histogram(col = "white", binwidth = 20)
+
+
+beds_oos %>%
+  select(average_occupied_beds, location) %>%
+  filter(location == this_nhb) %>% 
+  ggplot() +
+  aes(x = average_occupied_beds) +
+  geom_histogram(col = "white", binwidth = 20)
+
+
+beds_oos %>%
+  select(percentage_occupancy, location) %>%
+  filter(location == this_nhb) %>%  
+  ggplot() +
+  aes(x = percentage_occupancy) +
+  geom_histogram(col = "white", binwidth = 1)
+```
+
+
+## Boostrap Sampling distribution & 99.9% CI calculation
+
+```{r}
+
+results_nhb <- tibble()
+
+
+for (nhb_num in 2:15){
+  
+
+  this_nhb <- beds_hbs_names[[nhb_num,1]]
+  
+  
+  # Create a bootstrap sampling distribution (total_occupied_beds)
+  set.seed(42)
+  bootstrap_distn_tob <- beds_oos %>%
+    select(total_occupied_beds, location) %>%
+    filter(location == this_nhb) %>% 
+    specify(response = total_occupied_beds) %>%
+    generate(reps = 10000, type = "bootstrap") %>%
+    calculate(stat = "mean")
+  
+  bootstrap_distn_tob %>%
+    visualise(binwidth = 10000)
+  
+  # Calculate a 99.9% CI for ``mean(total_occupied_beds)``, and visualise it on the distribution
+  
+  tob_ci999 <- bootstrap_distn_tob %>%
+    get_ci(level = 0.999, type = "percentile")
+  tob_ci999
+  
+  
+  bootstrap_distn_tob %>%
+    visualise(bins = 30) +
+    shade_ci(endpoints = tob_ci999)
+  
+  
+  ############################################4#######################
+  
+  
+  # Create a bootstrap sampling distribution (average_available_staffed_beds)
+  set.seed(42)
+  bootstrap_distn_aasb <- beds_oos %>%
+    select(average_available_staffed_beds, location) %>%
+    filter(location == this_nhb) %>% 
+    specify(response = average_available_staffed_beds) %>%
+    generate(reps = 10000, type = "bootstrap") %>%
+    calculate(stat = "mean")
+  
+  bootstrap_distn_aasb %>%
+    visualise(binwidth = 10000)
+  
+  # Calculate a 99.9% CI for ``mean(average_available_staffed_beds)``, and visualise it on the distribution
+  
+  aasb_ci999 <- bootstrap_distn_aasb %>%
+    get_ci(level = 0.999, type = "percentile")
+  aasb_ci999
+  
+  
+  bootstrap_distn_aasb %>%
+    visualise(bins = 30) +
+    shade_ci(endpoints = aasb_ci999)
+  
+  
+  ############################################4#######################
+  
+  
+  # Create a bootstrap sampling distribution (average_occupied_beds)
+  set.seed(42)
+  bootstrap_distn_aob <- beds_oos %>%
+    select(average_occupied_beds, location) %>%
+    filter(location == this_nhb) %>% 
+    specify(response = average_occupied_beds) %>%
+    generate(reps = 10000, type = "bootstrap") %>%
+    calculate(stat = "mean")
+  
+  bootstrap_distn_aob %>%
+    visualise(binwidth = 10000)
+  
+  # Calculate a 99.9% CI for ``mean(average_occupied_beds)``, and visualise it on the distribution
+  
+  aob_ci999 <- bootstrap_distn_aob %>%
+    get_ci(level = 0.999, type = "percentile")
+  aob_ci999
+  
+  
+  bootstrap_distn_aob %>%
+    visualise(bins = 30) +
+    shade_ci(endpoints = aob_ci999)
+  
+  
+  ############################################4#######################
+  
+  
+  # Create a bootstrap sampling distribution (percentage_occupancy)
+  set.seed(42)
+  bootstrap_distn_po <- beds_oos %>%
+    select(percentage_occupancy, location) %>%
+    filter(location == this_nhb) %>% 
+    specify(response = percentage_occupancy) %>%
+    generate(reps = 10000, type = "bootstrap") %>%
+    calculate(stat = "mean")
+  
+  bootstrap_distn_po %>%
+    visualise(binwidth = 10000)
+  
+  # Calculate a 99.9% CI for ``mean(percentage_occupancy)``, and visualise it on the distribution
+  
+  po_ci999 <- bootstrap_distn_po %>%
+    get_ci(level = 0.999, type = "percentile")
+  po_ci999
+  
+  
+  bootstrap_distn_po %>%
+    visualise(bins = 30) +
+    shade_ci(endpoints = po_ci999)
+
+
+# Gather all confidence intervals in one tibble
+
+
+this_result <- tibble(
+  beds_hbs_names[nhb_num,], 
+  lower_tob_ci999 = tob_ci999 %>%
+    pull(lower_ci),
+  upper_tob_ci999 = tob_ci999 %>%
+    pull(upper_ci), 
+  lower_aasb_ci999 = aasb_ci999 %>%
+    pull(lower_ci),
+  upper_aasb_ci999 = aasb_ci999 %>%
+    pull(upper_ci), 
+  lower_aob_ci999 = aob_ci999 %>%
+    pull(lower_ci),
+  upper_aob_ci999 = aob_ci999 %>%
+    pull(upper_ci), 
+  lower_po_ci999 = po_ci999 %>%
+    pull(lower_ci),
+  upper_po_ci999 = po_ci999 %>%
+    pull(upper_ci)
+  )
+
+
+# add this_result to growing tibble of results
+  results_nhb <- results_nhb %>%
+    bind_rows(this_result)
+}
+
+```
+
+
+
+# Save confidence intervals tables
+
+
+```{r}
+results_country %>% 
+  clean_names() %>% 
+  write_csv(here("country_ci.csv"))
+
+results_shb %>% 
+  clean_names() %>% 
+  write_csv(here("shb_ci.csv"))
+
+results_nhb %>% 
+  clean_names() %>% 
+  write_csv(here("hb_ci.csv"))
+
+```
+
+
+
+
+# Doodles
+
+<!-- ```{r} -->
+<!-- country_name_beds <- unique(beds$country_name) %>%  -->
+<!--   discard(is.na) -->
+
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- hb_name_beds <- unique(beds$hb_name) %>%  -->
+<!--   discard(is.na) -->
+
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- shb_name_beds <- unique(beds$shb_name) %>%  -->
+<!--   discard(is.na) -->
+
+<!-- ``` -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+Qualifier,QualifierName,QualifierDefinition
+b,break in time series,"Break in a series of data occurring when there is a significant change in the definitions or conditions of data collection, meaning that data before the break cannot be directly compared with data after the break. There are many reasons this can occur, including changes in survey scope, changes in sampling methods, changes to questions, changes in mode of data collection, and changes in weighting."
+c,confidential,"Where presentation of data would disclose confidential information, for example being able to identify details about a single respondent, this data must be suppressed and given this marker to maintain confidentiality clauses."
+†,earliest revision,A period for which the earliest revision was made in a particular time series. No other periods are then marked with a revision. No revisions have been made to earlier periods. This symbol is only to be used if there is an accompanying Revision Table for users’ reference so revisions over the period can be identified. Not to be confused with ‘revision’.
+e,estimated,The particular value yielded by an estimator in a given set of circumstances. Tables which are entirely estimates do not require a symbol for each entry provided titles make it clear to users that all figures are estimates.
+f,forecast,The statistical value is forecasted. It is not an observed value; it is a calculated future value.
+~,less than half the final digit shown and different from a real zero,"For figures that round to zero, so appear as zero in a rounded table, but are not actually zero. Rounded ""zeros"" would be displayed with the figure ‘0’ and the symbol ‘~’ . Note that “0” should only be used without a symbol when a figure is a true zero."
+u,low reliability,"This indicates observations/values for which the user should be aware of the low quality, for example where values of statistical significance have been calculated."
+z,not applicable,An observation is not applicable (e.g. in tables of employment where people under 16 cannot legally be employed).
+:,not available,"Data is unavailable for reasons other than those described in this list, for instance, data not collected in a region/timeperiod."
+n,not significant,The figure is not statistically significant.
+p,provisional,"The data are yet to be finalised, or are expected (or almost certainly expected) to be revised."
+r,revised,The figure stated has been revised since it was first published. Not to be confused with ‘earliest revision’.
+*,significant at 0.05 level,"The figure is statistically significant, and there is only a 5% probability that the result was due to chance."
+**,significant at 0.01 level,"The figure is statistically significant, and there is only a 1% probability that the result was due to chance."
+***,significant at 0.001 level,"The figure is statistically significant, and there is only a 0.1% probability that the result was due to chance."
+d,derived,"This signifies that a figure is derived for custom groupings or totals; this includes totals for Geographies (i.e. Scotland when data is otherwise presented at council area level) and specialities (i.e. all cancers, all alcohol conditions). Please note that in some cases patients may fall in more than one category within the same period, therefore, the totals for smaller categories may not always add up to the 'total' category. Where this is the case, this is indicated in the data dictionary."
+x,archived or expired,The code or data marked with this qualifier means that the code/data is no longer in use but can be referred to.
+y,incomplete,"A data item that contains partially returned data that is not expected to be updated. For example data that does not cover a full time period, geography or aggregate returns."

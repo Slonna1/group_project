@@ -1,0 +1,127 @@
+
+library
+
+```{r}
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+library(ggplot2)
+library(here)
+library(lubridate)
+library(sf)
+library(leaflet)
+library(leaflet.extras)
+library(rgdal)
+
+```
+
+data loading
+
+```{r}
+raw_data <- read_csv(here("data/beds_by_nhs_board_of_treatment_and_specialty.csv"))
+
+scotlandpoly <- readOGR("../data/HB_WGS_84_EPSG4326/reprojected_hb.shp")
+
+health_boards <- read_csv(here("data/HB_scotland.csv"))
+
+hospitals <- read_csv(here("data/hospitals_scotland.csv")) %>%
+filter(!is.na(XCoordinate | YCoordinate))
+
+
+hosptials_data <- inner_join(raw_data, hospitals, by = "Location")
+HB_data <- inner_join(raw_data, health_boards, by = c("Location" = "HB"))
+
+HB_data = select(HB_data, Quarter, PercentageOccupancy, TotalOccupiedBeds, AverageOccupiedBeds, AllStaffedBeds, Location, SpecialtyName, HB)
+corrected_names = data.frame(scotlandpoly$HBName, scotlandpoly$HBCode)
+
+HB_data <- inner_join(HB_data, corrected_names, by = c("Location" = "scotlandpoly.HBCode"))
+
+hospitals_longlat <- hospitals %>%
+st_as_sf(coords = c("XCoordinate", "YCoordinate"), crs = 27700) %>% st_transform(4326) %>%
+st_coordinates() %>%
+as_tibble()
+hospitals <- cbind(hospitals, hospitals_longlat)
+```
+
+shiny
+
+```{r}
+ui <- fluidPage(
+
+    # Application title
+    titlePanel("Jacks experiment"),
+
+        #output print
+    verticalLayout(
+        wellPanel("Region_Selected: ", textOutput("region_selected")),
+
+        # the map
+        mainPanel(
+           leafletOutput("scotlandHM"),
+           plotOutput("plotteddata")
+        )
+    )
+)
+
+
+
+# Define server logic 
+server <- function(input, output) {
+  ##map bullshit
+  output$scotlandHM <- renderLeaflet({
+    leaflet() %>%
+addTiles() %>%
+addResetMapButton()%>%
+  addPolygons(data = scotlandpoly, popup = ~HBName, group = "HB_regions", layerId = ~HBName) %>%
+  addCircles(data = hospitals, lng = ~X, lat = ~Y, label = ~LocationName, group = "hospital_locations", color = "red")
+    })
+    ## trigger map bullshit
+observeEvent(input$scotlandHM_shape_click, { 
+    region_selected <- reactive(input$scotlandHM_shape_click)
+    p <- reactive(region_selected()$id)
+    output$region_selected <- renderText(p())
+
+
+ ##map data bullshit
+ filtered_df <- reactive({
+    HB_data %>%
+      filter(scotlandpoly.HBName == p()) %>%
+      group_by(Quarter) %>%
+      summarise(PercentageOccupancy_mean = mean(PercentageOccupancy, na.rm = TRUE), 
+                PercentageOccupancy_lowwer = quantile(PercentageOccupancy, 0.25, na.rm = TRUE), 
+                PercentageOccupancy_upper = quantile(PercentageOccupancy, 0.75, na.rm = TRUE),  
+                Quarter, scotlandpoly.HBName) %>%
+      arrange()
+  })
+ 
+ 
+  ##plotting bullshit
+  output$plotteddata <- renderPlot({
+        ggplot(filtered_df()) +
+      
+      annotate('rect', xmin = -Inf, xmax = "2019Q4", 
+  ymin=-Inf, ymax=Inf, alpha=0.5, fill="white") +
+      
+      geom_vline(aes(xintercept = "2019Q4"), color = "red") +
+      
+        geom_line(aes(x = Quarter, y = PercentageOccupancy_mean), group = "mean", size = 1) +
+        geom_line(aes(x = Quarter, y = PercentageOccupancy_upper), group = "75th percentile", size=0.5, alpha=0.5, color = "blue", linetype="twodash") +
+        geom_line(aes(x = Quarter, y = PercentageOccupancy_lowwer), group = "25th percentile", size=0.5, alpha=0.5, color = "blue", linetype="twodash") +
+        labs(
+    x = "yearly quarter", 
+    y = "Avarage percentage hospital cappacity with quartile markers", 
+    title = "patterns of hosptial cappacity over time",
+    subtitle = "historical referance data plotted before 2020"
+  ) + ylim(0, 100)
+    
+  })
+    
+  })}
+
+
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+```
+
+

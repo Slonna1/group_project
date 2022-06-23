@@ -1,0 +1,117 @@
+---
+title: "Project Description Outline"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Names of group members
+
+Person 1: Simone Famiano
+
+Person 2: John Hios
+
+Person 3: Jack Patton
+
+Person 4: Grant Walker
+
+### Roles & responsibilities of each member
+
+**Simone Famiano** formalised the aesthetics of the dashboard (lead stylist), and worked on the `Demographics` dashboard tab (workpack 1).
+
+**John Hios** did the project management, version control, and  worked on the `Acute Care vs. NHS Bed Numbers` dashboard tab (workpack 4).
+
+**Jack Patton** set up the Github repository, and worked on the `Hospital Capacity` dashboard tab (workpack 3).
+
+**Grant Walker** set up the Trello project management tool and worked on the `National Variation` dashboard tab (workpack 2). Prepared the basic leaflet map by cleaning and overlaying polygons of NHS Health boards. 
+
+**Everyone** worked on creating the workpacks for building the dashboard and merging each tab in the masted dashboard
+
+### Brief description of dashboard topic
+
+Our dashboard contains 4 main tabs providing insights on various aspects of secondary care in the acute hospital sector from 2020 onward. 
+
+Our topic is to consider the impact that winter may have on the health care, primarily the hospital (acute care) sector and the impact of the pandemic - this is achieved by answering the following questions:
+
+- Capacity – what is happening to the number of beds over the period? Perhaps think about the specialities these are if there has been specific variation?
+- Are there any demographic groups that are driving the activity?
+- What does this mean for the number of people in intensive care and the number of beds?
+- How significant are the differences in hospital activity across the country? Does urban/rural have an impact or is it related to the size and capacity of the health board?
+
+
+The dashboard outlines our topic in terms of: 
+
+- Hospital Capacity (in terms of patients) across the National Health Boards in Scotland.
+- Demographics on total stays and average length of stays on a countrywide level.
+- Bed availability/occupancy per National Health Board and countrywide.
+- Variation per admission type and differences between rural and urban areas.
+
+### Stages of the project
+
+* Planning & dashboard wireframe
+* Git branching & version control
+* Choosing datasets
+* Dataset cleaning/wrangling
+* Calculation of descriptive statistics
+* Selecting suitable visualisations for the in-scope datasets
+* Building the dashboard
+* Standardisation of aesthetics across all dashboard tabs
+
+### Which tools were used in the project
+
+* Zoom (daily stand-ups and occasional mob programming)
+* Slack (daily comms)
+* Trello (planning & task allocation)
+* Git/GitHub (collaboration & version control)
+* R (programming language for statistical computing and graphics)
+* Shiny (R package used to build interactive web apps)
+* Leaflet (open-source JavaScript libraries for interactive maps)
+* QGIS software (loading, cleaning and exporting shapefiles)
+
+### How did you gather and synthesise requirements for the project?
+
+We synthesised the information given in the brief by holding a kick-off meeting (KOM) on Friday PM hrs where the main ideas were discussed and the workscope was defined. The outcome of the KOM was the creation of 4 workpacks that would be lead by each one of the team members. A catch-up meeting was held on Saturday AM hrs to discuss any items requiring further attention.  
+
+We prioritised the delivery of a minimum viable product (MVP) consisting of 4 dashboard tabs and outlined what the extension scope would be if time permitted working on this. 
+
+### Motivations for using the data you have chosen
+
+- We used bed data and hospital information to answer the Hospital Capacity across NHBs question (Jack).
+- We used activity by board of treatment age and sex information to answer the Demographics status question. This data set had information on stays and length of stay for patients divided in age groups and gender. In the data set we used, the age groups were divided in 10 years and the time frame was in quarters, matching the data sets used by each group members. A further data set on demographics was present in the brief, we found this one to be too fragmented, dividing time in weekending rather than quarters and the age group were organised in a not regular criteria (ex. under 5 years old, 10 to 15 years old, 15 to 45 years old (!)). We concentrated mostly on the first data set for these reasons, using the second just for an extension tab on difference in time of total stays by Health Board, from 2016 to 2020. We did not include this extension in the final dashboard for time reasons and it would have been too similar to the `Hospital Capacity` tab.  (Simone).
+- We used the bed data information to answer the NHS Bed Numbers status across time question (John).  
+- We used the activity by health boards and speciality, and demographics information to answer the variation in hospital activity across the country. This dataset contained an aggregate measure for general hospital activity levels ('episodes') across admission types and so was useful for making urban and rural comparisons. The Scottish Government's spatial data site was accessed to obtain shapefiles so that we had a picture to reference the data against. The motivation was to bring another visual element to the dashboard to aid the user  (Grant).
+
+### Data quality and potential bias, including a brief summary of data cleaning and transformations
+
+According to the About tab on the Scottish Health and Social Care open data platform (https://www.opendata.nhs.scot/about), we are given access to statistics and reference data for information and re-use. This platform is managed by Public Health Scotland. Data is released under the UK Open Government Licence (OGL) which means it is free to use and re-use.
+
+The dataset is unlikely to be biased because it meets high standards of trustworthiness, quality and public value.
+
+To clean the datasets we used the tidyverse library and the janitor. Data belonging in different tables but downloaded from the Scottish Health and Social Care open data platform were combined using join operations in R.
+
+### How is the data stored and structured
+
+[**Hint**: This page offers a good starting point for understanding the data structure: https://guides.statistics.gov.scot/article/34-understanding-the-data-structure]
+
+The data is in the form of csv files which are being stored in the assignment folders `raw_data` and `clean_data`.
+
+This means that the original files used to derive the cleaned up set of data (refer to https://www.opendata.nhs.scot/dataset) are readily available for reviewing / QA'ing.
+
+Benefits of storing the data like this are transparency to reviews/QA's and ease of sharing with a third party.
+
+### Ethical and legal considerations of the data
+
+[**Hint:** this page contains information on the Open Government License which covers most datasets on statistics.gov.scot: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/]
+
+There are no ethical considerations, because as per the Open Government License for public sector information, we may: 
+
+- copy, publish, distribute and transmit the Information;
+- adapt the Information;
+- exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application.
+
+The datasets are covered by the Open Government License, which means we are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.

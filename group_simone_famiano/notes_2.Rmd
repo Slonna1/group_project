@@ -1,0 +1,223 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(janitor)
+library(here)
+library(tidyverse)
+library(lubridate)
+```
+
+
+```{r}
+phs_data <-  read_csv("raw_data/hospital_admissions_hb_agesex_20220302.csv") %>% 
+  clean_names()
+
+phs_data
+
+```
+
+```{r}
+target <- c("S08000015", "S08000016", "S08000017", "S08000019", "S08000020",
+            "S08000022", "S08000024", "S08000025", "S08000026", "S08000028",
+            "S08000029", "S08000030",	"S08000031", "S08000032")
+```
+
+
+
+```{r}
+phs_data_quarters <- phs_data %>% 
+  select(week_ending, hb, age_group, sex, admission_type, number_admissions) %>% 
+  filter(week_ending %in% c(20211003:20220102)) %>% 
+  filter(age_group %in% "All ages") %>% 
+  filter(!admission_type %in% "All") %>% 
+  filter(!sex == "All") %>% 
+  filter(hb %in% target) %>% 
+  mutate(
+    hb = str_replace_all(hb, "S08000015", "Ayrshire and Arran"),
+    hb = str_replace_all(hb, "S08000016", "Borders"),
+    hb = str_replace_all(hb, "S08000017", "Dumfries and Galloway"),
+    hb = str_replace_all(hb, "S08000019", "Forth Valley"),
+    hb = str_replace_all(hb, "S08000020", "Grampian"),
+    hb = str_replace_all(hb, "S08000022", "Highland"),
+    hb = str_replace_all(hb, "S08000024", "Lothian"),
+    hb = str_replace_all(hb, "S08000025", "Orkney"),
+    hb = str_replace_all(hb, "S08000026", "Shetland"),
+    hb = str_replace_all(hb, "S08000028", "Western Isle"),
+    hb = str_replace_all(hb, "S08000029", "Fife"),
+    hb = str_replace_all(hb, "S08000030", "Tayside"),
+    hb = str_replace_all(hb, "S08000031", 
+                               "Greater Glasgow and Clyde"),
+    hb = str_replace_all(hb, "S08000032", "Lanarkshire"),
+    hb = str_replace_all(hb, "S27000001", 
+                               "non-NHS Provider/ Location")) %>% 
+  rename(location = hb,
+         stays = number_admissions,
+         gender = sex) %>% 
+  mutate(week_ending = str_replace_all(week_ending, "[0-9]", "2021Q4"),
+         week_ending = str_remove_all(week_ending, "[2021Q4]{7}")) %>% 
+  rename(quarter = week_ending)
+
+
+phs_data_quarters
+
+```
+
+```{r}
+phs_data_quarters %>% 
+  group_by(age_group) %>% 
+  summarise(tot = n())
+
+phs_data_quarters %>% 
+  group_by(admission_type) %>% 
+  summarise(tot = n())
+
+phs_data_quarters %>% 
+  group_by(gender) %>% 
+  summarise(tot = n())
+
+phs_data_quarters %>% 
+  group_by(location) %>% 
+    summarise(tot = n())
+```
+
+```{r}
+hyp_data <- phs_data_clean_location %>% 
+  filter(quarter == "2020Q1") %>% 
+  group_by(sex, age) %>%
+  summarise(tot = sum(stays))
+
+hyp_data_sex <- hyp_data %>% 
+  group_by(sex) %>% 
+  summarise(tot = sum(tot))
+
+hyp_data_sex
+```
+```{r}
+hyp_data_age <- hyp_data %>% 
+  group_by(age) %>% 
+  summarise(tot = sum(tot)) %>% 
+  arrange(desc(tot))
+
+hyp_data_age
+```
+
+
+
+```{r}
+tot_2021_q4_sex <- phs_data_quarters %>% 
+  group_by(gender) %>% 
+  summarise(tot = sum(stays))
+
+tot_2021_q4_sex
+```
+
+```{r}
+tot_2021_q4_age <- phs_data %>% 
+  filter(!age_group == "All ages") %>% 
+  filter(week_ending %in% c(20211003:20220102)) %>% 
+  filter(!admission_type %in% "All") %>% 
+  filter(hb %in% target) %>% 
+  group_by(age_group) %>% 
+  summarise(tot = sum(number_admissions)) %>% 
+  arrange(desc(tot))
+
+tot_2021_q4_age
+```
+
+
+```{r}
+phs_data_comparison <- phs_data %>% 
+  select(age_group, hb, admission_type, number_admissions, average20182019) %>% 
+  filter(age_group %in% "All ages") %>% 
+  filter(admission_type %in% "All") %>%
+  filter(hb %in% target) %>% 
+  mutate(
+    hb = str_replace_all(hb, "S08000015", "Ayrshire and Arran"),
+    hb = str_replace_all(hb, "S08000016", "Borders"),
+    hb = str_replace_all(hb, "S08000017", "Dumfries and Galloway"),
+    hb = str_replace_all(hb, "S08000019", "Forth Valley"),
+    hb = str_replace_all(hb, "S08000020", "Grampian"),
+    hb = str_replace_all(hb, "S08000022", "Highland"),
+    hb = str_replace_all(hb, "S08000024", "Lothian"),
+    hb = str_replace_all(hb, "S08000025", "Orkney"),
+    hb = str_replace_all(hb, "S08000026", "Shetland"),
+    hb = str_replace_all(hb, "S08000028", "Western Isle"),
+    hb = str_replace_all(hb, "S08000029", "Fife"),
+    hb = str_replace_all(hb, "S08000030", "Tayside"),
+    hb = str_replace_all(hb, "S08000031", 
+                               "Greater Glasgow and Clyde"),
+    hb = str_replace_all(hb, "S08000032", "Lanarkshire"),
+    hb = str_replace_all(hb, "S27000001", 
+                               "non-NHS Provider/ Location")) %>% 
+  group_by(hb) %>% 
+  summarise(tot_stays_2020_2021 = sum(number_admissions),
+            avg_stays_2018_2019 = sum(average20182019)) %>% 
+  mutate(difference = tot_stays_2020_2021 - avg_stays_2018_2019)
+
+phs_data_comparison
+
+```
+
+```{r}
+
+min_max <- max(abs(phs_data_comparison$difference))
+
+ggplot(phs_data_comparison) +
+  aes(
+    x = reorder(hb, difference),
+    y = difference,
+    fill = difference > 0
+  ) +
+  geom_col() +
+  ylim(-min_max, min_max) +
+    labs(y = "Difference in Hospital Stays", x = "Health Board", 
+         title = "Hospital Stays differences between 2020/21 and 2018/19") + 
+  scale_fill_manual(values = c("#061a1f", "#062e3c"), name = "", 
+                    labels = c("decrease", "increase")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+phs_data_comparison_weekending <- phs_data %>% 
+  select(week_ending, age_group, hb, admission_type, number_admissions, 
+         average20182019) %>% 
+  filter(age_group %in% "All ages") %>% 
+  filter(admission_type %in% "All") %>%
+  filter(hb %in% target) %>% 
+  mutate(
+    hb = str_replace_all(hb, "S08000015", "Ayrshire and Arran"),
+    hb = str_replace_all(hb, "S08000016", "Borders"),
+    hb = str_replace_all(hb, "S08000017", "Dumfries and Galloway"),
+    hb = str_replace_all(hb, "S08000019", "Forth Valley"),
+    hb = str_replace_all(hb, "S08000020", "Grampian"),
+    hb = str_replace_all(hb, "S08000022", "Highland"),
+    hb = str_replace_all(hb, "S08000024", "Lothian"),
+    hb = str_replace_all(hb, "S08000025", "Orkney"),
+    hb = str_replace_all(hb, "S08000026", "Shetland"),
+    hb = str_replace_all(hb, "S08000028", "Western Isle"),
+    hb = str_replace_all(hb, "S08000029", "Fife"),
+    hb = str_replace_all(hb, "S08000030", "Tayside"),
+    hb = str_replace_all(hb, "S08000031", 
+                               "Greater Glasgow and Clyde"),
+    hb = str_replace_all(hb, "S08000032", "Lanarkshire"),
+    hb = str_replace_all(hb, "S27000001", 
+                               "non-NHS Provider/ Location")) %>% 
+  group_by(week_ending, hb) %>% 
+  summarise(tot_stays_2020_2021 = sum(number_admissions),
+            avg_stays_2018_2019 = sum(average20182019)) %>% 
+  mutate(difference = tot_stays_2020_2021 - avg_stays_2018_2019)
+
+phs_data_comparison_weekending
+
+```
+
+```{r}
+phs_data_comparison_weekending %>% 
+  group_by(week_ending) %>% 
+  summarise(tot= n())
+```
+

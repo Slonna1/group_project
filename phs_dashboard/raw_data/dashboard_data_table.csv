@@ -1,0 +1,1959 @@
+Quarter,Age,Gender,Location,Total Stays,Average Length of Stay (in days)
+2020Q1,0-9 ,Female,Ayrshire and Arran,32,1
+2020Q1,0-9 ,Male,Ayrshire and Arran,38,1
+2020Q1,10-19 ,Female,Ayrshire and Arran,137,2
+2020Q1,10-19 ,Male,Ayrshire and Arran,102,2
+2020Q1,20-29 ,Female,Ayrshire and Arran,385,2
+2020Q1,20-29 ,Male,Ayrshire and Arran,284,2
+2020Q1,30-39 ,Female,Ayrshire and Arran,508,3
+2020Q1,30-39 ,Male,Ayrshire and Arran,373,2
+2020Q1,40-49 ,Female,Ayrshire and Arran,534,3
+2020Q1,40-49 ,Male,Ayrshire and Arran,438,3
+2020Q1,50-59 ,Female,Ayrshire and Arran,888,3
+2020Q1,50-59 ,Male,Ayrshire and Arran,817,6
+2020Q1,60-69 ,Female,Ayrshire and Arran,930,5
+2020Q1,60-69 ,Male,Ayrshire and Arran,1020,7
+2020Q1,70-79 ,Female,Ayrshire and Arran,1272,7
+2020Q1,70-79 ,Male,Ayrshire and Arran,1266,4
+2020Q1,80-89 ,Female,Ayrshire and Arran,1087,4
+2020Q1,80-89 ,Male,Ayrshire and Arran,884,8
+2020Q1,90 +,Female,Ayrshire and Arran,304,19
+2020Q1,90 +,Male,Ayrshire and Arran,161,11
+2020Q2,0-9 ,Female,Ayrshire and Arran,10,1
+2020Q2,0-9 ,Male,Ayrshire and Arran,25,1
+2020Q2,10-19 ,Female,Ayrshire and Arran,79,2
+2020Q2,10-19 ,Male,Ayrshire and Arran,58,1
+2020Q2,20-29 ,Female,Ayrshire and Arran,260,1
+2020Q2,20-29 ,Male,Ayrshire and Arran,234,1
+2020Q2,30-39 ,Female,Ayrshire and Arran,385,14
+2020Q2,30-39 ,Male,Ayrshire and Arran,338,2
+2020Q2,40-49 ,Female,Ayrshire and Arran,418,4
+2020Q2,40-49 ,Male,Ayrshire and Arran,423,4
+2020Q2,50-59 ,Female,Ayrshire and Arran,615,4
+2020Q2,50-59 ,Male,Ayrshire and Arran,701,6
+2020Q2,60-69 ,Female,Ayrshire and Arran,722,5
+2020Q2,60-69 ,Male,Ayrshire and Arran,829,6
+2020Q2,70-79 ,Female,Ayrshire and Arran,879,6
+2020Q2,70-79 ,Male,Ayrshire and Arran,895,4
+2020Q2,80-89 ,Female,Ayrshire and Arran,773,8
+2020Q2,80-89 ,Male,Ayrshire and Arran,663,7
+2020Q2,90 +,Female,Ayrshire and Arran,187,15
+2020Q2,90 +,Male,Ayrshire and Arran,124,12
+2020Q3,0-9 ,Female,Ayrshire and Arran,14,3
+2020Q3,0-9 ,Male,Ayrshire and Arran,45,1
+2020Q3,10-19 ,Female,Ayrshire and Arran,124,1
+2020Q3,10-19 ,Male,Ayrshire and Arran,108,1
+2020Q3,20-29 ,Female,Ayrshire and Arran,383,2
+2020Q3,20-29 ,Male,Ayrshire and Arran,304,2
+2020Q3,30-39 ,Female,Ayrshire and Arran,521,2
+2020Q3,30-39 ,Male,Ayrshire and Arran,441,2
+2020Q3,40-49 ,Female,Ayrshire and Arran,566,5
+2020Q3,40-49 ,Male,Ayrshire and Arran,520,5
+2020Q3,50-59 ,Female,Ayrshire and Arran,896,4
+2020Q3,50-59 ,Male,Ayrshire and Arran,848,4
+2020Q3,60-69 ,Female,Ayrshire and Arran,933,5
+2020Q3,60-69 ,Male,Ayrshire and Arran,1103,5
+2020Q3,70-79 ,Female,Ayrshire and Arran,1209,6
+2020Q3,70-79 ,Male,Ayrshire and Arran,1300,8
+2020Q3,80-89 ,Female,Ayrshire and Arran,962,9
+2020Q3,80-89 ,Male,Ayrshire and Arran,832,7
+2020Q3,90 +,Female,Ayrshire and Arran,292,10
+2020Q3,90 +,Male,Ayrshire and Arran,158,7
+2020Q4,0-9 ,Female,Ayrshire and Arran,21,1
+2020Q4,0-9 ,Male,Ayrshire and Arran,34,3
+2020Q4,10-19 ,Female,Ayrshire and Arran,122,2
+2020Q4,10-19 ,Male,Ayrshire and Arran,68,2
+2020Q4,20-29 ,Female,Ayrshire and Arran,385,4
+2020Q4,20-29 ,Male,Ayrshire and Arran,239,2
+2020Q4,30-39 ,Female,Ayrshire and Arran,455,3
+2020Q4,30-39 ,Male,Ayrshire and Arran,368,2
+2020Q4,40-49 ,Female,Ayrshire and Arran,451,5
+2020Q4,40-49 ,Male,Ayrshire and Arran,468,3
+2020Q4,50-59 ,Female,Ayrshire and Arran,846,3
+2020Q4,50-59 ,Male,Ayrshire and Arran,815,3
+2020Q4,60-69 ,Female,Ayrshire and Arran,899,5
+2020Q4,60-69 ,Male,Ayrshire and Arran,968,7
+2020Q4,70-79 ,Female,Ayrshire and Arran,1160,8
+2020Q4,70-79 ,Male,Ayrshire and Arran,1128,11
+2020Q4,80-89 ,Female,Ayrshire and Arran,950,8
+2020Q4,80-89 ,Male,Ayrshire and Arran,823,8
+2020Q4,90 +,Female,Ayrshire and Arran,272,9
+2020Q4,90 +,Male,Ayrshire and Arran,153,8
+2021Q1,0-9 ,Female,Ayrshire and Arran,10,1
+2021Q1,0-9 ,Male,Ayrshire and Arran,22,1
+2021Q1,10-19 ,Female,Ayrshire and Arran,75,1
+2021Q1,10-19 ,Male,Ayrshire and Arran,66,2
+2021Q1,20-29 ,Female,Ayrshire and Arran,322,1
+2021Q1,20-29 ,Male,Ayrshire and Arran,224,2
+2021Q1,30-39 ,Female,Ayrshire and Arran,399,2
+2021Q1,30-39 ,Male,Ayrshire and Arran,283,3
+2021Q1,40-49 ,Female,Ayrshire and Arran,497,3
+2021Q1,40-49 ,Male,Ayrshire and Arran,430,5
+2021Q1,50-59 ,Female,Ayrshire and Arran,734,5
+2021Q1,50-59 ,Male,Ayrshire and Arran,711,8
+2021Q1,60-69 ,Female,Ayrshire and Arran,765,5
+2021Q1,60-69 ,Male,Ayrshire and Arran,897,7
+2021Q1,70-79 ,Female,Ayrshire and Arran,1010,7
+2021Q1,70-79 ,Male,Ayrshire and Arran,1033,3
+2021Q1,80-89 ,Female,Ayrshire and Arran,864,9
+2021Q1,80-89 ,Male,Ayrshire and Arran,707,8
+2021Q1,90 +,Female,Ayrshire and Arran,235,18
+2021Q1,90 +,Male,Ayrshire and Arran,150,10
+2021Q2,0-9 ,Female,Ayrshire and Arran,20,1
+2021Q2,0-9 ,Male,Ayrshire and Arran,43,1
+2021Q2,10-19 ,Female,Ayrshire and Arran,136,1
+2021Q2,10-19 ,Male,Ayrshire and Arran,123,1
+2021Q2,20-29 ,Female,Ayrshire and Arran,405,2
+2021Q2,20-29 ,Male,Ayrshire and Arran,237,2
+2021Q2,30-39 ,Female,Ayrshire and Arran,501,4
+2021Q2,30-39 ,Male,Ayrshire and Arran,397,3
+2021Q2,40-49 ,Female,Ayrshire and Arran,550,3
+2021Q2,40-49 ,Male,Ayrshire and Arran,497,5
+2021Q2,50-59 ,Female,Ayrshire and Arran,890,3
+2021Q2,50-59 ,Male,Ayrshire and Arran,817,4
+2021Q2,60-69 ,Female,Ayrshire and Arran,1040,5
+2021Q2,60-69 ,Male,Ayrshire and Arran,1053,5
+2021Q2,70-79 ,Female,Ayrshire and Arran,1209,6
+2021Q2,70-79 ,Male,Ayrshire and Arran,1311,6
+2021Q2,80-89 ,Female,Ayrshire and Arran,1102,9
+2021Q2,80-89 ,Male,Ayrshire and Arran,874,8
+2021Q2,90 +,Female,Ayrshire and Arran,271,9
+2021Q2,90 +,Male,Ayrshire and Arran,160,7
+2021Q3,0-9 ,Female,Ayrshire and Arran,28,1
+2021Q3,0-9 ,Male,Ayrshire and Arran,40,1
+2021Q3,10-19 ,Female,Ayrshire and Arran,117,3
+2021Q3,10-19 ,Male,Ayrshire and Arran,95,2
+2021Q3,20-29 ,Female,Ayrshire and Arran,383,2
+2021Q3,20-29 ,Male,Ayrshire and Arran,285,2
+2021Q3,30-39 ,Female,Ayrshire and Arran,490,2
+2021Q3,30-39 ,Male,Ayrshire and Arran,396,2
+2021Q3,40-49 ,Female,Ayrshire and Arran,552,4
+2021Q3,40-49 ,Male,Ayrshire and Arran,464,3
+2021Q3,50-59 ,Female,Ayrshire and Arran,835,4
+2021Q3,50-59 ,Male,Ayrshire and Arran,867,4
+2021Q3,60-69 ,Female,Ayrshire and Arran,1002,6
+2021Q3,60-69 ,Male,Ayrshire and Arran,1102,5
+2021Q3,70-79 ,Female,Ayrshire and Arran,1247,7
+2021Q3,70-79 ,Male,Ayrshire and Arran,1299,7
+2021Q3,80-89 ,Female,Ayrshire and Arran,972,13
+2021Q3,80-89 ,Male,Ayrshire and Arran,854,4
+2021Q3,90 +,Female,Ayrshire and Arran,285,16
+2021Q3,90 +,Male,Ayrshire and Arran,131,14
+2020Q1,0-9 ,Female,Borders,0,NA
+2020Q1,0-9 ,Male,Borders,10,1
+2020Q1,10-19 ,Female,Borders,25,2
+2020Q1,10-19 ,Male,Borders,27,2
+2020Q1,20-29 ,Female,Borders,64,2
+2020Q1,20-29 ,Male,Borders,55,2
+2020Q1,30-39 ,Female,Borders,58,2
+2020Q1,30-39 ,Male,Borders,62,2
+2020Q1,40-49 ,Female,Borders,79,3
+2020Q1,40-49 ,Male,Borders,72,3
+2020Q1,50-59 ,Female,Borders,150,3
+2020Q1,50-59 ,Male,Borders,170,4
+2020Q1,60-69 ,Female,Borders,202,4
+2020Q1,60-69 ,Male,Borders,225,5
+2020Q1,70-79 ,Female,Borders,300,5
+2020Q1,70-79 ,Male,Borders,326,5
+2020Q1,80-89 ,Female,Borders,340,7
+2020Q1,80-89 ,Male,Borders,275,5
+2020Q1,90 +,Female,Borders,112,10
+2020Q1,90 +,Male,Borders,64,10
+2020Q2,0-9 ,Female,Borders,0,NA
+2020Q2,0-9 ,Male,Borders,5,0
+2020Q2,10-19 ,Female,Borders,10,1
+2020Q2,10-19 ,Male,Borders,15,2
+2020Q2,20-29 ,Female,Borders,40,2
+2020Q2,20-29 ,Male,Borders,35,1
+2020Q2,30-39 ,Female,Borders,44,2
+2020Q2,30-39 ,Male,Borders,41,2
+2020Q2,40-49 ,Female,Borders,65,2
+2020Q2,40-49 ,Male,Borders,77,2
+2020Q2,50-59 ,Female,Borders,120,3
+2020Q2,50-59 ,Male,Borders,115,4
+2020Q2,60-69 ,Female,Borders,157,5
+2020Q2,60-69 ,Male,Borders,169,3
+2020Q2,70-79 ,Female,Borders,233,5
+2020Q2,70-79 ,Male,Borders,240,4
+2020Q2,80-89 ,Female,Borders,259,6
+2020Q2,80-89 ,Male,Borders,223,5
+2020Q2,90 +,Female,Borders,90,9
+2020Q2,90 +,Male,Borders,51,6
+2020Q3,0-9 ,Female,Borders,5,1
+2020Q3,0-9 ,Male,Borders,10,1
+2020Q3,10-19 ,Female,Borders,30,2
+2020Q3,10-19 ,Male,Borders,20,2
+2020Q3,20-29 ,Female,Borders,50,3
+2020Q3,20-29 ,Male,Borders,49,2
+2020Q3,30-39 ,Female,Borders,59,2
+2020Q3,30-39 ,Male,Borders,54,2
+2020Q3,40-49 ,Female,Borders,81,2
+2020Q3,40-49 ,Male,Borders,74,3
+2020Q3,50-59 ,Female,Borders,150,3
+2020Q3,50-59 ,Male,Borders,146,3
+2020Q3,60-69 ,Female,Borders,149,3
+2020Q3,60-69 ,Male,Borders,159,5
+2020Q3,70-79 ,Female,Borders,275,5
+2020Q3,70-79 ,Male,Borders,311,5
+2020Q3,80-89 ,Female,Borders,282,5
+2020Q3,80-89 ,Male,Borders,239,4
+2020Q3,90 +,Female,Borders,105,9
+2020Q3,90 +,Male,Borders,52,9
+2020Q4,0-9 ,Female,Borders,5,0
+2020Q4,0-9 ,Male,Borders,5,0
+2020Q4,10-19 ,Female,Borders,19,1
+2020Q4,10-19 ,Male,Borders,15,1
+2020Q4,20-29 ,Female,Borders,43,2
+2020Q4,20-29 ,Male,Borders,55,1
+2020Q4,30-39 ,Female,Borders,61,3
+2020Q4,30-39 ,Male,Borders,54,1
+2020Q4,40-49 ,Female,Borders,78,2
+2020Q4,40-49 ,Male,Borders,78,3
+2020Q4,50-59 ,Female,Borders,157,3
+2020Q4,50-59 ,Male,Borders,136,3
+2020Q4,60-69 ,Female,Borders,168,4
+2020Q4,60-69 ,Male,Borders,183,4
+2020Q4,70-79 ,Female,Borders,254,5
+2020Q4,70-79 ,Male,Borders,264,5
+2020Q4,80-89 ,Female,Borders,309,6
+2020Q4,80-89 ,Male,Borders,253,6
+2020Q4,90 +,Female,Borders,102,11
+2020Q4,90 +,Male,Borders,70,12
+2021Q1,0-9 ,Female,Borders,5,1
+2021Q1,0-9 ,Male,Borders,5,1
+2021Q1,10-19 ,Female,Borders,20,10
+2021Q1,10-19 ,Male,Borders,15,5
+2021Q1,20-29 ,Female,Borders,44,3
+2021Q1,20-29 ,Male,Borders,40,3
+2021Q1,30-39 ,Female,Borders,61,3
+2021Q1,30-39 ,Male,Borders,45,6
+2021Q1,40-49 ,Female,Borders,64,3
+2021Q1,40-49 ,Male,Borders,70,4
+2021Q1,50-59 ,Female,Borders,124,5
+2021Q1,50-59 ,Male,Borders,140,4
+2021Q1,60-69 ,Female,Borders,162,4
+2021Q1,60-69 ,Male,Borders,182,4
+2021Q1,70-79 ,Female,Borders,270,6
+2021Q1,70-79 ,Male,Borders,266,9
+2021Q1,80-89 ,Female,Borders,269,7
+2021Q1,80-89 ,Male,Borders,240,7
+2021Q1,90 +,Female,Borders,105,11
+2021Q1,90 +,Male,Borders,80,12
+2021Q2,0-9 ,Female,Borders,0,NA
+2021Q2,0-9 ,Male,Borders,10,1
+2021Q2,10-19 ,Female,Borders,23,2
+2021Q2,10-19 ,Male,Borders,23,1
+2021Q2,20-29 ,Female,Borders,40,2
+2021Q2,20-29 ,Male,Borders,48,2
+2021Q2,30-39 ,Female,Borders,64,3
+2021Q2,30-39 ,Male,Borders,67,2
+2021Q2,40-49 ,Female,Borders,89,3
+2021Q2,40-49 ,Male,Borders,93,3
+2021Q2,50-59 ,Female,Borders,164,3
+2021Q2,50-59 ,Male,Borders,175,5
+2021Q2,60-69 ,Female,Borders,198,4
+2021Q2,60-69 ,Male,Borders,220,5
+2021Q2,70-79 ,Female,Borders,297,6
+2021Q2,70-79 ,Male,Borders,344,5
+2021Q2,80-89 ,Female,Borders,330,7
+2021Q2,80-89 ,Male,Borders,264,10
+2021Q2,90 +,Female,Borders,101,10
+2021Q2,90 +,Male,Borders,70,13
+2021Q3,0-9 ,Female,Borders,5,0
+2021Q3,0-9 ,Male,Borders,0,NA
+2021Q3,10-19 ,Female,Borders,13,1
+2021Q3,10-19 ,Male,Borders,30,2
+2021Q3,20-29 ,Female,Borders,26,3
+2021Q3,20-29 ,Male,Borders,40,3
+2021Q3,30-39 ,Female,Borders,69,3
+2021Q3,30-39 ,Male,Borders,41,4
+2021Q3,40-49 ,Female,Borders,60,2
+2021Q3,40-49 ,Male,Borders,57,5
+2021Q3,50-59 ,Female,Borders,131,3
+2021Q3,50-59 ,Male,Borders,150,5
+2021Q3,60-69 ,Female,Borders,182,5
+2021Q3,60-69 ,Male,Borders,208,6
+2021Q3,70-79 ,Female,Borders,257,6
+2021Q3,70-79 ,Male,Borders,304,6
+2021Q3,80-89 ,Female,Borders,283,7
+2021Q3,80-89 ,Male,Borders,271,7
+2021Q3,90 +,Female,Borders,110,10
+2021Q3,90 +,Male,Borders,69,13
+2020Q1,0-9 ,Female,Dumfries and Galloway,20,1
+2020Q1,0-9 ,Male,Dumfries and Galloway,22,1
+2020Q1,10-19 ,Female,Dumfries and Galloway,54,1
+2020Q1,10-19 ,Male,Dumfries and Galloway,46,1
+2020Q1,20-29 ,Female,Dumfries and Galloway,99,2
+2020Q1,20-29 ,Male,Dumfries and Galloway,79,3
+2020Q1,30-39 ,Female,Dumfries and Galloway,127,3
+2020Q1,30-39 ,Male,Dumfries and Galloway,99,3
+2020Q1,40-49 ,Female,Dumfries and Galloway,123,3
+2020Q1,40-49 ,Male,Dumfries and Galloway,118,4
+2020Q1,50-59 ,Female,Dumfries and Galloway,300,4
+2020Q1,50-59 ,Male,Dumfries and Galloway,253,6
+2020Q1,60-69 ,Female,Dumfries and Galloway,324,3
+2020Q1,60-69 ,Male,Dumfries and Galloway,362,9
+2020Q1,70-79 ,Female,Dumfries and Galloway,433,4
+2020Q1,70-79 ,Male,Dumfries and Galloway,494,2
+2020Q1,80-89 ,Female,Dumfries and Galloway,425,6
+2020Q1,80-89 ,Male,Dumfries and Galloway,385,6
+2020Q1,90 +,Female,Dumfries and Galloway,167,13
+2020Q1,90 +,Male,Dumfries and Galloway,62,23
+2020Q2,0-9 ,Female,Dumfries and Galloway,10,1
+2020Q2,0-9 ,Male,Dumfries and Galloway,10,1
+2020Q2,10-19 ,Female,Dumfries and Galloway,28,4
+2020Q2,10-19 ,Male,Dumfries and Galloway,23,1
+2020Q2,20-29 ,Female,Dumfries and Galloway,89,2
+2020Q2,20-29 ,Male,Dumfries and Galloway,74,1
+2020Q2,30-39 ,Female,Dumfries and Galloway,100,2
+2020Q2,30-39 ,Male,Dumfries and Galloway,60,3
+2020Q2,40-49 ,Female,Dumfries and Galloway,129,3
+2020Q2,40-49 ,Male,Dumfries and Galloway,95,4
+2020Q2,50-59 ,Female,Dumfries and Galloway,165,5
+2020Q2,50-59 ,Male,Dumfries and Galloway,205,4
+2020Q2,60-69 ,Female,Dumfries and Galloway,212,5
+2020Q2,60-69 ,Male,Dumfries and Galloway,244,5
+2020Q2,70-79 ,Female,Dumfries and Galloway,309,6
+2020Q2,70-79 ,Male,Dumfries and Galloway,359,6
+2020Q2,80-89 ,Female,Dumfries and Galloway,291,7
+2020Q2,80-89 ,Male,Dumfries and Galloway,255,8
+2020Q2,90 +,Female,Dumfries and Galloway,93,15
+2020Q2,90 +,Male,Dumfries and Galloway,43,7
+2020Q3,0-9 ,Female,Dumfries and Galloway,23,1
+2020Q3,0-9 ,Male,Dumfries and Galloway,18,1
+2020Q3,10-19 ,Female,Dumfries and Galloway,52,1
+2020Q3,10-19 ,Male,Dumfries and Galloway,48,1
+2020Q3,20-29 ,Female,Dumfries and Galloway,83,2
+2020Q3,20-29 ,Male,Dumfries and Galloway,87,2
+2020Q3,30-39 ,Female,Dumfries and Galloway,121,5
+2020Q3,30-39 ,Male,Dumfries and Galloway,97,2
+2020Q3,40-49 ,Female,Dumfries and Galloway,115,5
+2020Q3,40-49 ,Male,Dumfries and Galloway,126,3
+2020Q3,50-59 ,Female,Dumfries and Galloway,242,4
+2020Q3,50-59 ,Male,Dumfries and Galloway,264,4
+2020Q3,60-69 ,Female,Dumfries and Galloway,328,4
+2020Q3,60-69 ,Male,Dumfries and Galloway,342,4
+2020Q3,70-79 ,Female,Dumfries and Galloway,394,2
+2020Q3,70-79 ,Male,Dumfries and Galloway,511,6
+2020Q3,80-89 ,Female,Dumfries and Galloway,347,7
+2020Q3,80-89 ,Male,Dumfries and Galloway,347,7
+2020Q3,90 +,Female,Dumfries and Galloway,108,11
+2020Q3,90 +,Male,Dumfries and Galloway,75,7
+2020Q4,0-9 ,Female,Dumfries and Galloway,10,1
+2020Q4,0-9 ,Male,Dumfries and Galloway,19,1
+2020Q4,10-19 ,Female,Dumfries and Galloway,46,1
+2020Q4,10-19 ,Male,Dumfries and Galloway,33,2
+2020Q4,20-29 ,Female,Dumfries and Galloway,99,1
+2020Q4,20-29 ,Male,Dumfries and Galloway,79,4
+2020Q4,30-39 ,Female,Dumfries and Galloway,109,3
+2020Q4,30-39 ,Male,Dumfries and Galloway,93,3
+2020Q4,40-49 ,Female,Dumfries and Galloway,124,2
+2020Q4,40-49 ,Male,Dumfries and Galloway,151,4
+2020Q4,50-59 ,Female,Dumfries and Galloway,277,3
+2020Q4,50-59 ,Male,Dumfries and Galloway,260,4
+2020Q4,60-69 ,Female,Dumfries and Galloway,309,5
+2020Q4,60-69 ,Male,Dumfries and Galloway,347,4
+2020Q4,70-79 ,Female,Dumfries and Galloway,418,8
+2020Q4,70-79 ,Male,Dumfries and Galloway,459,6
+2020Q4,80-89 ,Female,Dumfries and Galloway,393,7
+2020Q4,80-89 ,Male,Dumfries and Galloway,377,8
+2020Q4,90 +,Female,Dumfries and Galloway,113,12
+2020Q4,90 +,Male,Dumfries and Galloway,70,15
+2021Q1,0-9 ,Female,Dumfries and Galloway,11,1
+2021Q1,0-9 ,Male,Dumfries and Galloway,16,1
+2021Q1,10-19 ,Female,Dumfries and Galloway,43,2
+2021Q1,10-19 ,Male,Dumfries and Galloway,38,1
+2021Q1,20-29 ,Female,Dumfries and Galloway,85,1
+2021Q1,20-29 ,Male,Dumfries and Galloway,69,1
+2021Q1,30-39 ,Female,Dumfries and Galloway,97,3
+2021Q1,30-39 ,Male,Dumfries and Galloway,71,2
+2021Q1,40-49 ,Female,Dumfries and Galloway,114,3
+2021Q1,40-49 ,Male,Dumfries and Galloway,115,3
+2021Q1,50-59 ,Female,Dumfries and Galloway,248,3
+2021Q1,50-59 ,Male,Dumfries and Galloway,233,6
+2021Q1,60-69 ,Female,Dumfries and Galloway,278,4
+2021Q1,60-69 ,Male,Dumfries and Galloway,342,5
+2021Q1,70-79 ,Female,Dumfries and Galloway,377,6
+2021Q1,70-79 ,Male,Dumfries and Galloway,458,5
+2021Q1,80-89 ,Female,Dumfries and Galloway,339,8
+2021Q1,80-89 ,Male,Dumfries and Galloway,358,8
+2021Q1,90 +,Female,Dumfries and Galloway,118,18
+2021Q1,90 +,Male,Dumfries and Galloway,70,10
+2021Q2,0-9 ,Female,Dumfries and Galloway,22,1
+2021Q2,0-9 ,Male,Dumfries and Galloway,20,1
+2021Q2,10-19 ,Female,Dumfries and Galloway,47,2
+2021Q2,10-19 ,Male,Dumfries and Galloway,45,2
+2021Q2,20-29 ,Female,Dumfries and Galloway,123,2
+2021Q2,20-29 ,Male,Dumfries and Galloway,96,2
+2021Q2,30-39 ,Female,Dumfries and Galloway,125,2
+2021Q2,30-39 ,Male,Dumfries and Galloway,101,3
+2021Q2,40-49 ,Female,Dumfries and Galloway,155,2
+2021Q2,40-49 ,Male,Dumfries and Galloway,151,5
+2021Q2,50-59 ,Female,Dumfries and Galloway,284,4
+2021Q2,50-59 ,Male,Dumfries and Galloway,307,3
+2021Q2,60-69 ,Female,Dumfries and Galloway,321,4
+2021Q2,60-69 ,Male,Dumfries and Galloway,361,4
+2021Q2,70-79 ,Female,Dumfries and Galloway,398,6
+2021Q2,70-79 ,Male,Dumfries and Galloway,527,6
+2021Q2,80-89 ,Female,Dumfries and Galloway,390,10
+2021Q2,80-89 ,Male,Dumfries and Galloway,393,6
+2021Q2,90 +,Female,Dumfries and Galloway,143,8
+2021Q2,90 +,Male,Dumfries and Galloway,81,11
+2021Q3,0-9 ,Female,Dumfries and Galloway,11,1
+2021Q3,0-9 ,Male,Dumfries and Galloway,24,2
+2021Q3,10-19 ,Female,Dumfries and Galloway,64,2
+2021Q3,10-19 ,Male,Dumfries and Galloway,46,1
+2021Q3,20-29 ,Female,Dumfries and Galloway,82,2
+2021Q3,20-29 ,Male,Dumfries and Galloway,87,2
+2021Q3,30-39 ,Female,Dumfries and Galloway,117,3
+2021Q3,30-39 ,Male,Dumfries and Galloway,106,3
+2021Q3,40-49 ,Female,Dumfries and Galloway,152,3
+2021Q3,40-49 ,Male,Dumfries and Galloway,169,3
+2021Q3,50-59 ,Female,Dumfries and Galloway,224,3
+2021Q3,50-59 ,Male,Dumfries and Galloway,255,4
+2021Q3,60-69 ,Female,Dumfries and Galloway,294,5
+2021Q3,60-69 ,Male,Dumfries and Galloway,331,5
+2021Q3,70-79 ,Female,Dumfries and Galloway,389,10
+2021Q3,70-79 ,Male,Dumfries and Galloway,489,8
+2021Q3,80-89 ,Female,Dumfries and Galloway,382,7
+2021Q3,80-89 ,Male,Dumfries and Galloway,349,9
+2021Q3,90 +,Female,Dumfries and Galloway,120,15
+2021Q3,90 +,Male,Dumfries and Galloway,74,14
+2020Q1,0-9 ,Female,Fife,40,0
+2020Q1,0-9 ,Male,Fife,35,1
+2020Q1,10-19 ,Female,Fife,110,1
+2020Q1,10-19 ,Male,Fife,95,1
+2020Q1,20-29 ,Female,Fife,275,2
+2020Q1,20-29 ,Male,Fife,203,1
+2020Q1,30-39 ,Female,Fife,354,2
+2020Q1,30-39 ,Male,Fife,236,2
+2020Q1,40-49 ,Female,Fife,371,3
+2020Q1,40-49 ,Male,Fife,297,4
+2020Q1,50-59 ,Female,Fife,568,4
+2020Q1,50-59 ,Male,Fife,570,5
+2020Q1,60-69 ,Female,Fife,705,9
+2020Q1,60-69 ,Male,Fife,773,6
+2020Q1,70-79 ,Female,Fife,923,12
+2020Q1,70-79 ,Male,Fife,970,8
+2020Q1,80-89 ,Female,Fife,786,16
+2020Q1,80-89 ,Male,Fife,676,9
+2020Q1,90 +,Female,Fife,271,15
+2020Q1,90 +,Male,Fife,146,13
+2020Q2,0-9 ,Female,Fife,15,2
+2020Q2,0-9 ,Male,Fife,30,1
+2020Q2,10-19 ,Female,Fife,50,2
+2020Q2,10-19 ,Male,Fife,60,1
+2020Q2,20-29 ,Female,Fife,163,2
+2020Q2,20-29 ,Male,Fife,138,1
+2020Q2,30-39 ,Female,Fife,263,2
+2020Q2,30-39 ,Male,Fife,173,2
+2020Q2,40-49 ,Female,Fife,263,2
+2020Q2,40-49 ,Male,Fife,241,4
+2020Q2,50-59 ,Female,Fife,439,4
+2020Q2,50-59 ,Male,Fife,420,4
+2020Q2,60-69 ,Female,Fife,444,3
+2020Q2,60-69 ,Male,Fife,533,6
+2020Q2,70-79 ,Female,Fife,548,10
+2020Q2,70-79 ,Male,Fife,701,9
+2020Q2,80-89 ,Female,Fife,490,13
+2020Q2,80-89 ,Male,Fife,452,11
+2020Q2,90 +,Female,Fife,160,15
+2020Q2,90 +,Male,Fife,78,17
+2020Q3,0-9 ,Female,Fife,24,1
+2020Q3,0-9 ,Male,Fife,58,1
+2020Q3,10-19 ,Female,Fife,93,1
+2020Q3,10-19 ,Male,Fife,104,1
+2020Q3,20-29 ,Female,Fife,229,2
+2020Q3,20-29 ,Male,Fife,204,2
+2020Q3,30-39 ,Female,Fife,340,3
+2020Q3,30-39 ,Male,Fife,255,2
+2020Q3,40-49 ,Female,Fife,349,3
+2020Q3,40-49 ,Male,Fife,321,3
+2020Q3,50-59 ,Female,Fife,533,3
+2020Q3,50-59 ,Male,Fife,543,4
+2020Q3,60-69 ,Female,Fife,615,6
+2020Q3,60-69 ,Male,Fife,763,8
+2020Q3,70-79 ,Female,Fife,759,8
+2020Q3,70-79 ,Male,Fife,899,7
+2020Q3,80-89 ,Female,Fife,702,11
+2020Q3,80-89 ,Male,Fife,596,10
+2020Q3,90 +,Female,Fife,205,22
+2020Q3,90 +,Male,Fife,96,9
+2020Q4,0-9 ,Female,Fife,18,1
+2020Q4,0-9 ,Male,Fife,26,1
+2020Q4,10-19 ,Female,Fife,72,1
+2020Q4,10-19 ,Male,Fife,99,1
+2020Q4,20-29 ,Female,Fife,242,2
+2020Q4,20-29 ,Male,Fife,167,3
+2020Q4,30-39 ,Female,Fife,334,2
+2020Q4,30-39 ,Male,Fife,250,2
+2020Q4,40-49 ,Female,Fife,346,3
+2020Q4,40-49 ,Male,Fife,314,5
+2020Q4,50-59 ,Female,Fife,564,3
+2020Q4,50-59 ,Male,Fife,536,3
+2020Q4,60-69 ,Female,Fife,583,7
+2020Q4,60-69 ,Male,Fife,752,7
+2020Q4,70-79 ,Female,Fife,805,8
+2020Q4,70-79 ,Male,Fife,900,7
+2020Q4,80-89 ,Female,Fife,732,14
+2020Q4,80-89 ,Male,Fife,618,4
+2020Q4,90 +,Female,Fife,211,9
+2020Q4,90 +,Male,Fife,115,14
+2021Q1,0-9 ,Female,Fife,16,0
+2021Q1,0-9 ,Male,Fife,25,1
+2021Q1,10-19 ,Female,Fife,61,1
+2021Q1,10-19 ,Male,Fife,50,1
+2021Q1,20-29 ,Female,Fife,223,1
+2021Q1,20-29 ,Male,Fife,164,2
+2021Q1,30-39 ,Female,Fife,353,2
+2021Q1,30-39 ,Male,Fife,244,2
+2021Q1,40-49 ,Female,Fife,342,2
+2021Q1,40-49 ,Male,Fife,284,3
+2021Q1,50-59 ,Female,Fife,472,3
+2021Q1,50-59 ,Male,Fife,521,4
+2021Q1,60-69 ,Female,Fife,586,5
+2021Q1,60-69 ,Male,Fife,706,4
+2021Q1,70-79 ,Female,Fife,728,9
+2021Q1,70-79 ,Male,Fife,826,8
+2021Q1,80-89 ,Female,Fife,653,12
+2021Q1,80-89 ,Male,Fife,537,12
+2021Q1,90 +,Female,Fife,248,16
+2021Q1,90 +,Male,Fife,150,14
+2021Q2,0-9 ,Female,Fife,28,0
+2021Q2,0-9 ,Male,Fife,33,0
+2021Q2,10-19 ,Female,Fife,100,1
+2021Q2,10-19 ,Male,Fife,85,1
+2021Q2,20-29 ,Female,Fife,264,2
+2021Q2,20-29 ,Male,Fife,182,1
+2021Q2,30-39 ,Female,Fife,358,2
+2021Q2,30-39 ,Male,Fife,256,2
+2021Q2,40-49 ,Female,Fife,411,3
+2021Q2,40-49 ,Male,Fife,350,3
+2021Q2,50-59 ,Female,Fife,613,4
+2021Q2,50-59 ,Male,Fife,570,3
+2021Q2,60-69 ,Female,Fife,713,5
+2021Q2,60-69 ,Male,Fife,763,6
+2021Q2,70-79 ,Female,Fife,889,9
+2021Q2,70-79 ,Male,Fife,985,7
+2021Q2,80-89 ,Female,Fife,764,12
+2021Q2,80-89 ,Male,Fife,645,8
+2021Q2,90 +,Female,Fife,252,13
+2021Q2,90 +,Male,Fife,129,8
+2021Q3,0-9 ,Female,Fife,35,0
+2021Q3,0-9 ,Male,Fife,36,1
+2021Q3,10-19 ,Female,Fife,112,1
+2021Q3,10-19 ,Male,Fife,101,1
+2021Q3,20-29 ,Female,Fife,280,2
+2021Q3,20-29 ,Male,Fife,188,2
+2021Q3,30-39 ,Female,Fife,405,2
+2021Q3,30-39 ,Male,Fife,290,2
+2021Q3,40-49 ,Female,Fife,335,3
+2021Q3,40-49 ,Male,Fife,345,3
+2021Q3,50-59 ,Female,Fife,621,3
+2021Q3,50-59 ,Male,Fife,556,4
+2021Q3,60-69 ,Female,Fife,641,4
+2021Q3,60-69 ,Male,Fife,702,6
+2021Q3,70-79 ,Female,Fife,903,5
+2021Q3,70-79 ,Male,Fife,970,4
+2021Q3,80-89 ,Female,Fife,733,12
+2021Q3,80-89 ,Male,Fife,642,10
+2021Q3,90 +,Female,Fife,231,10
+2021Q3,90 +,Male,Fife,143,7
+2020Q1,0-9 ,Female,Forth Valley,35,0
+2020Q1,0-9 ,Male,Forth Valley,49,1
+2020Q1,10-19 ,Female,Forth Valley,123,1
+2020Q1,10-19 ,Male,Forth Valley,73,2
+2020Q1,20-29 ,Female,Forth Valley,334,1
+2020Q1,20-29 ,Male,Forth Valley,235,2
+2020Q1,30-39 ,Female,Forth Valley,397,2
+2020Q1,30-39 ,Male,Forth Valley,310,2
+2020Q1,40-49 ,Female,Forth Valley,402,2
+2020Q1,40-49 ,Male,Forth Valley,376,4
+2020Q1,50-59 ,Female,Forth Valley,577,4
+2020Q1,50-59 ,Male,Forth Valley,592,5
+2020Q1,60-69 ,Female,Forth Valley,651,7
+2020Q1,60-69 ,Male,Forth Valley,700,5
+2020Q1,70-79 ,Female,Forth Valley,838,8
+2020Q1,70-79 ,Male,Forth Valley,872,9
+2020Q1,80-89 ,Female,Forth Valley,804,15
+2020Q1,80-89 ,Male,Forth Valley,579,14
+2020Q1,90 +,Female,Forth Valley,230,22
+2020Q1,90 +,Male,Forth Valley,135,20
+2020Q2,0-9 ,Female,Forth Valley,5,0
+2020Q2,0-9 ,Male,Forth Valley,10,1
+2020Q2,10-19 ,Female,Forth Valley,80,1
+2020Q2,10-19 ,Male,Forth Valley,40,1
+2020Q2,20-29 ,Female,Forth Valley,235,1
+2020Q2,20-29 ,Male,Forth Valley,162,3
+2020Q2,30-39 ,Female,Forth Valley,254,1
+2020Q2,30-39 ,Male,Forth Valley,276,2
+2020Q2,40-49 ,Female,Forth Valley,301,2
+2020Q2,40-49 ,Male,Forth Valley,298,4
+2020Q2,50-59 ,Female,Forth Valley,445,3
+2020Q2,50-59 ,Male,Forth Valley,446,7
+2020Q2,60-69 ,Female,Forth Valley,457,6
+2020Q2,60-69 ,Male,Forth Valley,551,5
+2020Q2,70-79 ,Female,Forth Valley,560,11
+2020Q2,70-79 ,Male,Forth Valley,631,7
+2020Q2,80-89 ,Female,Forth Valley,576,13
+2020Q2,80-89 ,Male,Forth Valley,432,10
+2020Q2,90 +,Female,Forth Valley,156,20
+2020Q2,90 +,Male,Forth Valley,95,17
+2020Q3,0-9 ,Female,Forth Valley,27,6
+2020Q3,0-9 ,Male,Forth Valley,25,1
+2020Q3,10-19 ,Female,Forth Valley,93,1
+2020Q3,10-19 ,Male,Forth Valley,63,1
+2020Q3,20-29 ,Female,Forth Valley,258,1
+2020Q3,20-29 ,Male,Forth Valley,217,1
+2020Q3,30-39 ,Female,Forth Valley,324,2
+2020Q3,30-39 ,Male,Forth Valley,302,2
+2020Q3,40-49 ,Female,Forth Valley,419,3
+2020Q3,40-49 ,Male,Forth Valley,362,2
+2020Q3,50-59 ,Female,Forth Valley,545,4
+2020Q3,50-59 ,Male,Forth Valley,554,3
+2020Q3,60-69 ,Female,Forth Valley,612,6
+2020Q3,60-69 ,Male,Forth Valley,609,5
+2020Q3,70-79 ,Female,Forth Valley,764,7
+2020Q3,70-79 ,Male,Forth Valley,793,7
+2020Q3,80-89 ,Female,Forth Valley,713,11
+2020Q3,80-89 ,Male,Forth Valley,621,10
+2020Q3,90 +,Female,Forth Valley,186,20
+2020Q3,90 +,Male,Forth Valley,111,14
+2020Q4,0-9 ,Female,Forth Valley,20,0
+2020Q4,0-9 ,Male,Forth Valley,37,0
+2020Q4,10-19 ,Female,Forth Valley,93,1
+2020Q4,10-19 ,Male,Forth Valley,62,2
+2020Q4,20-29 ,Female,Forth Valley,293,1
+2020Q4,20-29 ,Male,Forth Valley,196,2
+2020Q4,30-39 ,Female,Forth Valley,322,2
+2020Q4,30-39 ,Male,Forth Valley,288,2
+2020Q4,40-49 ,Female,Forth Valley,422,3
+2020Q4,40-49 ,Male,Forth Valley,339,4
+2020Q4,50-59 ,Female,Forth Valley,594,3
+2020Q4,50-59 ,Male,Forth Valley,602,4
+2020Q4,60-69 ,Female,Forth Valley,619,5
+2020Q4,60-69 ,Male,Forth Valley,706,6
+2020Q4,70-79 ,Female,Forth Valley,802,9
+2020Q4,70-79 ,Male,Forth Valley,850,8
+2020Q4,80-89 ,Female,Forth Valley,693,11
+2020Q4,80-89 ,Male,Forth Valley,589,10
+2020Q4,90 +,Female,Forth Valley,228,14
+2020Q4,90 +,Male,Forth Valley,121,7
+2021Q1,0-9 ,Female,Forth Valley,34,1
+2021Q1,0-9 ,Male,Forth Valley,39,0
+2021Q1,10-19 ,Female,Forth Valley,74,1
+2021Q1,10-19 ,Male,Forth Valley,51,0
+2021Q1,20-29 ,Female,Forth Valley,246,1
+2021Q1,20-29 ,Male,Forth Valley,200,2
+2021Q1,30-39 ,Female,Forth Valley,327,2
+2021Q1,30-39 ,Male,Forth Valley,282,2
+2021Q1,40-49 ,Female,Forth Valley,388,3
+2021Q1,40-49 ,Male,Forth Valley,357,1
+2021Q1,50-59 ,Female,Forth Valley,567,5
+2021Q1,50-59 ,Male,Forth Valley,570,5
+2021Q1,60-69 ,Female,Forth Valley,616,6
+2021Q1,60-69 ,Male,Forth Valley,620,6
+2021Q1,70-79 ,Female,Forth Valley,717,10
+2021Q1,70-79 ,Male,Forth Valley,752,9
+2021Q1,80-89 ,Female,Forth Valley,672,13
+2021Q1,80-89 ,Male,Forth Valley,552,13
+2021Q1,90 +,Female,Forth Valley,206,18
+2021Q1,90 +,Male,Forth Valley,118,16
+2021Q2,0-9 ,Female,Forth Valley,41,0
+2021Q2,0-9 ,Male,Forth Valley,41,0
+2021Q2,10-19 ,Female,Forth Valley,95,1
+2021Q2,10-19 ,Male,Forth Valley,75,1
+2021Q2,20-29 ,Female,Forth Valley,294,1
+2021Q2,20-29 ,Male,Forth Valley,238,2
+2021Q2,30-39 ,Female,Forth Valley,390,2
+2021Q2,30-39 ,Male,Forth Valley,387,2
+2021Q2,40-49 ,Female,Forth Valley,480,2
+2021Q2,40-49 ,Male,Forth Valley,434,3
+2021Q2,50-59 ,Female,Forth Valley,630,4
+2021Q2,50-59 ,Male,Forth Valley,619,3
+2021Q2,60-69 ,Female,Forth Valley,666,5
+2021Q2,60-69 ,Male,Forth Valley,689,5
+2021Q2,70-79 ,Female,Forth Valley,867,9
+2021Q2,70-79 ,Male,Forth Valley,936,7
+2021Q2,80-89 ,Female,Forth Valley,821,14
+2021Q2,80-89 ,Male,Forth Valley,615,11
+2021Q2,90 +,Female,Forth Valley,221,26
+2021Q2,90 +,Male,Forth Valley,130,16
+2021Q3,0-9 ,Female,Forth Valley,49,0
+2021Q3,0-9 ,Male,Forth Valley,45,0
+2021Q3,10-19 ,Female,Forth Valley,92,1
+2021Q3,10-19 ,Male,Forth Valley,86,1
+2021Q3,20-29 ,Female,Forth Valley,253,1
+2021Q3,20-29 ,Male,Forth Valley,202,1
+2021Q3,30-39 ,Female,Forth Valley,359,2
+2021Q3,30-39 ,Male,Forth Valley,364,2
+2021Q3,40-49 ,Female,Forth Valley,413,3
+2021Q3,40-49 ,Male,Forth Valley,387,3
+2021Q3,50-59 ,Female,Forth Valley,563,4
+2021Q3,50-59 ,Male,Forth Valley,572,3
+2021Q3,60-69 ,Female,Forth Valley,678,5
+2021Q3,60-69 ,Male,Forth Valley,635,7
+2021Q3,70-79 ,Female,Forth Valley,777,7
+2021Q3,70-79 ,Male,Forth Valley,850,8
+2021Q3,80-89 ,Female,Forth Valley,683,13
+2021Q3,80-89 ,Male,Forth Valley,564,10
+2021Q3,90 +,Female,Forth Valley,190,23
+2021Q3,90 +,Male,Forth Valley,113,14
+2020Q1,0-9 ,Female,Grampian,153,2
+2020Q1,0-9 ,Male,Grampian,144,2
+2020Q1,10-19 ,Female,Grampian,162,4
+2020Q1,10-19 ,Male,Grampian,185,2
+2020Q1,20-29 ,Female,Grampian,424,2
+2020Q1,20-29 ,Male,Grampian,316,3
+2020Q1,30-39 ,Female,Grampian,465,2
+2020Q1,30-39 ,Male,Grampian,415,3
+2020Q1,40-49 ,Female,Grampian,540,4
+2020Q1,40-49 ,Male,Grampian,551,4
+2020Q1,50-59 ,Female,Grampian,817,5
+2020Q1,50-59 ,Male,Grampian,873,6
+2020Q1,60-69 ,Female,Grampian,996,6
+2020Q1,60-69 ,Male,Grampian,1205,5
+2020Q1,70-79 ,Female,Grampian,1270,6
+2020Q1,70-79 ,Male,Grampian,1478,10
+2020Q1,80-89 ,Female,Grampian,1168,11
+2020Q1,80-89 ,Male,Grampian,1035,8
+2020Q1,90 +,Female,Grampian,330,11
+2020Q1,90 +,Male,Grampian,228,7
+2020Q2,0-9 ,Female,Grampian,108,1
+2020Q2,0-9 ,Male,Grampian,99,2
+2020Q2,10-19 ,Female,Grampian,125,2
+2020Q2,10-19 ,Male,Grampian,142,2
+2020Q2,20-29 ,Female,Grampian,404,4
+2020Q2,20-29 ,Male,Grampian,427,2
+2020Q2,30-39 ,Female,Grampian,411,2
+2020Q2,30-39 ,Male,Grampian,443,2
+2020Q2,40-49 ,Female,Grampian,460,2
+2020Q2,40-49 ,Male,Grampian,505,3
+2020Q2,50-59 ,Female,Grampian,617,5
+2020Q2,50-59 ,Male,Grampian,772,4
+2020Q2,60-69 ,Female,Grampian,740,5
+2020Q2,60-69 ,Male,Grampian,967,7
+2020Q2,70-79 ,Female,Grampian,957,8
+2020Q2,70-79 ,Male,Grampian,1119,8
+2020Q2,80-89 ,Female,Grampian,891,8
+2020Q2,80-89 ,Male,Grampian,799,7
+2020Q2,90 +,Female,Grampian,253,14
+2020Q2,90 +,Male,Grampian,156,7
+2020Q3,0-9 ,Female,Grampian,120,2
+2020Q3,0-9 ,Male,Grampian,119,1
+2020Q3,10-19 ,Female,Grampian,173,2
+2020Q3,10-19 ,Male,Grampian,191,2
+2020Q3,20-29 ,Female,Grampian,436,2
+2020Q3,20-29 ,Male,Grampian,338,3
+2020Q3,30-39 ,Female,Grampian,449,2
+2020Q3,30-39 ,Male,Grampian,413,4
+2020Q3,40-49 ,Female,Grampian,468,4
+2020Q3,40-49 ,Male,Grampian,536,3
+2020Q3,50-59 ,Female,Grampian,777,3
+2020Q3,50-59 ,Male,Grampian,833,4
+2020Q3,60-69 ,Female,Grampian,814,6
+2020Q3,60-69 ,Male,Grampian,1088,7
+2020Q3,70-79 ,Female,Grampian,1013,6
+2020Q3,70-79 ,Male,Grampian,1266,8
+2020Q3,80-89 ,Female,Grampian,1038,11
+2020Q3,80-89 ,Male,Grampian,864,6
+2020Q3,90 +,Female,Grampian,310,7
+2020Q3,90 +,Male,Grampian,186,17
+2020Q4,0-9 ,Female,Grampian,89,1
+2020Q4,0-9 ,Male,Grampian,158,2
+2020Q4,10-19 ,Female,Grampian,159,2
+2020Q4,10-19 ,Male,Grampian,174,3
+2020Q4,20-29 ,Female,Grampian,412,3
+2020Q4,20-29 ,Male,Grampian,369,2
+2020Q4,30-39 ,Female,Grampian,394,4
+2020Q4,30-39 ,Male,Grampian,391,4
+2020Q4,40-49 ,Female,Grampian,470,3
+2020Q4,40-49 ,Male,Grampian,486,4
+2020Q4,50-59 ,Female,Grampian,739,5
+2020Q4,50-59 ,Male,Grampian,789,5
+2020Q4,60-69 ,Female,Grampian,882,6
+2020Q4,60-69 ,Male,Grampian,1139,7
+2020Q4,70-79 ,Female,Grampian,1119,5
+2020Q4,70-79 ,Male,Grampian,1327,5
+2020Q4,80-89 ,Female,Grampian,970,7
+2020Q4,80-89 ,Male,Grampian,959,6
+2020Q4,90 +,Female,Grampian,280,10
+2020Q4,90 +,Male,Grampian,200,7
+2021Q1,0-9 ,Female,Grampian,108,3
+2021Q1,0-9 ,Male,Grampian,124,1
+2021Q1,10-19 ,Female,Grampian,158,2
+2021Q1,10-19 ,Male,Grampian,167,2
+2021Q1,20-29 ,Female,Grampian,385,3
+2021Q1,20-29 ,Male,Grampian,308,3
+2021Q1,30-39 ,Female,Grampian,408,2
+2021Q1,30-39 ,Male,Grampian,373,3
+2021Q1,40-49 ,Female,Grampian,463,4
+2021Q1,40-49 ,Male,Grampian,460,4
+2021Q1,50-59 ,Female,Grampian,665,5
+2021Q1,50-59 ,Male,Grampian,750,5
+2021Q1,60-69 ,Female,Grampian,818,6
+2021Q1,60-69 ,Male,Grampian,1054,8
+2021Q1,70-79 ,Female,Grampian,1015,6
+2021Q1,70-79 ,Male,Grampian,1203,8
+2021Q1,80-89 ,Female,Grampian,950,6
+2021Q1,80-89 ,Male,Grampian,957,7
+2021Q1,90 +,Female,Grampian,323,10
+2021Q1,90 +,Male,Grampian,220,8
+2021Q2,0-9 ,Female,Grampian,116,2
+2021Q2,0-9 ,Male,Grampian,139,1
+2021Q2,10-19 ,Female,Grampian,174,2
+2021Q2,10-19 ,Male,Grampian,206,2
+2021Q2,20-29 ,Female,Grampian,406,2
+2021Q2,20-29 ,Male,Grampian,340,3
+2021Q2,30-39 ,Female,Grampian,453,3
+2021Q2,30-39 ,Male,Grampian,386,3
+2021Q2,40-49 ,Female,Grampian,473,3
+2021Q2,40-49 ,Male,Grampian,524,4
+2021Q2,50-59 ,Female,Grampian,835,5
+2021Q2,50-59 ,Male,Grampian,787,4
+2021Q2,60-69 ,Female,Grampian,944,7
+2021Q2,60-69 ,Male,Grampian,1145,8
+2021Q2,70-79 ,Female,Grampian,1251,6
+2021Q2,70-79 ,Male,Grampian,1495,9
+2021Q2,80-89 ,Female,Grampian,1103,10
+2021Q2,80-89 ,Male,Grampian,1044,7
+2021Q2,90 +,Female,Grampian,339,8
+2021Q2,90 +,Male,Grampian,251,8
+2021Q3,0-9 ,Female,Grampian,140,2
+2021Q3,0-9 ,Male,Grampian,139,2
+2021Q3,10-19 ,Female,Grampian,168,2
+2021Q3,10-19 ,Male,Grampian,220,3
+2021Q3,20-29 ,Female,Grampian,432,3
+2021Q3,20-29 ,Male,Grampian,390,3
+2021Q3,30-39 ,Female,Grampian,483,3
+2021Q3,30-39 ,Male,Grampian,474,3
+2021Q3,40-49 ,Female,Grampian,530,2
+2021Q3,40-49 ,Male,Grampian,522,5
+2021Q3,50-59 ,Female,Grampian,782,5
+2021Q3,50-59 ,Male,Grampian,858,6
+2021Q3,60-69 ,Female,Grampian,1021,5
+2021Q3,60-69 ,Male,Grampian,1139,7
+2021Q3,70-79 ,Female,Grampian,1169,6
+2021Q3,70-79 ,Male,Grampian,1444,9
+2021Q3,80-89 ,Female,Grampian,1109,5
+2021Q3,80-89 ,Male,Grampian,940,9
+2021Q3,90 +,Female,Grampian,330,9
+2021Q3,90 +,Male,Grampian,208,8
+2020Q1,0-9 ,Female,Greater Glasgow and Clyde,657,3
+2020Q1,0-9 ,Male,Greater Glasgow and Clyde,770,1
+2020Q1,10-19 ,Female,Greater Glasgow and Clyde,664,3
+2020Q1,10-19 ,Male,Greater Glasgow and Clyde,842,3
+2020Q1,20-29 ,Female,Greater Glasgow and Clyde,1495,3
+2020Q1,20-29 ,Male,Greater Glasgow and Clyde,1222,3
+2020Q1,30-39 ,Female,Greater Glasgow and Clyde,1687,4
+2020Q1,30-39 ,Male,Greater Glasgow and Clyde,1581,4
+2020Q1,40-49 ,Female,Greater Glasgow and Clyde,1894,4
+2020Q1,40-49 ,Male,Greater Glasgow and Clyde,1967,5
+2020Q1,50-59 ,Female,Greater Glasgow and Clyde,3098,6
+2020Q1,50-59 ,Male,Greater Glasgow and Clyde,3190,4
+2020Q1,60-69 ,Female,Greater Glasgow and Clyde,3401,8
+2020Q1,60-69 ,Male,Greater Glasgow and Clyde,3711,9
+2020Q1,70-79 ,Female,Greater Glasgow and Clyde,3838,12
+2020Q1,70-79 ,Male,Greater Glasgow and Clyde,3773,11
+2020Q1,80-89 ,Female,Greater Glasgow and Clyde,3741,13
+2020Q1,80-89 ,Male,Greater Glasgow and Clyde,2503,8
+2020Q1,90 +,Female,Greater Glasgow and Clyde,1073,4
+2020Q1,90 +,Male,Greater Glasgow and Clyde,522,6
+2020Q2,0-9 ,Female,Greater Glasgow and Clyde,321,7
+2020Q2,0-9 ,Male,Greater Glasgow and Clyde,414,3
+2020Q2,10-19 ,Female,Greater Glasgow and Clyde,335,2
+2020Q2,10-19 ,Male,Greater Glasgow and Clyde,414,3
+2020Q2,20-29 ,Female,Greater Glasgow and Clyde,1022,3
+2020Q2,20-29 ,Male,Greater Glasgow and Clyde,894,3
+2020Q2,30-39 ,Female,Greater Glasgow and Clyde,1180,2
+2020Q2,30-39 ,Male,Greater Glasgow and Clyde,1263,4
+2020Q2,40-49 ,Female,Greater Glasgow and Clyde,1330,4
+2020Q2,40-49 ,Male,Greater Glasgow and Clyde,1639,5
+2020Q2,50-59 ,Female,Greater Glasgow and Clyde,2065,5
+2020Q2,50-59 ,Male,Greater Glasgow and Clyde,2487,4
+2020Q2,60-69 ,Female,Greater Glasgow and Clyde,2176,7
+2020Q2,60-69 ,Male,Greater Glasgow and Clyde,2639,8
+2020Q2,70-79 ,Female,Greater Glasgow and Clyde,2538,11
+2020Q2,70-79 ,Male,Greater Glasgow and Clyde,2622,10
+2020Q2,80-89 ,Female,Greater Glasgow and Clyde,2432,14
+2020Q2,80-89 ,Male,Greater Glasgow and Clyde,1651,10
+2020Q2,90 +,Female,Greater Glasgow and Clyde,734,10
+2020Q2,90 +,Male,Greater Glasgow and Clyde,359,14
+2020Q3,0-9 ,Female,Greater Glasgow and Clyde,471,4
+2020Q3,0-9 ,Male,Greater Glasgow and Clyde,639,3
+2020Q3,10-19 ,Female,Greater Glasgow and Clyde,533,2
+2020Q3,10-19 ,Male,Greater Glasgow and Clyde,646,2
+2020Q3,20-29 ,Female,Greater Glasgow and Clyde,1262,3
+2020Q3,20-29 ,Male,Greater Glasgow and Clyde,1174,3
+2020Q3,30-39 ,Female,Greater Glasgow and Clyde,1630,3
+2020Q3,30-39 ,Male,Greater Glasgow and Clyde,1658,3
+2020Q3,40-49 ,Female,Greater Glasgow and Clyde,1722,3
+2020Q3,40-49 ,Male,Greater Glasgow and Clyde,1986,4
+2020Q3,50-59 ,Female,Greater Glasgow and Clyde,2544,5
+2020Q3,50-59 ,Male,Greater Glasgow and Clyde,3016,7
+2020Q3,60-69 ,Female,Greater Glasgow and Clyde,2891,5
+2020Q3,60-69 ,Male,Greater Glasgow and Clyde,3345,9
+2020Q3,70-79 ,Female,Greater Glasgow and Clyde,3254,9
+2020Q3,70-79 ,Male,Greater Glasgow and Clyde,3330,10
+2020Q3,80-89 ,Female,Greater Glasgow and Clyde,3147,13
+2020Q3,80-89 ,Male,Greater Glasgow and Clyde,2174,4
+2020Q3,90 +,Female,Greater Glasgow and Clyde,935,11
+2020Q3,90 +,Male,Greater Glasgow and Clyde,429,9
+2020Q4,0-9 ,Female,Greater Glasgow and Clyde,501,3
+2020Q4,0-9 ,Male,Greater Glasgow and Clyde,691,9
+2020Q4,10-19 ,Female,Greater Glasgow and Clyde,607,2
+2020Q4,10-19 ,Male,Greater Glasgow and Clyde,610,2
+2020Q4,20-29 ,Female,Greater Glasgow and Clyde,1210,3
+2020Q4,20-29 ,Male,Greater Glasgow and Clyde,1055,2
+2020Q4,30-39 ,Female,Greater Glasgow and Clyde,1537,3
+2020Q4,30-39 ,Male,Greater Glasgow and Clyde,1470,3
+2020Q4,40-49 ,Female,Greater Glasgow and Clyde,1650,5
+2020Q4,40-49 ,Male,Greater Glasgow and Clyde,1846,4
+2020Q4,50-59 ,Female,Greater Glasgow and Clyde,2843,6
+2020Q4,50-59 ,Male,Greater Glasgow and Clyde,2984,7
+2020Q4,60-69 ,Female,Greater Glasgow and Clyde,2901,5
+2020Q4,60-69 ,Male,Greater Glasgow and Clyde,3396,9
+2020Q4,70-79 ,Female,Greater Glasgow and Clyde,3394,11
+2020Q4,70-79 ,Male,Greater Glasgow and Clyde,3397,7
+2020Q4,80-89 ,Female,Greater Glasgow and Clyde,3191,15
+2020Q4,80-89 ,Male,Greater Glasgow and Clyde,2309,8
+2020Q4,90 +,Female,Greater Glasgow and Clyde,918,18
+2020Q4,90 +,Male,Greater Glasgow and Clyde,456,12
+2021Q1,0-9 ,Female,Greater Glasgow and Clyde,491,3
+2021Q1,0-9 ,Male,Greater Glasgow and Clyde,694,3
+2021Q1,10-19 ,Female,Greater Glasgow and Clyde,538,2
+2021Q1,10-19 ,Male,Greater Glasgow and Clyde,530,3
+2021Q1,20-29 ,Female,Greater Glasgow and Clyde,1200,3
+2021Q1,20-29 ,Male,Greater Glasgow and Clyde,1020,2
+2021Q1,30-39 ,Female,Greater Glasgow and Clyde,1436,3
+2021Q1,30-39 ,Male,Greater Glasgow and Clyde,1433,3
+2021Q1,40-49 ,Female,Greater Glasgow and Clyde,1608,4
+2021Q1,40-49 ,Male,Greater Glasgow and Clyde,1692,4
+2021Q1,50-59 ,Female,Greater Glasgow and Clyde,2739,6
+2021Q1,50-59 ,Male,Greater Glasgow and Clyde,2707,7
+2021Q1,60-69 ,Female,Greater Glasgow and Clyde,2887,8
+2021Q1,60-69 ,Male,Greater Glasgow and Clyde,3119,9
+2021Q1,70-79 ,Female,Greater Glasgow and Clyde,3150,12
+2021Q1,70-79 ,Male,Greater Glasgow and Clyde,3107,11
+2021Q1,80-89 ,Female,Greater Glasgow and Clyde,2908,16
+2021Q1,80-89 ,Male,Greater Glasgow and Clyde,2101,14
+2021Q1,90 +,Female,Greater Glasgow and Clyde,948,12
+2021Q1,90 +,Male,Greater Glasgow and Clyde,438,18
+2021Q2,0-9 ,Female,Greater Glasgow and Clyde,541,3
+2021Q2,0-9 ,Male,Greater Glasgow and Clyde,756,2
+2021Q2,10-19 ,Female,Greater Glasgow and Clyde,707,3
+2021Q2,10-19 ,Male,Greater Glasgow and Clyde,711,3
+2021Q2,20-29 ,Female,Greater Glasgow and Clyde,1444,3
+2021Q2,20-29 ,Male,Greater Glasgow and Clyde,1262,2
+2021Q2,30-39 ,Female,Greater Glasgow and Clyde,1813,3
+2021Q2,30-39 ,Male,Greater Glasgow and Clyde,1729,3
+2021Q2,40-49 ,Female,Greater Glasgow and Clyde,1979,4
+2021Q2,40-49 ,Male,Greater Glasgow and Clyde,2113,5
+2021Q2,50-59 ,Female,Greater Glasgow and Clyde,3054,6
+2021Q2,50-59 ,Male,Greater Glasgow and Clyde,3249,7
+2021Q2,60-69 ,Female,Greater Glasgow and Clyde,3320,7
+2021Q2,60-69 ,Male,Greater Glasgow and Clyde,3798,8
+2021Q2,70-79 ,Female,Greater Glasgow and Clyde,3604,8
+2021Q2,70-79 ,Male,Greater Glasgow and Clyde,3525,5
+2021Q2,80-89 ,Female,Greater Glasgow and Clyde,3457,14
+2021Q2,80-89 ,Male,Greater Glasgow and Clyde,2256,11
+2021Q2,90 +,Female,Greater Glasgow and Clyde,1007,9
+2021Q2,90 +,Male,Greater Glasgow and Clyde,454,10
+2021Q3,0-9 ,Female,Greater Glasgow and Clyde,473,3
+2021Q3,0-9 ,Male,Greater Glasgow and Clyde,725,2
+2021Q3,10-19 ,Female,Greater Glasgow and Clyde,607,3
+2021Q3,10-19 ,Male,Greater Glasgow and Clyde,728,2
+2021Q3,20-29 ,Female,Greater Glasgow and Clyde,1290,3
+2021Q3,20-29 ,Male,Greater Glasgow and Clyde,1060,4
+2021Q3,30-39 ,Female,Greater Glasgow and Clyde,1581,4
+2021Q3,30-39 ,Male,Greater Glasgow and Clyde,1663,4
+2021Q3,40-49 ,Female,Greater Glasgow and Clyde,1757,5
+2021Q3,40-49 ,Male,Greater Glasgow and Clyde,1929,4
+2021Q3,50-59 ,Female,Greater Glasgow and Clyde,2709,7
+2021Q3,50-59 ,Male,Greater Glasgow and Clyde,2895,7
+2021Q3,60-69 ,Female,Greater Glasgow and Clyde,3153,9
+2021Q3,60-69 ,Male,Greater Glasgow and Clyde,3617,7
+2021Q3,70-79 ,Female,Greater Glasgow and Clyde,3591,11
+2021Q3,70-79 ,Male,Greater Glasgow and Clyde,3544,11
+2021Q3,80-89 ,Female,Greater Glasgow and Clyde,3272,14
+2021Q3,80-89 ,Male,Greater Glasgow and Clyde,2276,12
+2021Q3,90 +,Female,Greater Glasgow and Clyde,957,3
+2021Q3,90 +,Male,Greater Glasgow and Clyde,399,13
+2020Q1,0-9 ,Female,Highland,25,1
+2020Q1,0-9 ,Male,Highland,30,2
+2020Q1,10-19 ,Female,Highland,104,1
+2020Q1,10-19 ,Male,Highland,81,2
+2020Q1,20-29 ,Female,Highland,200,2
+2020Q1,20-29 ,Male,Highland,151,3
+2020Q1,30-39 ,Female,Highland,238,3
+2020Q1,30-39 ,Male,Highland,183,3
+2020Q1,40-49 ,Female,Highland,224,3
+2020Q1,40-49 ,Male,Highland,222,4
+2020Q1,50-59 ,Female,Highland,365,5
+2020Q1,50-59 ,Male,Highland,436,4
+2020Q1,60-69 ,Female,Highland,505,5
+2020Q1,60-69 ,Male,Highland,613,6
+2020Q1,70-79 ,Female,Highland,596,7
+2020Q1,70-79 ,Male,Highland,730,8
+2020Q1,80-89 ,Female,Highland,566,12
+2020Q1,80-89 ,Male,Highland,503,12
+2020Q1,90 +,Female,Highland,165,19
+2020Q1,90 +,Male,Highland,100,11
+2020Q2,0-9 ,Female,Highland,14,1
+2020Q2,0-9 ,Male,Highland,15,1
+2020Q2,10-19 ,Female,Highland,57,1
+2020Q2,10-19 ,Male,Highland,54,1
+2020Q2,20-29 ,Female,Highland,156,3
+2020Q2,20-29 ,Male,Highland,135,4
+2020Q2,30-39 ,Female,Highland,137,4
+2020Q2,30-39 ,Male,Highland,179,3
+2020Q2,40-49 ,Female,Highland,203,2
+2020Q2,40-49 ,Male,Highland,224,4
+2020Q2,50-59 ,Female,Highland,293,3
+2020Q2,50-59 ,Male,Highland,350,6
+2020Q2,60-69 ,Female,Highland,364,5
+2020Q2,60-69 ,Male,Highland,423,5
+2020Q2,70-79 ,Female,Highland,403,11
+2020Q2,70-79 ,Male,Highland,548,6
+2020Q2,80-89 ,Female,Highland,430,10
+2020Q2,80-89 ,Male,Highland,370,2
+2020Q2,90 +,Female,Highland,109,17
+2020Q2,90 +,Male,Highland,71,12
+2020Q3,0-9 ,Female,Highland,20,1
+2020Q3,0-9 ,Male,Highland,43,1
+2020Q3,10-19 ,Female,Highland,86,2
+2020Q3,10-19 ,Male,Highland,101,2
+2020Q3,20-29 ,Female,Highland,189,2
+2020Q3,20-29 ,Male,Highland,186,2
+2020Q3,30-39 ,Female,Highland,229,3
+2020Q3,30-39 ,Male,Highland,208,3
+2020Q3,40-49 ,Female,Highland,234,4
+2020Q3,40-49 ,Male,Highland,280,4
+2020Q3,50-59 ,Female,Highland,408,3
+2020Q3,50-59 ,Male,Highland,412,4
+2020Q3,60-69 ,Female,Highland,461,6
+2020Q3,60-69 ,Male,Highland,550,6
+2020Q3,70-79 ,Female,Highland,603,6
+2020Q3,70-79 ,Male,Highland,701,6
+2020Q3,80-89 ,Female,Highland,520,10
+2020Q3,80-89 ,Male,Highland,459,13
+2020Q3,90 +,Female,Highland,150,11
+2020Q3,90 +,Male,Highland,74,13
+2020Q4,0-9 ,Female,Highland,20,1
+2020Q4,0-9 ,Male,Highland,25,2
+2020Q4,10-19 ,Female,Highland,88,94
+2020Q4,10-19 ,Male,Highland,66,5
+2020Q4,20-29 ,Female,Highland,159,2
+2020Q4,20-29 ,Male,Highland,139,2
+2020Q4,30-39 ,Female,Highland,181,2
+2020Q4,30-39 ,Male,Highland,188,2
+2020Q4,40-49 ,Female,Highland,221,3
+2020Q4,40-49 ,Male,Highland,278,4
+2020Q4,50-59 ,Female,Highland,397,5
+2020Q4,50-59 ,Male,Highland,461,3
+2020Q4,60-69 ,Female,Highland,452,5
+2020Q4,60-69 ,Male,Highland,574,7
+2020Q4,70-79 ,Female,Highland,602,7
+2020Q4,70-79 ,Male,Highland,719,6
+2020Q4,80-89 ,Female,Highland,609,10
+2020Q4,80-89 ,Male,Highland,461,8
+2020Q4,90 +,Female,Highland,151,18
+2020Q4,90 +,Male,Highland,80,15
+2021Q1,0-9 ,Female,Highland,5,1
+2021Q1,0-9 ,Male,Highland,19,1
+2021Q1,10-19 ,Female,Highland,45,2
+2021Q1,10-19 ,Male,Highland,45,2
+2021Q1,20-29 ,Female,Highland,171,2
+2021Q1,20-29 ,Male,Highland,157,3
+2021Q1,30-39 ,Female,Highland,196,1
+2021Q1,30-39 ,Male,Highland,168,4
+2021Q1,40-49 ,Female,Highland,225,3
+2021Q1,40-49 ,Male,Highland,254,3
+2021Q1,50-59 ,Female,Highland,371,5
+2021Q1,50-59 ,Male,Highland,423,5
+2021Q1,60-69 ,Female,Highland,409,4
+2021Q1,60-69 ,Male,Highland,534,4
+2021Q1,70-79 ,Female,Highland,612,5
+2021Q1,70-79 ,Male,Highland,656,10
+2021Q1,80-89 ,Female,Highland,495,14
+2021Q1,80-89 ,Male,Highland,396,6
+2021Q1,90 +,Female,Highland,139,20
+2021Q1,90 +,Male,Highland,62,32
+2021Q2,0-9 ,Female,Highland,25,1
+2021Q2,0-9 ,Male,Highland,25,1
+2021Q2,10-19 ,Female,Highland,79,2
+2021Q2,10-19 ,Male,Highland,81,2
+2021Q2,20-29 ,Female,Highland,174,2
+2021Q2,20-29 ,Male,Highland,132,5
+2021Q2,30-39 ,Female,Highland,168,3
+2021Q2,30-39 ,Male,Highland,201,2
+2021Q2,40-49 ,Female,Highland,215,3
+2021Q2,40-49 ,Male,Highland,253,3
+2021Q2,50-59 ,Female,Highland,435,4
+2021Q2,50-59 ,Male,Highland,458,4
+2021Q2,60-69 ,Female,Highland,461,4
+2021Q2,60-69 ,Male,Highland,599,6
+2021Q2,70-79 ,Female,Highland,613,11
+2021Q2,70-79 ,Male,Highland,722,3
+2021Q2,80-89 ,Female,Highland,521,7
+2021Q2,80-89 ,Male,Highland,508,13
+2021Q2,90 +,Female,Highland,154,11
+2021Q2,90 +,Male,Highland,84,10
+2021Q3,0-9 ,Female,Highland,33,1
+2021Q3,0-9 ,Male,Highland,39,1
+2021Q3,10-19 ,Female,Highland,79,1
+2021Q3,10-19 ,Male,Highland,95,2
+2021Q3,20-29 ,Female,Highland,180,3
+2021Q3,20-29 ,Male,Highland,161,3
+2021Q3,30-39 ,Female,Highland,201,2
+2021Q3,30-39 ,Male,Highland,204,2
+2021Q3,40-49 ,Female,Highland,227,4
+2021Q3,40-49 ,Male,Highland,285,5
+2021Q3,50-59 ,Female,Highland,406,5
+2021Q3,50-59 ,Male,Highland,443,5
+2021Q3,60-69 ,Female,Highland,481,7
+2021Q3,60-69 ,Male,Highland,632,4
+2021Q3,70-79 ,Female,Highland,574,4
+2021Q3,70-79 ,Male,Highland,723,11
+2021Q3,80-89 ,Female,Highland,572,14
+2021Q3,80-89 ,Male,Highland,515,10
+2021Q3,90 +,Female,Highland,146,21
+2021Q3,90 +,Male,Highland,87,10
+2020Q1,0-9 ,Female,Lanarkshire,40,0
+2020Q1,0-9 ,Male,Lanarkshire,43,0
+2020Q1,10-19 ,Female,Lanarkshire,257,2
+2020Q1,10-19 ,Male,Lanarkshire,208,2
+2020Q1,20-29 ,Female,Lanarkshire,683,2
+2020Q1,20-29 ,Male,Lanarkshire,523,2
+2020Q1,30-39 ,Female,Lanarkshire,882,2
+2020Q1,30-39 ,Male,Lanarkshire,672,3
+2020Q1,40-49 ,Female,Lanarkshire,883,2
+2020Q1,40-49 ,Male,Lanarkshire,876,4
+2020Q1,50-59 ,Female,Lanarkshire,1444,4
+2020Q1,50-59 ,Male,Lanarkshire,1405,5
+2020Q1,60-69 ,Female,Lanarkshire,1531,7
+2020Q1,60-69 ,Male,Lanarkshire,1598,4
+2020Q1,70-79 ,Female,Lanarkshire,1890,8
+2020Q1,70-79 ,Male,Lanarkshire,1855,7
+2020Q1,80-89 ,Female,Lanarkshire,1615,11
+2020Q1,80-89 ,Male,Lanarkshire,1149,11
+2020Q1,90 +,Female,Lanarkshire,358,15
+2020Q1,90 +,Male,Lanarkshire,217,14
+2020Q2,0-9 ,Female,Lanarkshire,11,0
+2020Q2,0-9 ,Male,Lanarkshire,20,0
+2020Q2,10-19 ,Female,Lanarkshire,144,1
+2020Q2,10-19 ,Male,Lanarkshire,137,2
+2020Q2,20-29 ,Female,Lanarkshire,442,2
+2020Q2,20-29 ,Male,Lanarkshire,371,3
+2020Q2,30-39 ,Female,Lanarkshire,614,2
+2020Q2,30-39 ,Male,Lanarkshire,607,2
+2020Q2,40-49 ,Female,Lanarkshire,702,3
+2020Q2,40-49 ,Male,Lanarkshire,783,3
+2020Q2,50-59 ,Female,Lanarkshire,1114,10
+2020Q2,50-59 ,Male,Lanarkshire,1210,3
+2020Q2,60-69 ,Female,Lanarkshire,1061,5
+2020Q2,60-69 ,Male,Lanarkshire,1233,4
+2020Q2,70-79 ,Female,Lanarkshire,1258,6
+2020Q2,70-79 ,Male,Lanarkshire,1308,5
+2020Q2,80-89 ,Female,Lanarkshire,1068,10
+2020Q2,80-89 ,Male,Lanarkshire,809,9
+2020Q2,90 +,Female,Lanarkshire,259,12
+2020Q2,90 +,Male,Lanarkshire,152,9
+2020Q3,0-9 ,Female,Lanarkshire,42,0
+2020Q3,0-9 ,Male,Lanarkshire,52,0
+2020Q3,10-19 ,Female,Lanarkshire,168,1
+2020Q3,10-19 ,Male,Lanarkshire,228,1
+2020Q3,20-29 ,Female,Lanarkshire,561,1
+2020Q3,20-29 ,Male,Lanarkshire,454,1
+2020Q3,30-39 ,Female,Lanarkshire,735,2
+2020Q3,30-39 ,Male,Lanarkshire,659,2
+2020Q3,40-49 ,Female,Lanarkshire,880,2
+2020Q3,40-49 ,Male,Lanarkshire,818,3
+2020Q3,50-59 ,Female,Lanarkshire,1291,4
+2020Q3,50-59 ,Male,Lanarkshire,1265,2
+2020Q3,60-69 ,Female,Lanarkshire,1379,5
+2020Q3,60-69 ,Male,Lanarkshire,1502,5
+2020Q3,70-79 ,Female,Lanarkshire,1687,6
+2020Q3,70-79 ,Male,Lanarkshire,1684,7
+2020Q3,80-89 ,Female,Lanarkshire,1374,9
+2020Q3,80-89 ,Male,Lanarkshire,1163,9
+2020Q3,90 +,Female,Lanarkshire,322,11
+2020Q3,90 +,Male,Lanarkshire,194,7
+2020Q4,0-9 ,Female,Lanarkshire,22,0
+2020Q4,0-9 ,Male,Lanarkshire,31,0
+2020Q4,10-19 ,Female,Lanarkshire,156,1
+2020Q4,10-19 ,Male,Lanarkshire,146,1
+2020Q4,20-29 ,Female,Lanarkshire,527,1
+2020Q4,20-29 ,Male,Lanarkshire,400,2
+2020Q4,30-39 ,Female,Lanarkshire,701,2
+2020Q4,30-39 ,Male,Lanarkshire,546,3
+2020Q4,40-49 ,Female,Lanarkshire,787,3
+2020Q4,40-49 ,Male,Lanarkshire,753,2
+2020Q4,50-59 ,Female,Lanarkshire,1258,3
+2020Q4,50-59 ,Male,Lanarkshire,1309,5
+2020Q4,60-69 ,Female,Lanarkshire,1209,6
+2020Q4,60-69 ,Male,Lanarkshire,1444,7
+2020Q4,70-79 ,Female,Lanarkshire,1518,8
+2020Q4,70-79 ,Male,Lanarkshire,1599,6
+2020Q4,80-89 ,Female,Lanarkshire,1404,10
+2020Q4,80-89 ,Male,Lanarkshire,1096,10
+2020Q4,90 +,Female,Lanarkshire,347,17
+2020Q4,90 +,Male,Lanarkshire,193,7
+2021Q1,0-9 ,Female,Lanarkshire,12,0
+2021Q1,0-9 ,Male,Lanarkshire,21,1
+2021Q1,10-19 ,Female,Lanarkshire,169,1
+2021Q1,10-19 ,Male,Lanarkshire,121,2
+2021Q1,20-29 ,Female,Lanarkshire,523,1
+2021Q1,20-29 ,Male,Lanarkshire,387,2
+2021Q1,30-39 ,Female,Lanarkshire,684,3
+2021Q1,30-39 ,Male,Lanarkshire,571,2
+2021Q1,40-49 ,Female,Lanarkshire,874,10
+2021Q1,40-49 ,Male,Lanarkshire,803,4
+2021Q1,50-59 ,Female,Lanarkshire,1239,5
+2021Q1,50-59 ,Male,Lanarkshire,1329,3
+2021Q1,60-69 ,Female,Lanarkshire,1224,5
+2021Q1,60-69 ,Male,Lanarkshire,1506,6
+2021Q1,70-79 ,Female,Lanarkshire,1492,8
+2021Q1,70-79 ,Male,Lanarkshire,1529,8
+2021Q1,80-89 ,Female,Lanarkshire,1439,11
+2021Q1,80-89 ,Male,Lanarkshire,1051,7
+2021Q1,90 +,Female,Lanarkshire,361,16
+2021Q1,90 +,Male,Lanarkshire,164,11
+2021Q2,0-9 ,Female,Lanarkshire,38,0
+2021Q2,0-9 ,Male,Lanarkshire,67,1
+2021Q2,10-19 ,Female,Lanarkshire,215,2
+2021Q2,10-19 ,Male,Lanarkshire,199,1
+2021Q2,20-29 ,Female,Lanarkshire,655,2
+2021Q2,20-29 ,Male,Lanarkshire,467,2
+2021Q2,30-39 ,Female,Lanarkshire,859,2
+2021Q2,30-39 ,Male,Lanarkshire,623,3
+2021Q2,40-49 ,Female,Lanarkshire,1048,3
+2021Q2,40-49 ,Male,Lanarkshire,924,3
+2021Q2,50-59 ,Female,Lanarkshire,1539,4
+2021Q2,50-59 ,Male,Lanarkshire,1462,3
+2021Q2,60-69 ,Female,Lanarkshire,1510,2
+2021Q2,60-69 ,Male,Lanarkshire,1652,4
+2021Q2,70-79 ,Female,Lanarkshire,1867,5
+2021Q2,70-79 ,Male,Lanarkshire,1803,7
+2021Q2,80-89 ,Female,Lanarkshire,1552,7
+2021Q2,80-89 ,Male,Lanarkshire,1209,5
+2021Q2,90 +,Female,Lanarkshire,364,6
+2021Q2,90 +,Male,Lanarkshire,175,8
+2021Q3,0-9 ,Female,Lanarkshire,37,1
+2021Q3,0-9 ,Male,Lanarkshire,64,1
+2021Q3,10-19 ,Female,Lanarkshire,191,2
+2021Q3,10-19 ,Male,Lanarkshire,182,2
+2021Q3,20-29 ,Female,Lanarkshire,662,1
+2021Q3,20-29 ,Male,Lanarkshire,439,2
+2021Q3,30-39 ,Female,Lanarkshire,860,2
+2021Q3,30-39 ,Male,Lanarkshire,636,3
+2021Q3,40-49 ,Female,Lanarkshire,999,2
+2021Q3,40-49 ,Male,Lanarkshire,884,3
+2021Q3,50-59 ,Female,Lanarkshire,1438,3
+2021Q3,50-59 ,Male,Lanarkshire,1327,5
+2021Q3,60-69 ,Female,Lanarkshire,1453,6
+2021Q3,60-69 ,Male,Lanarkshire,1588,6
+2021Q3,70-79 ,Female,Lanarkshire,1821,7
+2021Q3,70-79 ,Male,Lanarkshire,1741,8
+2021Q3,80-89 ,Female,Lanarkshire,1521,10
+2021Q3,80-89 ,Male,Lanarkshire,1170,10
+2021Q3,90 +,Female,Lanarkshire,404,13
+2021Q3,90 +,Male,Lanarkshire,200,6
+2020Q1,0-9 ,Female,Lothian,191,3
+2020Q1,0-9 ,Male,Lothian,288,3
+2020Q1,10-19 ,Female,Lothian,392,3
+2020Q1,10-19 ,Male,Lothian,303,5
+2020Q1,20-29 ,Female,Lothian,787,3
+2020Q1,20-29 ,Male,Lothian,595,2
+2020Q1,30-39 ,Female,Lothian,855,4
+2020Q1,30-39 ,Male,Lothian,800,4
+2020Q1,40-49 ,Female,Lothian,922,4
+2020Q1,40-49 ,Male,Lothian,880,6
+2020Q1,50-59 ,Female,Lothian,1481,7
+2020Q1,50-59 ,Male,Lothian,1601,7
+2020Q1,60-69 ,Female,Lothian,1692,8
+2020Q1,60-69 ,Male,Lothian,1908,4
+2020Q1,70-79 ,Female,Lothian,2057,10
+2020Q1,70-79 ,Male,Lothian,2250,10
+2020Q1,80-89 ,Female,Lothian,1946,11
+2020Q1,80-89 ,Male,Lothian,1474,14
+2020Q1,90 +,Female,Lothian,678,19
+2020Q1,90 +,Male,Lothian,358,14
+2020Q2,0-9 ,Female,Lothian,95,3
+2020Q2,0-9 ,Male,Lothian,145,3
+2020Q2,10-19 ,Female,Lothian,217,3
+2020Q2,10-19 ,Male,Lothian,207,3
+2020Q2,20-29 ,Female,Lothian,541,1
+2020Q2,20-29 ,Male,Lothian,435,2
+2020Q2,30-39 ,Female,Lothian,617,2
+2020Q2,30-39 ,Male,Lothian,592,3
+2020Q2,40-49 ,Female,Lothian,682,4
+2020Q2,40-49 ,Male,Lothian,776,5
+2020Q2,50-59 ,Female,Lothian,1039,6
+2020Q2,50-59 ,Male,Lothian,1345,5
+2020Q2,60-69 ,Female,Lothian,1174,6
+2020Q2,60-69 ,Male,Lothian,1518,9
+2020Q2,70-79 ,Female,Lothian,1475,10
+2020Q2,70-79 ,Male,Lothian,1621,8
+2020Q2,80-89 ,Female,Lothian,1418,13
+2020Q2,80-89 ,Male,Lothian,1139,11
+2020Q2,90 +,Female,Lothian,439,15
+2020Q2,90 +,Male,Lothian,227,13
+2020Q3,0-9 ,Female,Lothian,187,4
+2020Q3,0-9 ,Male,Lothian,250,3
+2020Q3,10-19 ,Female,Lothian,321,2
+2020Q3,10-19 ,Male,Lothian,313,3
+2020Q3,20-29 ,Female,Lothian,701,2
+2020Q3,20-29 ,Male,Lothian,558,3
+2020Q3,30-39 ,Female,Lothian,865,2
+2020Q3,30-39 ,Male,Lothian,764,4
+2020Q3,40-49 ,Female,Lothian,897,4
+2020Q3,40-49 ,Male,Lothian,928,5
+2020Q3,50-59 ,Female,Lothian,1414,5
+2020Q3,50-59 ,Male,Lothian,1572,6
+2020Q3,60-69 ,Female,Lothian,1569,6
+2020Q3,60-69 ,Male,Lothian,1956,6
+2020Q3,70-79 ,Female,Lothian,1931,8
+2020Q3,70-79 ,Male,Lothian,2067,9
+2020Q3,80-89 ,Female,Lothian,1746,11
+2020Q3,80-89 ,Male,Lothian,1311,11
+2020Q3,90 +,Female,Lothian,544,11
+2020Q3,90 +,Male,Lothian,290,13
+2020Q4,0-9 ,Female,Lothian,162,3
+2020Q4,0-9 ,Male,Lothian,223,5
+2020Q4,10-19 ,Female,Lothian,317,3
+2020Q4,10-19 ,Male,Lothian,274,3
+2020Q4,20-29 ,Female,Lothian,713,2
+2020Q4,20-29 ,Male,Lothian,532,3
+2020Q4,30-39 ,Female,Lothian,846,3
+2020Q4,30-39 ,Male,Lothian,719,4
+2020Q4,40-49 ,Female,Lothian,935,5
+2020Q4,40-49 ,Male,Lothian,893,4
+2020Q4,50-59 ,Female,Lothian,1371,5
+2020Q4,50-59 ,Male,Lothian,1436,4
+2020Q4,60-69 ,Female,Lothian,1503,7
+2020Q4,60-69 ,Male,Lothian,1877,8
+2020Q4,70-79 ,Female,Lothian,1917,9
+2020Q4,70-79 ,Male,Lothian,2001,10
+2020Q4,80-89 ,Female,Lothian,1755,14
+2020Q4,80-89 ,Male,Lothian,1352,12
+2020Q4,90 +,Female,Lothian,573,17
+2020Q4,90 +,Male,Lothian,345,15
+2021Q1,0-9 ,Female,Lothian,122,3
+2021Q1,0-9 ,Male,Lothian,203,2
+2021Q1,10-19 ,Female,Lothian,265,6
+2021Q1,10-19 ,Male,Lothian,258,3
+2021Q1,20-29 ,Female,Lothian,673,3
+2021Q1,20-29 ,Male,Lothian,525,3
+2021Q1,30-39 ,Female,Lothian,840,3
+2021Q1,30-39 ,Male,Lothian,797,3
+2021Q1,40-49 ,Female,Lothian,884,5
+2021Q1,40-49 ,Male,Lothian,961,6
+2021Q1,50-59 ,Female,Lothian,1395,6
+2021Q1,50-59 ,Male,Lothian,1520,6
+2021Q1,60-69 ,Female,Lothian,1535,7
+2021Q1,60-69 ,Male,Lothian,1863,8
+2021Q1,70-79 ,Female,Lothian,1830,7
+2021Q1,70-79 ,Male,Lothian,2091,9
+2021Q1,80-89 ,Female,Lothian,1632,15
+2021Q1,80-89 ,Male,Lothian,1343,9
+2021Q1,90 +,Female,Lothian,614,15
+2021Q1,90 +,Male,Lothian,284,9
+2021Q2,0-9 ,Female,Lothian,211,3
+2021Q2,0-9 ,Male,Lothian,258,3
+2021Q2,10-19 ,Female,Lothian,352,3
+2021Q2,10-19 ,Male,Lothian,286,3
+2021Q2,20-29 ,Female,Lothian,681,3
+2021Q2,20-29 ,Male,Lothian,563,3
+2021Q2,30-39 ,Female,Lothian,954,3
+2021Q2,30-39 ,Male,Lothian,828,4
+2021Q2,40-49 ,Female,Lothian,1063,3
+2021Q2,40-49 ,Male,Lothian,1001,4
+2021Q2,50-59 ,Female,Lothian,1559,6
+2021Q2,50-59 ,Male,Lothian,1599,6
+2021Q2,60-69 ,Female,Lothian,1664,7
+2021Q2,60-69 ,Male,Lothian,2027,5
+2021Q2,70-79 ,Female,Lothian,2089,8
+2021Q2,70-79 ,Male,Lothian,2287,5
+2021Q2,80-89 ,Female,Lothian,1864,13
+2021Q2,80-89 ,Male,Lothian,1376,12
+2021Q2,90 +,Female,Lothian,581,18
+2021Q2,90 +,Male,Lothian,319,17
+2021Q3,0-9 ,Female,Lothian,142,2
+2021Q3,0-9 ,Male,Lothian,189,3
+2021Q3,10-19 ,Female,Lothian,301,2
+2021Q3,10-19 ,Male,Lothian,235,3
+2021Q3,20-29 ,Female,Lothian,682,2
+2021Q3,20-29 ,Male,Lothian,588,3
+2021Q3,30-39 ,Female,Lothian,878,3
+2021Q3,30-39 ,Male,Lothian,739,3
+2021Q3,40-49 ,Female,Lothian,932,3
+2021Q3,40-49 ,Male,Lothian,850,5
+2021Q3,50-59 ,Female,Lothian,1480,7
+2021Q3,50-59 ,Male,Lothian,1516,5
+2021Q3,60-69 ,Female,Lothian,1704,7
+2021Q3,60-69 ,Male,Lothian,1880,6
+2021Q3,70-79 ,Female,Lothian,1988,9
+2021Q3,70-79 ,Male,Lothian,2135,9
+2021Q3,80-89 ,Female,Lothian,1806,13
+2021Q3,80-89 ,Male,Lothian,1438,12
+2021Q3,90 +,Female,Lothian,553,14
+2021Q3,90 +,Male,Lothian,323,15
+2020Q1,0-9 ,Female,Orkney,10,2
+2020Q1,0-9 ,Male,Orkney,5,0
+2020Q1,10-19 ,Female,Orkney,10,4
+2020Q1,10-19 ,Male,Orkney,5,1
+2020Q1,20-29 ,Female,Orkney,5,1
+2020Q1,20-29 ,Male,Orkney,12,1
+2020Q1,30-39 ,Female,Orkney,15,1
+2020Q1,30-39 ,Male,Orkney,10,1
+2020Q1,40-49 ,Female,Orkney,10,3
+2020Q1,40-49 ,Male,Orkney,25,2
+2020Q1,50-59 ,Female,Orkney,24,3
+2020Q1,50-59 ,Male,Orkney,30,5
+2020Q1,60-69 ,Female,Orkney,30,4
+2020Q1,60-69 ,Male,Orkney,33,3
+2020Q1,70-79 ,Female,Orkney,50,5
+2020Q1,70-79 ,Male,Orkney,39,14
+2020Q1,80-89 ,Female,Orkney,63,10
+2020Q1,80-89 ,Male,Orkney,37,11
+2020Q1,90 +,Female,Orkney,10,17
+2020Q1,90 +,Male,Orkney,10,21
+2020Q2,0-9 ,Female,Orkney,5,0
+2020Q2,0-9 ,Male,Orkney,0,NA
+2020Q2,10-19 ,Female,Orkney,10,1
+2020Q2,10-19 ,Male,Orkney,0,NA
+2020Q2,20-29 ,Female,Orkney,5,2
+2020Q2,20-29 ,Male,Orkney,10,4
+2020Q2,30-39 ,Female,Orkney,10,2
+2020Q2,30-39 ,Male,Orkney,10,2
+2020Q2,40-49 ,Female,Orkney,12,2
+2020Q2,40-49 ,Male,Orkney,10,2
+2020Q2,50-59 ,Female,Orkney,17,6
+2020Q2,50-59 ,Male,Orkney,12,9
+2020Q2,60-69 ,Female,Orkney,25,16
+2020Q2,60-69 ,Male,Orkney,34,5
+2020Q2,70-79 ,Female,Orkney,29,10
+2020Q2,70-79 ,Male,Orkney,40,5
+2020Q2,80-89 ,Female,Orkney,40,14
+2020Q2,80-89 ,Male,Orkney,36,8
+2020Q2,90 +,Female,Orkney,13,19
+2020Q2,90 +,Male,Orkney,10,8
+2020Q3,0-9 ,Female,Orkney,0,NA
+2020Q3,0-9 ,Male,Orkney,10,0
+2020Q3,10-19 ,Female,Orkney,10,1
+2020Q3,10-19 ,Male,Orkney,10,1
+2020Q3,20-29 ,Female,Orkney,10,2
+2020Q3,20-29 ,Male,Orkney,15,1
+2020Q3,30-39 ,Female,Orkney,14,1
+2020Q3,30-39 ,Male,Orkney,10,2
+2020Q3,40-49 ,Female,Orkney,15,2
+2020Q3,40-49 ,Male,Orkney,23,2
+2020Q3,50-59 ,Female,Orkney,27,1
+2020Q3,50-59 ,Male,Orkney,35,5
+2020Q3,60-69 ,Female,Orkney,30,11
+2020Q3,60-69 ,Male,Orkney,39,3
+2020Q3,70-79 ,Female,Orkney,45,4
+2020Q3,70-79 ,Male,Orkney,55,7
+2020Q3,80-89 ,Female,Orkney,39,10
+2020Q3,80-89 ,Male,Orkney,41,5
+2020Q3,90 +,Female,Orkney,20,9
+2020Q3,90 +,Male,Orkney,10,8
+2020Q4,0-9 ,Female,Orkney,10,0
+2020Q4,0-9 ,Male,Orkney,5,2
+2020Q4,10-19 ,Female,Orkney,10,1
+2020Q4,10-19 ,Male,Orkney,0,NA
+2020Q4,20-29 ,Female,Orkney,10,1
+2020Q4,20-29 ,Male,Orkney,10,1
+2020Q4,30-39 ,Female,Orkney,11,2
+2020Q4,30-39 ,Male,Orkney,5,3
+2020Q4,40-49 ,Female,Orkney,22,2
+2020Q4,40-49 ,Male,Orkney,16,2
+2020Q4,50-59 ,Female,Orkney,20,4
+2020Q4,50-59 ,Male,Orkney,35,3
+2020Q4,60-69 ,Female,Orkney,28,6
+2020Q4,60-69 ,Male,Orkney,30,5
+2020Q4,70-79 ,Female,Orkney,56,11
+2020Q4,70-79 ,Male,Orkney,50,10
+2020Q4,80-89 ,Female,Orkney,54,8
+2020Q4,80-89 ,Male,Orkney,45,10
+2020Q4,90 +,Female,Orkney,21,14
+2020Q4,90 +,Male,Orkney,10,9
+2021Q1,0-9 ,Female,Orkney,0,NA
+2021Q1,0-9 ,Male,Orkney,5,0
+2021Q1,10-19 ,Female,Orkney,5,0
+2021Q1,10-19 ,Male,Orkney,5,1
+2021Q1,20-29 ,Female,Orkney,12,4
+2021Q1,20-29 ,Male,Orkney,15,4
+2021Q1,30-39 ,Female,Orkney,15,2
+2021Q1,30-39 ,Male,Orkney,12,1
+2021Q1,40-49 ,Female,Orkney,15,5
+2021Q1,40-49 ,Male,Orkney,20,2
+2021Q1,50-59 ,Female,Orkney,20,3
+2021Q1,50-59 ,Male,Orkney,35,5
+2021Q1,60-69 ,Female,Orkney,29,5
+2021Q1,60-69 ,Male,Orkney,36,4
+2021Q1,70-79 ,Female,Orkney,53,4
+2021Q1,70-79 ,Male,Orkney,51,3
+2021Q1,80-89 ,Female,Orkney,53,7
+2021Q1,80-89 ,Male,Orkney,64,6
+2021Q1,90 +,Female,Orkney,11,20
+2021Q1,90 +,Male,Orkney,15,15
+2021Q2,0-9 ,Female,Orkney,5,3
+2021Q2,0-9 ,Male,Orkney,10,1
+2021Q2,10-19 ,Female,Orkney,10,1
+2021Q2,10-19 ,Male,Orkney,5,0
+2021Q2,20-29 ,Female,Orkney,12,5
+2021Q2,20-29 ,Male,Orkney,10,3
+2021Q2,30-39 ,Female,Orkney,15,2
+2021Q2,30-39 ,Male,Orkney,13,2
+2021Q2,40-49 ,Female,Orkney,15,2
+2021Q2,40-49 ,Male,Orkney,10,2
+2021Q2,50-59 ,Female,Orkney,20,2
+2021Q2,50-59 ,Male,Orkney,35,5
+2021Q2,60-69 ,Female,Orkney,25,6
+2021Q2,60-69 ,Male,Orkney,50,8
+2021Q2,70-79 ,Female,Orkney,59,5
+2021Q2,70-79 ,Male,Orkney,58,5
+2021Q2,80-89 ,Female,Orkney,45,17
+2021Q2,80-89 ,Male,Orkney,49,5
+2021Q2,90 +,Female,Orkney,30,17
+2021Q2,90 +,Male,Orkney,0,NA
+2021Q3,0-9 ,Female,Orkney,0,NA
+2021Q3,0-9 ,Male,Orkney,5,1
+2021Q3,10-19 ,Female,Orkney,5,1
+2021Q3,10-19 ,Male,Orkney,10,2
+2021Q3,20-29 ,Female,Orkney,10,1
+2021Q3,20-29 ,Male,Orkney,5,3
+2021Q3,30-39 ,Female,Orkney,15,5
+2021Q3,30-39 ,Male,Orkney,15,2
+2021Q3,40-49 ,Female,Orkney,10,5
+2021Q3,40-49 ,Male,Orkney,10,4
+2021Q3,50-59 ,Female,Orkney,35,7
+2021Q3,50-59 ,Male,Orkney,45,3
+2021Q3,60-69 ,Female,Orkney,40,4
+2021Q3,60-69 ,Male,Orkney,45,6
+2021Q3,70-79 ,Female,Orkney,65,4
+2021Q3,70-79 ,Male,Orkney,58,10
+2021Q3,80-89 ,Female,Orkney,48,9
+2021Q3,80-89 ,Male,Orkney,54,6
+2021Q3,90 +,Female,Orkney,30,7
+2021Q3,90 +,Male,Orkney,10,10
+2020Q1,0-9 ,Female,Shetland,10,1
+2020Q1,0-9 ,Male,Shetland,15,0
+2020Q1,10-19 ,Female,Shetland,10,1
+2020Q1,10-19 ,Male,Shetland,5,2
+2020Q1,20-29 ,Female,Shetland,10,5
+2020Q1,20-29 ,Male,Shetland,10,2
+2020Q1,30-39 ,Female,Shetland,16,2
+2020Q1,30-39 ,Male,Shetland,25,4
+2020Q1,40-49 ,Female,Shetland,20,2
+2020Q1,40-49 ,Male,Shetland,27,3
+2020Q1,50-59 ,Female,Shetland,25,10
+2020Q1,50-59 ,Male,Shetland,30,4
+2020Q1,60-69 ,Female,Shetland,35,3
+2020Q1,60-69 ,Male,Shetland,40,3
+2020Q1,70-79 ,Female,Shetland,40,6
+2020Q1,70-79 ,Male,Shetland,51,6
+2020Q1,80-89 ,Female,Shetland,46,5
+2020Q1,80-89 ,Male,Shetland,35,6
+2020Q1,90 +,Female,Shetland,17,14
+2020Q1,90 +,Male,Shetland,11,10
+2020Q2,0-9 ,Female,Shetland,0,NA
+2020Q2,0-9 ,Male,Shetland,5,1
+2020Q2,10-19 ,Female,Shetland,5,12
+2020Q2,10-19 ,Male,Shetland,5,1
+2020Q2,20-29 ,Female,Shetland,20,3
+2020Q2,20-29 ,Male,Shetland,14,1
+2020Q2,30-39 ,Female,Shetland,13,2
+2020Q2,30-39 ,Male,Shetland,10,2
+2020Q2,40-49 ,Female,Shetland,15,3
+2020Q2,40-49 ,Male,Shetland,19,4
+2020Q2,50-59 ,Female,Shetland,22,3
+2020Q2,50-59 ,Male,Shetland,27,3
+2020Q2,60-69 ,Female,Shetland,24,4
+2020Q2,60-69 ,Male,Shetland,25,7
+2020Q2,70-79 ,Female,Shetland,16,10
+2020Q2,70-79 ,Male,Shetland,44,8
+2020Q2,80-89 ,Female,Shetland,29,7
+2020Q2,80-89 ,Male,Shetland,30,9
+2020Q2,90 +,Female,Shetland,10,2
+2020Q2,90 +,Male,Shetland,0,NA
+2020Q3,0-9 ,Female,Shetland,0,NA
+2020Q3,0-9 ,Male,Shetland,5,4
+2020Q3,10-19 ,Female,Shetland,5,1
+2020Q3,10-19 ,Male,Shetland,10,2
+2020Q3,20-29 ,Female,Shetland,18,7
+2020Q3,20-29 ,Male,Shetland,10,3
+2020Q3,30-39 ,Female,Shetland,17,2
+2020Q3,30-39 ,Male,Shetland,17,2
+2020Q3,40-49 ,Female,Shetland,15,2
+2020Q3,40-49 ,Male,Shetland,28,2
+2020Q3,50-59 ,Female,Shetland,25,2
+2020Q3,50-59 ,Male,Shetland,40,3
+2020Q3,60-69 ,Female,Shetland,35,2
+2020Q3,60-69 ,Male,Shetland,41,9
+2020Q3,70-79 ,Female,Shetland,52,5
+2020Q3,70-79 ,Male,Shetland,68,5
+2020Q3,80-89 ,Female,Shetland,47,6
+2020Q3,80-89 ,Male,Shetland,37,4
+2020Q3,90 +,Female,Shetland,15,10
+2020Q3,90 +,Male,Shetland,5,8
+2020Q4,0-9 ,Female,Shetland,5,2
+2020Q4,0-9 ,Male,Shetland,10,1
+2020Q4,10-19 ,Female,Shetland,13,1
+2020Q4,10-19 ,Male,Shetland,15,1
+2020Q4,20-29 ,Female,Shetland,22,4
+2020Q4,20-29 ,Male,Shetland,10,1
+2020Q4,30-39 ,Female,Shetland,15,3
+2020Q4,30-39 ,Male,Shetland,15,4
+2020Q4,40-49 ,Female,Shetland,15,2
+2020Q4,40-49 ,Male,Shetland,13,13
+2020Q4,50-59 ,Female,Shetland,28,2
+2020Q4,50-59 ,Male,Shetland,35,4
+2020Q4,60-69 ,Female,Shetland,25,3
+2020Q4,60-69 ,Male,Shetland,35,5
+2020Q4,70-79 ,Female,Shetland,50,5
+2020Q4,70-79 ,Male,Shetland,77,4
+2020Q4,80-89 ,Female,Shetland,38,5
+2020Q4,80-89 ,Male,Shetland,39,7
+2020Q4,90 +,Female,Shetland,10,11
+2020Q4,90 +,Male,Shetland,5,6
+2021Q1,0-9 ,Female,Shetland,5,1
+2021Q1,0-9 ,Male,Shetland,0,NA
+2021Q1,10-19 ,Female,Shetland,5,3
+2021Q1,10-19 ,Male,Shetland,10,2
+2021Q1,20-29 ,Female,Shetland,36,2
+2021Q1,20-29 ,Male,Shetland,14,2
+2021Q1,30-39 ,Female,Shetland,15,3
+2021Q1,30-39 ,Male,Shetland,15,4
+2021Q1,40-49 ,Female,Shetland,15,2
+2021Q1,40-49 ,Male,Shetland,20,4
+2021Q1,50-59 ,Female,Shetland,25,2
+2021Q1,50-59 ,Male,Shetland,30,3
+2021Q1,60-69 ,Female,Shetland,30,3
+2021Q1,60-69 ,Male,Shetland,38,7
+2021Q1,70-79 ,Female,Shetland,40,4
+2021Q1,70-79 ,Male,Shetland,60,5
+2021Q1,80-89 ,Female,Shetland,28,7
+2021Q1,80-89 ,Male,Shetland,46,5
+2021Q1,90 +,Female,Shetland,10,10
+2021Q1,90 +,Male,Shetland,10,8
+2021Q2,0-9 ,Female,Shetland,5,2
+2021Q2,0-9 ,Male,Shetland,10,1
+2021Q2,10-19 ,Female,Shetland,10,1
+2021Q2,10-19 ,Male,Shetland,5,1
+2021Q2,20-29 ,Female,Shetland,17,1
+2021Q2,20-29 ,Male,Shetland,10,7
+2021Q2,30-39 ,Female,Shetland,16,2
+2021Q2,30-39 ,Male,Shetland,15,3
+2021Q2,40-49 ,Female,Shetland,25,3
+2021Q2,40-49 ,Male,Shetland,21,3
+2021Q2,50-59 ,Female,Shetland,25,4
+2021Q2,50-59 ,Male,Shetland,21,3
+2021Q2,60-69 ,Female,Shetland,40,6
+2021Q2,60-69 ,Male,Shetland,30,5
+2021Q2,70-79 ,Female,Shetland,55,4
+2021Q2,70-79 ,Male,Shetland,54,5
+2021Q2,80-89 ,Female,Shetland,36,9
+2021Q2,80-89 ,Male,Shetland,39,5
+2021Q2,90 +,Female,Shetland,11,8
+2021Q2,90 +,Male,Shetland,10,6
+2021Q3,0-9 ,Female,Shetland,10,2
+2021Q3,0-9 ,Male,Shetland,10,4
+2021Q3,10-19 ,Female,Shetland,5,1
+2021Q3,10-19 ,Male,Shetland,10,0
+2021Q3,20-29 ,Female,Shetland,14,1
+2021Q3,20-29 ,Male,Shetland,20,3
+2021Q3,30-39 ,Female,Shetland,28,1
+2021Q3,30-39 ,Male,Shetland,20,2
+2021Q3,40-49 ,Female,Shetland,15,1
+2021Q3,40-49 ,Male,Shetland,18,3
+2021Q3,50-59 ,Female,Shetland,24,4
+2021Q3,50-59 ,Male,Shetland,31,3
+2021Q3,60-69 ,Female,Shetland,35,5
+2021Q3,60-69 ,Male,Shetland,48,6
+2021Q3,70-79 ,Female,Shetland,42,5
+2021Q3,70-79 ,Male,Shetland,45,5
+2021Q3,80-89 ,Female,Shetland,25,6
+2021Q3,80-89 ,Male,Shetland,46,3
+2021Q3,90 +,Female,Shetland,15,11
+2021Q3,90 +,Male,Shetland,10,10
+2020Q1,0-9 ,Female,Tayside,38,1
+2020Q1,0-9 ,Male,Tayside,47,0
+2020Q1,10-19 ,Female,Tayside,136,1
+2020Q1,10-19 ,Male,Tayside,116,2
+2020Q1,20-29 ,Female,Tayside,342,3
+2020Q1,20-29 ,Male,Tayside,290,2
+2020Q1,30-39 ,Female,Tayside,405,2
+2020Q1,30-39 ,Male,Tayside,386,2
+2020Q1,40-49 ,Female,Tayside,438,3
+2020Q1,40-49 ,Male,Tayside,452,3
+2020Q1,50-59 ,Female,Tayside,769,2
+2020Q1,50-59 ,Male,Tayside,831,3
+2020Q1,60-69 ,Female,Tayside,911,6
+2020Q1,60-69 ,Male,Tayside,1146,7
+2020Q1,70-79 ,Female,Tayside,1156,9
+2020Q1,70-79 ,Male,Tayside,1461,6
+2020Q1,80-89 ,Female,Tayside,1084,13
+2020Q1,80-89 ,Male,Tayside,1066,12
+2020Q1,90 +,Female,Tayside,430,9
+2020Q1,90 +,Male,Tayside,193,10
+2020Q2,0-9 ,Female,Tayside,23,0
+2020Q2,0-9 ,Male,Tayside,14,0
+2020Q2,10-19 ,Female,Tayside,56,1
+2020Q2,10-19 ,Male,Tayside,67,4
+2020Q2,20-29 ,Female,Tayside,230,2
+2020Q2,20-29 ,Male,Tayside,175,4
+2020Q2,30-39 ,Female,Tayside,297,2
+2020Q2,30-39 ,Male,Tayside,307,2
+2020Q2,40-49 ,Female,Tayside,365,3
+2020Q2,40-49 ,Male,Tayside,359,4
+2020Q2,50-59 ,Female,Tayside,568,3
+2020Q2,50-59 ,Male,Tayside,664,4
+2020Q2,60-69 ,Female,Tayside,670,5
+2020Q2,60-69 ,Male,Tayside,780,6
+2020Q2,70-79 ,Female,Tayside,804,7
+2020Q2,70-79 ,Male,Tayside,915,6
+2020Q2,80-89 ,Female,Tayside,866,5
+2020Q2,80-89 ,Male,Tayside,739,10
+2020Q2,90 +,Female,Tayside,278,9
+2020Q2,90 +,Male,Tayside,146,8
+2020Q3,0-9 ,Female,Tayside,41,0
+2020Q3,0-9 ,Male,Tayside,39,1
+2020Q3,10-19 ,Female,Tayside,103,2
+2020Q3,10-19 ,Male,Tayside,115,2
+2020Q3,20-29 ,Female,Tayside,297,2
+2020Q3,20-29 ,Male,Tayside,297,3
+2020Q3,30-39 ,Female,Tayside,385,3
+2020Q3,30-39 ,Male,Tayside,321,3
+2020Q3,40-49 ,Female,Tayside,452,3
+2020Q3,40-49 ,Male,Tayside,391,3
+2020Q3,50-59 ,Female,Tayside,710,5
+2020Q3,50-59 ,Male,Tayside,711,4
+2020Q3,60-69 ,Female,Tayside,867,5
+2020Q3,60-69 ,Male,Tayside,968,4
+2020Q3,70-79 ,Female,Tayside,1106,6
+2020Q3,70-79 ,Male,Tayside,1221,6
+2020Q3,80-89 ,Female,Tayside,1009,7
+2020Q3,80-89 ,Male,Tayside,883,7
+2020Q3,90 +,Female,Tayside,337,12
+2020Q3,90 +,Male,Tayside,179,8
+2020Q4,0-9 ,Female,Tayside,25,1
+2020Q4,0-9 ,Male,Tayside,31,1
+2020Q4,10-19 ,Female,Tayside,86,1
+2020Q4,10-19 ,Male,Tayside,109,1
+2020Q4,20-29 ,Female,Tayside,285,2
+2020Q4,20-29 ,Male,Tayside,240,2
+2020Q4,30-39 ,Female,Tayside,403,5
+2020Q4,30-39 ,Male,Tayside,292,2
+2020Q4,40-49 ,Female,Tayside,470,4
+2020Q4,40-49 ,Male,Tayside,401,3
+2020Q4,50-59 ,Female,Tayside,702,4
+2020Q4,50-59 ,Male,Tayside,709,5
+2020Q4,60-69 ,Female,Tayside,854,5
+2020Q4,60-69 ,Male,Tayside,1009,5
+2020Q4,70-79 ,Female,Tayside,1085,9
+2020Q4,70-79 ,Male,Tayside,1273,4
+2020Q4,80-89 ,Female,Tayside,1034,11
+2020Q4,80-89 ,Male,Tayside,844,5
+2020Q4,90 +,Female,Tayside,355,8
+2020Q4,90 +,Male,Tayside,219,6
+2021Q1,0-9 ,Female,Tayside,20,0
+2021Q1,0-9 ,Male,Tayside,15,0
+2021Q1,10-19 ,Female,Tayside,104,1
+2021Q1,10-19 ,Male,Tayside,87,2
+2021Q1,20-29 ,Female,Tayside,267,2
+2021Q1,20-29 ,Male,Tayside,198,2
+2021Q1,30-39 ,Female,Tayside,368,3
+2021Q1,30-39 ,Male,Tayside,295,3
+2021Q1,40-49 ,Female,Tayside,437,4
+2021Q1,40-49 ,Male,Tayside,379,4
+2021Q1,50-59 ,Female,Tayside,618,5
+2021Q1,50-59 ,Male,Tayside,625,4
+2021Q1,60-69 ,Female,Tayside,731,4
+2021Q1,60-69 ,Male,Tayside,904,5
+2021Q1,70-79 ,Female,Tayside,957,5
+2021Q1,70-79 ,Male,Tayside,1080,6
+2021Q1,80-89 ,Female,Tayside,941,4
+2021Q1,80-89 ,Male,Tayside,799,11
+2021Q1,90 +,Female,Tayside,355,16
+2021Q1,90 +,Male,Tayside,194,8
+2021Q2,0-9 ,Female,Tayside,29,1
+2021Q2,0-9 ,Male,Tayside,41,1
+2021Q2,10-19 ,Female,Tayside,104,2
+2021Q2,10-19 ,Male,Tayside,99,3
+2021Q2,20-29 ,Female,Tayside,324,2
+2021Q2,20-29 ,Male,Tayside,258,2
+2021Q2,30-39 ,Female,Tayside,380,3
+2021Q2,30-39 ,Male,Tayside,304,2
+2021Q2,40-49 ,Female,Tayside,485,3
+2021Q2,40-49 ,Male,Tayside,414,4
+2021Q2,50-59 ,Female,Tayside,737,4
+2021Q2,50-59 ,Male,Tayside,750,6
+2021Q2,60-69 ,Female,Tayside,874,4
+2021Q2,60-69 ,Male,Tayside,1049,3
+2021Q2,70-79 ,Female,Tayside,1113,6
+2021Q2,70-79 ,Male,Tayside,1251,6
+2021Q2,80-89 ,Female,Tayside,1033,11
+2021Q2,80-89 ,Male,Tayside,894,9
+2021Q2,90 +,Female,Tayside,294,14
+2021Q2,90 +,Male,Tayside,226,6
+2021Q3,0-9 ,Female,Tayside,35,1
+2021Q3,0-9 ,Male,Tayside,30,0
+2021Q3,10-19 ,Female,Tayside,99,1
+2021Q3,10-19 ,Male,Tayside,100,50
+2021Q3,20-29 ,Female,Tayside,321,2
+2021Q3,20-29 ,Male,Tayside,321,2
+2021Q3,30-39 ,Female,Tayside,361,2
+2021Q3,30-39 ,Male,Tayside,378,4
+2021Q3,40-49 ,Female,Tayside,468,3
+2021Q3,40-49 ,Male,Tayside,430,4
+2021Q3,50-59 ,Female,Tayside,673,4
+2021Q3,50-59 ,Male,Tayside,736,4
+2021Q3,60-69 ,Female,Tayside,890,5
+2021Q3,60-69 ,Male,Tayside,1051,4
+2021Q3,70-79 ,Female,Tayside,1105,7
+2021Q3,70-79 ,Male,Tayside,1278,9
+2021Q3,80-89 ,Female,Tayside,1099,12
+2021Q3,80-89 ,Male,Tayside,890,4
+2021Q3,90 +,Female,Tayside,314,14
+2021Q3,90 +,Male,Tayside,219,10
+2020Q1,0-9 ,Female,Western Isle,0,NA
+2020Q1,10-19 ,Female,Western Isle,11,2
+2020Q1,10-19 ,Male,Western Isle,10,5
+2020Q1,20-29 ,Female,Western Isle,15,3
+2020Q1,20-29 ,Male,Western Isle,18,1
+2020Q1,30-39 ,Female,Western Isle,5,4
+2020Q1,30-39 ,Male,Western Isle,5,2
+2020Q1,40-49 ,Female,Western Isle,27,2
+2020Q1,40-49 ,Male,Western Isle,15,2
+2020Q1,50-59 ,Female,Western Isle,34,6
+2020Q1,50-59 ,Male,Western Isle,41,3
+2020Q1,60-69 ,Female,Western Isle,47,9
+2020Q1,60-69 ,Male,Western Isle,69,3
+2020Q1,70-79 ,Female,Western Isle,92,6
+2020Q1,70-79 ,Male,Western Isle,98,8
+2020Q1,80-89 ,Female,Western Isle,77,9
+2020Q1,80-89 ,Male,Western Isle,58,10
+2020Q1,90 +,Female,Western Isle,32,10
+2020Q1,90 +,Male,Western Isle,20,12
+2020Q2,0-9 ,Female,Western Isle,0,NA
+2020Q2,0-9 ,Male,Western Isle,0,NA
+2020Q2,10-19 ,Female,Western Isle,0,NA
+2020Q2,10-19 ,Male,Western Isle,5,3
+2020Q2,20-29 ,Female,Western Isle,10,6
+2020Q2,20-29 ,Male,Western Isle,15,1
+2020Q2,30-39 ,Female,Western Isle,11,2
+2020Q2,30-39 ,Male,Western Isle,10,2
+2020Q2,40-49 ,Female,Western Isle,24,2
+2020Q2,40-49 ,Male,Western Isle,10,2
+2020Q2,50-59 ,Female,Western Isle,30,2
+2020Q2,50-59 ,Male,Western Isle,27,3
+2020Q2,60-69 ,Female,Western Isle,43,3
+2020Q2,60-69 ,Male,Western Isle,56,2
+2020Q2,70-79 ,Female,Western Isle,45,3
+2020Q2,70-79 ,Male,Western Isle,49,4
+2020Q2,80-89 ,Female,Western Isle,65,5
+2020Q2,80-89 ,Male,Western Isle,40,3
+2020Q2,90 +,Female,Western Isle,11,8
+2020Q2,90 +,Male,Western Isle,10,5
+2020Q3,0-9 ,Female,Western Isle,5,1
+2020Q3,0-9 ,Male,Western Isle,0,NA
+2020Q3,10-19 ,Female,Western Isle,5,4
+2020Q3,10-19 ,Male,Western Isle,5,1
+2020Q3,20-29 ,Female,Western Isle,12,1
+2020Q3,20-29 ,Male,Western Isle,16,1
+2020Q3,30-39 ,Female,Western Isle,18,1
+2020Q3,30-39 ,Male,Western Isle,12,2
+2020Q3,40-49 ,Female,Western Isle,11,2
+2020Q3,40-49 ,Male,Western Isle,20,4
+2020Q3,50-59 ,Female,Western Isle,25,2
+2020Q3,50-59 ,Male,Western Isle,49,2
+2020Q3,60-69 ,Female,Western Isle,35,6
+2020Q3,60-69 ,Male,Western Isle,51,4
+2020Q3,70-79 ,Female,Western Isle,60,4
+2020Q3,70-79 ,Male,Western Isle,50,9
+2020Q3,80-89 ,Female,Western Isle,78,8
+2020Q3,80-89 ,Male,Western Isle,45,4
+2020Q3,90 +,Female,Western Isle,19,17
+2020Q3,90 +,Male,Western Isle,10,10
+2020Q4,0-9 ,Female,Western Isle,0,NA
+2020Q4,0-9 ,Male,Western Isle,0,NA
+2020Q4,10-19 ,Female,Western Isle,10,1
+2020Q4,10-19 ,Male,Western Isle,10,0
+2020Q4,20-29 ,Female,Western Isle,15,2
+2020Q4,20-29 ,Male,Western Isle,17,1
+2020Q4,30-39 ,Female,Western Isle,11,1
+2020Q4,30-39 ,Male,Western Isle,15,1
+2020Q4,40-49 ,Female,Western Isle,25,1
+2020Q4,40-49 ,Male,Western Isle,31,4
+2020Q4,50-59 ,Female,Western Isle,31,3
+2020Q4,50-59 ,Male,Western Isle,62,3
+2020Q4,60-69 ,Female,Western Isle,68,3
+2020Q4,60-69 ,Male,Western Isle,60,6
+2020Q4,70-79 ,Female,Western Isle,77,5
+2020Q4,70-79 ,Male,Western Isle,84,9
+2020Q4,80-89 ,Female,Western Isle,72,5
+2020Q4,80-89 ,Male,Western Isle,44,4
+2020Q4,90 +,Female,Western Isle,32,11
+2020Q4,90 +,Male,Western Isle,12,13
+2021Q1,0-9 ,Female,Western Isle,0,NA
+2021Q1,10-19 ,Female,Western Isle,5,0
+2021Q1,10-19 ,Male,Western Isle,5,2
+2021Q1,20-29 ,Female,Western Isle,10,1
+2021Q1,20-29 ,Male,Western Isle,15,1
+2021Q1,30-39 ,Female,Western Isle,10,1
+2021Q1,30-39 ,Male,Western Isle,18,2
+2021Q1,40-49 ,Female,Western Isle,15,1
+2021Q1,40-49 ,Male,Western Isle,13,3
+2021Q1,50-59 ,Female,Western Isle,26,3
+2021Q1,50-59 ,Male,Western Isle,41,8
+2021Q1,60-69 ,Female,Western Isle,51,3
+2021Q1,60-69 ,Male,Western Isle,46,6
+2021Q1,70-79 ,Female,Western Isle,48,7
+2021Q1,70-79 ,Male,Western Isle,62,6
+2021Q1,80-89 ,Female,Western Isle,77,11
+2021Q1,80-89 ,Male,Western Isle,37,13
+2021Q1,90 +,Female,Western Isle,17,16
+2021Q1,90 +,Male,Western Isle,13,16
+2021Q2,0-9 ,Female,Western Isle,0,NA
+2021Q2,0-9 ,Male,Western Isle,0,NA
+2021Q2,10-19 ,Female,Western Isle,5,1
+2021Q2,10-19 ,Male,Western Isle,5,1
+2021Q2,20-29 ,Female,Western Isle,15,3
+2021Q2,20-29 ,Male,Western Isle,15,2
+2021Q2,30-39 ,Female,Western Isle,16,2
+2021Q2,30-39 ,Male,Western Isle,10,1
+2021Q2,40-49 ,Female,Western Isle,15,3
+2021Q2,40-49 ,Male,Western Isle,12,3
+2021Q2,50-59 ,Female,Western Isle,29,3
+2021Q2,50-59 ,Male,Western Isle,40,4
+2021Q2,60-69 ,Female,Western Isle,62,6
+2021Q2,60-69 ,Male,Western Isle,66,5
+2021Q2,70-79 ,Female,Western Isle,69,6
+2021Q2,70-79 ,Male,Western Isle,85,4
+2021Q2,80-89 ,Female,Western Isle,79,12
+2021Q2,80-89 ,Male,Western Isle,39,14
+2021Q2,90 +,Female,Western Isle,26,13
+2021Q2,90 +,Male,Western Isle,10,26
+2021Q3,0-9 ,Female,Western Isle,0,NA
+2021Q3,0-9 ,Male,Western Isle,5,1
+2021Q3,10-19 ,Female,Western Isle,5,0
+2021Q3,10-19 ,Male,Western Isle,5,1
+2021Q3,20-29 ,Female,Western Isle,15,3
+2021Q3,20-29 ,Male,Western Isle,19,2
+2021Q3,30-39 ,Female,Western Isle,20,7
+2021Q3,30-39 ,Male,Western Isle,20,2
+2021Q3,40-49 ,Female,Western Isle,22,2
+2021Q3,40-49 ,Male,Western Isle,30,2
+2021Q3,50-59 ,Female,Western Isle,31,4
+2021Q3,50-59 ,Male,Western Isle,48,4
+2021Q3,60-69 ,Female,Western Isle,64,5
+2021Q3,60-69 ,Male,Western Isle,65,4
+2021Q3,70-79 ,Female,Western Isle,74,4
+2021Q3,70-79 ,Male,Western Isle,82,6
+2021Q3,80-89 ,Female,Western Isle,90,1
+2021Q3,80-89 ,Male,Western Isle,38,8
+2021Q3,90 +,Female,Western Isle,15,18
+2021Q3,90 +,Male,Western Isle,14,12

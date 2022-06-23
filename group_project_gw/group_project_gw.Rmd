@@ -1,0 +1,241 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+# Introduction
+
+__Question__
+
+- How significant are the differences in hospital activity across the country? 
+
+- Does urban/rural have an impact or is it related to the size and capacity of the health board?
+
+__Glossary__ (https://www.ndc.scot.nhs.uk/Dictionary-A-Z/)
+
+episode of care = is an inpatient episode, a day case episode, a day patient episode, a haemodialysis patient episode, an outpatient episode or an AHP episode. Each episode is initiated by a referral (including re-referral) or admission and is ended by a discharge.
+
+spell = A spell/care package is the healthcare provided usually in connection with a single condition. It may comprise several SMR episodes and cover one or more types of care, e.g. inpatient care, outpatient care, day patient care.
+
+# Data cleaning
+
+Loading required libraries:
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(ggplot2)
+
+```
+
+Reading in the raw data:
+
+```{r}
+# dataset contains health board admission types and episodes
+phs_admissions_data <- read_csv("../group_project_gw/raw_data/Activity_by_Board_of_Treatment_and_Specialty.csv") %>% 
+  clean_names()
+
+```
+
+Selecting data columns of interest, then filtering to (i) include quarters from 2020-2021 inclusive only and (ii) to exclude the aggregates S92000003 "Scotland" and "All Inpatients and Day cases", and the SN0811 "National Facility NHS Louisa Jordan" as only 2021Q1 data also as located within urban Glasgow and contains NAs, 
+and Special Health Board SB0801 "The Golden Jubilee national hospital" as no population for per capita analysis and no NHS urban or rural classification so no use for analysis relating to 3 of 4 plots;
+"S27000001" "Non-NHS Provider Location"
+Removed: 
+- "Non-NHS Provider Location" and "The Golden Jubilee National Hospital") as hbs with population NA.
+- S27000001 = "Non-NHS Provider Location" as urban_rural status unclear.
+Removed: 
+- S27000001 = "Non-NHS Provider Location" as urban_rural status unclear; and
+- SN0811 = "National Facility NHS Louisa Jordan" as located within Urban Glasgow and contains NAs
+- "Scotland" as it's an aggregate but has a Rural category
+then column renaming to be more explicit about contents:
+
+```{r}
+phs_admissions_data <- phs_admissions_data %>%
+  select(quarter, hb, location, admission_type, specialty_name, episodes, length_of_episode, spells) %>%
+  filter(str_detect(quarter, pattern = "^202")) %>%
+  filter(admission_type != "Not Specified", admission_type != "All Inpatients and Day cases") %>%
+  filter(hb != "S92000003", hb != "SN0811", hb != "SB0801", hb != "S27000001") %>% 
+  rename("hb_code" = "hb", "location_code" = "location")
+
+```
+
+(Removed columns: id, quarter_qf, hbqf, location_qf, admission_type_qf, specialty, length_of_episode, average_length_of_episode, average_length_of_episode_qf, spells, length_of_spell, average_length_of_spell, average_length_of_spell_qf)
+
+Creating tibble containing hb code and hb name:
+
+```{r}
+hb_name_convert <- tibble(hb_code = c("S08000015", "S08000016", "S08000017", "S08000018", "S08000019", "S08000020", "S08000021", "S08000022", "S08000023", "S08000024", "S08000025", "S08000026", "S08000027", "S08000028", "S08000029", "S08000030", "S08000031", "S08000032"), hb_name = c("Ayrshire and Arran", "Borders", "Dumfries and Galloway", "Fife", "Forth Valley", "Grampian", "Greater Glasgow and Clyde", "Highland", "Lanarkshire", "Lothian", "Orkney", "Shetland", "Tayside", "Western Isles", "Fife", "Tayside", "Greater Glasgow and Clyde", "Lanarkshire"))
+
+```
+
+Joining of activity data table with hb names table. Joining on the hb code:
+
+```{r}
+phs_admissions_data <- phs_admissions_data %>% 
+  left_join(hb_name_convert, "hb_code" = "hb_code")
+
+```
+
+Assigning hb categories of urban or rural:
+
+Based on Scottish Rural Medicine Collaborative (https://www.srmc.scot.nhs.uk/about/) rural classifications which do not include cities of Aberdeen or Dundee
+
+Urban = "Forth Valley", "Greater Glasgow and Clyde", "Lanarkshire", "Lothian", "Fife", "Tayside", "Greater Glasgow and Clyde", "Lanarkshire", "The Golden Jubilee National Hospital", "Scotland", "National Facility NHS Louisa Jordan"
+
+Rural = "Ayrshire and Arran", "Borders", "Dumfries and Galloway",  "Fife", "Grampian", "Highland", "Orkney", "Shetland","Tayside", "Western Isles", 
+
+```{r}
+urban <- c("Forth Valley", "Greater Glasgow and Clyde", "Lanarkshire", "Lothian", "Fife", "Tayside", "Greater Glasgow and Clyde", "Lanarkshire")
+
+phs_admissions_data <- phs_admissions_data %>%
+  mutate(urban_rural = if_else(hb_name %in% urban, "Urban", "Rural"), .after = location_code)
+
+```
+
+Creating table of hb and occupied beds:
+
+```{r}
+hb_occ_beds <- read_csv("../group_project_gw/raw_data/beds_by_nhs_board_of_treatment_and_specialty.csv") %>% clean_names() %>% 
+  rename("hb_code" = "hb")
+
+hb_occ_beds <- hb_occ_beds %>% 
+  filter(hb_code == location, specialty_name == "All Acute") %>% 
+  filter(str_detect(quarter, pattern = "^202")) %>% 
+  group_by(hb_code) %>% 
+  select(quarter, hb_code, total_occupied_beds)
+
+```
+
+Joining of activity data table with hb occupied beds; joining on the hb code:
+
+```{r}
+phs_admissions_data <- phs_admissions_data %>% 
+  left_join(hb_occ_beds, by = c("quarter", "hb_code"))
+
+```
+
+Creating table of hb and population:
+
+Required if doing per capita calculation
+
+```{r}
+hb_pops <- read_csv("../group_project_gw/raw_data/Health_Board_2019_Population_Estimates.csv") %>% clean_names() %>%
+  rename("hb_code" = "hb")
+
+hb_pops <- hb_pops %>%
+  select(year, hb_code, sex, all_ages) %>%
+  filter(sex == "All", year == "2020") %>%
+  group_by(hb_code) %>%
+  summarise(pop = sum(all_ages))
+
+```
+
+Joining of activity data table with hb population table; joining on the hb code:
+
+```{r}
+phs_admissions_data <- phs_admissions_data %>%
+  left_join(hb_pops, "hb_code" = "hb_code")
+
+```
+
+```{r}
+write_csv(phs_admissions_data, "../group_project_gw/clean_data/phs_admissions_data_clean.csv")
+  
+```
+
+
+# Data analysis
+
+```{r}
+# 1. num episodes for one hb per quarter
+# input selector is dropdown option list for diff hbs
+phs_admissions_data %>% 
+  filter(hb_name == "Lothian") %>% # replace on shiny: inputSelect 
+  group_by(quarter, admission_type) %>%  
+  summarise(episodes = sum(episodes)) %>% 
+  ggplot() +
+  geom_line(aes(x = quarter, y = episodes, group = admission_type, colour = admission_type), alpha = 1) +
+  geom_point(aes(x = quarter, y = episodes, colour = admission_type), alpha = 0.5, size = 0.75) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
+  xlab("Admission type") +
+  ylab("Episodes") # need to change original y scale to 1000s
+
+```
+
+Q. Remove Transfers?
+
+```{r}
+# 2. num episodes (normalised) per hb per quarter
+# input selector is dropdown hb option list
+phs_admissions_data %>% 
+  group_by(quarter, hb_name) %>% 
+  summarise(episodes = sum(episodes)/mean(pop)) %>% 
+  ggplot() +
+  geom_line(aes(x = quarter, y = episodes, group = hb_name, colour = hb_name), alpha = 0.75) +
+  geom_point(aes(x = quarter, y = episodes, colour = hb_name), alpha = 0.75) +
+  xlab("Quarter") +
+  ylab("Episodes per capita") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+
+
+```{r}
+# num episodes (normalised) per for urban vs. rural
+phs_admissions_data %>%
+  group_by(urban_rural, admission_type) %>%
+  summarise(episodes = sum(episodes)/mean(pop)) %>% 
+  ggplot() +
+  aes(x = admission_type, y = episodes) +
+  geom_bar(stat = "identity") +
+  facet_grid(~urban_rural) +
+  xlab("Admission type") +
+  ylab("Episodes per capita") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
+
+```{r}
+# num episodes (normalised) for urban vs. rural per quarter
+phs_admissions_data %>%
+  group_by(quarter, urban_rural) %>% 
+  summarise(episodes = sum(episodes)/mean(pop)) %>% 
+  ggplot() +
+  aes(x = quarter, y = episodes, group = urban_rural, colour = urban_rural) +
+  geom_line() +
+  xlab("Quarter") +
+  ylab("Episodes per capita") +
+  ylim(0,NA)
+
+```
+
+Geospatial plot (extension):
+
+Code sent to Jack to replace the 'no. beds' tab. Polygon selection and piping into server will be explored.
+
+```{r}
+# library(leaflet)
+# library(rgdal)
+
+```
+
+```{r}
+# hb_shapes <- readOGR("../data/HB_WGS_84_EPSG4326/reprojected_hb.shp")
+# 
+# leaflet() %>%
+#   addTiles() %>%
+#   addPolygons(data = hb_shapes,
+#               color = "#660000",
+#               weight = 1)
+
+```
+
+
+
+# Shiny dashboard
+
+Project located in repo 'CC_PDA2_G1'

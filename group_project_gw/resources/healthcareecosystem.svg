@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" content="&lt;mxfile host=&quot;nhsd-confluence.digital.nhs.uk&quot; modified=&quot;2021-09-20T15:40:29.422Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36&quot; etag=&quot;0ea5asC9CiHUAFmlNG5P&quot; version=&quot;14.9.9&quot; type=&quot;atlas&quot;&gt;&lt;mxAtlasLibraries/&gt;&lt;diagram id=&quot;D68SLpjsGM2BSa1fLJHo&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;" height="644" version="1.1" viewBox="-0.5 -0.5 753 644" width="753">
+  <defs/>
+  <g>
+    <rect fill="#ffffff" height="320" pointer-events="all" stroke="#ffffff" stroke-width="3" width="320" x="322" y="321"/>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" pointer-events="none" text-anchor="middle">
+      <text x="481.5" y="18.5">v</text>
+    </g>
+    <rect fill="#e5f1fa" height="320" pointer-events="none" stroke="#e5f1fa" stroke-width="3" width="320" x="322" y="1"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 137px; height: 1px; padding-top: 23px; margin-left: 424px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Secondary Care</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="17px" font-weight="bold" text-anchor="middle" x="493" y="28">Secondary Care</text>
+      </switch>
+    </g>
+    <path d="M 458.25 297.25 Q 505.75 297.25 505.75 337.25 Q 505.75 377.25 458.25 377.25 Z" fill="#e5f1fa" pointer-events="none" stroke="#e5f1fa" stroke-miterlimit="10" stroke-width="3" transform="rotate(90,482,337.25)"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 113px; height: 1px; padding-top: 344px; margin-left: 451px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Tertiary Care</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="17px" font-weight="bold" text-anchor="middle" x="508" y="349">Tertiary Care</text>
+      </switch>
+    </g>
+    <rect fill="#ffffff" height="320" pointer-events="none" stroke="#ffffff" stroke-width="3" width="320" x="2" y="1"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 114px; height: 1px; padding-top: 24px; margin-left: 97px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Primary Care</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="17px" font-weight="bold" text-anchor="middle" x="154" y="29">Primary Care</text>
+      </switch>
+    </g>
+    <path d="M 323 121 Q 371 121 371 161 Q 371 201 323 201 Z" fill="#ffffff" pointer-events="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="3"/>
+    <rect fill="#e5f1fa" height="320" pointer-events="none" stroke="#e5f1fa" stroke-width="3" width="320" x="1" y="321.5"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 344px; margin-left: 34px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <span style="font-size: 17px ; text-align: left">Community Health</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="17px" font-weight="bold" text-anchor="middle" x="138" y="349">Community Health</text>
+      </switch>
+    </g>
+    <path d="M 271 441.5 Q 321 441.5 321 481.5 Q 321 521.5 271 521.5 Z" fill="#ffffff" pointer-events="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="3" transform="rotate(-180,296,481.5)"/>
+    <path d="M 138.5 258 Q 183.5 258 183.5 298 Q 183.5 338 138.5 338 Z" fill="#e5f1fa" pointer-events="none" stroke="#e5f1fa" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,161,298)"/>
+    <rect fill="none" height="640" pointer-events="none" stroke="#0072ce" stroke-width="3" width="640" x="2" y="1"/>
+    <ellipse cx="322.21" cy="321.29" fill="#ffffff" pointer-events="none" rx="78.20781222222222" ry="78.20781222222222" stroke="#0072ce" stroke-width="3"/>
+    <ellipse cx="274.69" cy="303.05" fill="#ffffff" pointer-events="none" rx="15.762259333333335" ry="15.762259333333335" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 258.93 318.81 Q 288.48 318.81 288.48 338.52 Q 288.48 358.22 258.93 358.22 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,273.7,338.52)"/>
+    <path d="M 282.27 285.8 C 272.57 290 268.13 301.24 272.35 310.91 C 276.56 320.58 287.84 325.01 297.53 320.8 C 289.93 319.5 283.5 314.46 280.42 307.41 C 277.35 300.36 278.04 292.23 282.27 285.8 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2" transform="rotate(-175,282.83,305.4)"/>
+    <ellipse cx="359.55" cy="321.91" fill="#0072ce" pointer-events="none" rx="15.762259333333333" ry="15.762259333333333" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 343.79 337.67 Q 373.34 337.67 373.34 357.38 Q 373.34 377.08 343.79 377.08 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,358.57,357.38)"/>
+    <ellipse cx="311.93" cy="257.79" fill="#0072ce" pointer-events="none" rx="8.218703777777776" ry="8.218703777777776" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 303.72 266.01 Q 319.13 266.01 319.13 276.28 Q 319.13 286.56 303.72 286.56 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,311.42,276.28)"/>
+    <ellipse cx="311.93" cy="361.51" fill="#ffffff" pointer-events="none" rx="8.218703777777776" ry="8.218703777777776" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 303.72 369.73 Q 319.13 369.73 319.13 380.01 Q 319.13 390.28 303.72 390.28 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,311.42,380.01)"/>
+    <ellipse cx="349.65" cy="267.22" fill="#ffffff" pointer-events="none" rx="8.218703777777776" ry="8.218703777777776" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 341.43 275.44 Q 356.84 275.44 356.84 285.71 Q 356.84 295.99 341.43 295.99 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,349.14,285.71)"/>
+    <path d="M 265.93 284.67 C 256.04 289.36 251.5 301.89 255.8 312.66 C 260.11 323.44 271.62 328.38 281.51 323.69 C 273.75 322.24 267.19 316.62 264.05 308.76 C 260.91 300.9 261.62 291.84 265.93 284.67 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2" transform="rotate(30,266.51,306.53)"/>
+    <ellipse cx="321.93" cy="311.3" fill="#0072ce" pointer-events="none" rx="8.218703777777776" ry="8.218703777777776" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 313.72 319.52 Q 329.13 319.52 329.13 329.79 Q 329.13 340.07 313.72 340.07 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,321.42,329.79)"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 421px; margin-left: 255px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <font style="font-size: 16px">Patients<br/>
+                </font>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="319" y="425">Patients
+</text>
+      </switch>
+    </g>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 102px; height: 1px; padding-top: 142px; margin-left: 33px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">General Practice</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="84" y="146">General Practice</text>
+      </switch>
+    </g>
+    <rect fill="none" height="10" pointer-events="none" rx="1.5" ry="1.5" stroke="#0072ce" stroke-width="2" width="26.25" x="70.93" y="61"/>
+    <rect fill="none" height="50" pointer-events="none" stroke="#0072ce" stroke-width="3" width="70" x="49.05" y="71"/>
+    <path d="M 66.55 92.5 L 80.55 92.5 L 80.55 78.5 L 87.55 78.5 L 87.55 92.5 L 101.55 92.5 L 101.55 99.5 L 87.55 99.5 L 87.55 113.5 L 80.55 113.5 L 80.55 99.5 L 66.55 99.5 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 132px; height: 1px; padding-top: 142px; margin-left: 143px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Community Pharmacy</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="209" y="146">Community Pharmacy</text>
+      </switch>
+    </g>
+    <ellipse cx="203.63" cy="70.72" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 186.91 87.43 Q 218.26 87.43 218.26 108.33 Q 218.26 129.22 186.91 129.22 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,202.59,108.33)"/>
+    <rect fill="#ffffff" height="8.25" pointer-events="none" rx="4.13" ry="4.13" stroke="#0072ce" stroke-width="3" transform="rotate(-60,220.21,115.26)" width="24.27" x="208.07" y="111.13"/>
+    <ellipse cx="228.45" cy="119.11" fill="#ffffff" pointer-events="none" rx="7.975" ry="7.975" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 216.69 113.18 L 220.54 115.52" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 204.69 104.18 L 208.69 104.18 L 208.69 100.18 L 210.69 100.18 L 210.69 104.18 L 214.69 104.18 L 214.69 106.18 L 210.69 106.18 L 210.69 110.18 L 208.69 110.18 L 208.69 106.18 L 204.69 106.18 Z" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M 221.64 122.76 L 235.4 115.18" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 77px; height: 1px; padding-top: 262px; margin-left: 43px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Dental</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="82" y="265">Dental</text>
+      </switch>
+    </g>
+    <ellipse cx="80.16" cy="190.83" fill="#ffffff" pointer-events="none" rx="16.828065266058207" ry="16.828065266058207" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 64.23 205.83 Q 96.09 205.83 96.09 228.13 Q 96.09 250.43 64.23 250.43 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,80.16,228.13)"/>
+    <path d="M 65.89 182.48 L 69.46 184.69 Q 73.03 186.91 79.3 186.91 L 82.44 186.91 Q 85.57 186.91 90.45 184.88 L 95.34 182.85" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <ellipse cx="80.16" cy="184.82" fill="#ffffff" pointer-events="none" rx="6.267435853280523" ry="6.267435853280523" stroke="#0072ce" stroke-width="2"/>
+    <ellipse cx="80.16" cy="184.82" fill="#ffffff" pointer-events="none" rx="3.328008438091958" ry="3.328008438091958" stroke="#0072ce" stroke-width="2"/>
+    <ellipse cx="99.65" cy="207.23" fill="#ffffff" pointer-events="none" rx="5.441378458061896" ry="5.441378458061896" stroke="#0072ce" stroke-width="2"/>
+    <path d="M 99.65 223.56 L 99.65 212.68" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <rect fill="#ffffff" height="21.77" pointer-events="none" rx="2.72" ry="2.72" stroke="#0072ce" stroke-width="2" width="5.44" x="96.93" y="223.02"/>
+    <rect fill="#ffffff" height="16.33" pointer-events="none" stroke="#0072ce" stroke-width="2" width="5.44" x="108.53" y="205.06"/>
+    <rect fill="#ffffff" height="43" pointer-events="none" rx="2.72" ry="2.72" stroke="#0072ce" stroke-width="2" width="5.44" x="112.89" y="201.79"/>
+    <ellipse cx="203.05" cy="190.49" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 186.33 207.2 Q 217.68 207.2 217.68 228.1 Q 217.68 248.99 186.33 248.99 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,202,228.1)"/>
+    <path d="M 186.68 182.46 L 190.25 184.67 Q 193.82 186.89 200.09 186.89 L 203.23 186.89 Q 206.36 186.89 211.24 184.86 L 216.13 182.83" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <ellipse cx="201.95" cy="185.8" fill="#ffffff" pointer-events="none" rx="6.267435853280523" ry="6.267435853280523" stroke="#0072ce" stroke-width="2"/>
+    <path d="M 195 235.77 L 245 235.77" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <ellipse cx="208.68" cy="235.77" fill="#ffffff" pointer-events="none" rx="10" ry="10" stroke="#0072ce" stroke-width="3"/>
+    <ellipse cx="230.68" cy="235.77" fill="#ffffff" pointer-events="none" rx="10" ry="10" stroke="#0072ce" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 77px; height: 1px; padding-top: 262px; margin-left: 166px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Optometry</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="205" y="265">Optometry</text>
+      </switch>
+    </g>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 138px; height: 1px; padding-top: 142px; margin-left: 429px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Planned / Elective Care</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="498" y="146">Planned / Elective Care</text>
+      </switch>
+    </g>
+    <ellipse cx="492.8" cy="75.81" fill="#ffffff" pointer-events="none" rx="14.8052602739726" ry="14.8052602739726" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 478 90.61 Q 505.76 90.61 505.76 109.12 Q 505.76 127.63 478 127.63 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,491.88,109.12)"/>
+    <rect fill="#ffffff" height="43.25" pointer-events="none" stroke="#0072ce" stroke-width="3" width="29.8" x="497.9" y="84.88"/>
+    <path d="M 502.7 96.25 L 522 96" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 502.7 105.25 L 522 105" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 502.7 113.25 L 522 113" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 502.7 121.25 L 522 121" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 268px; margin-left: 383px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Urgent &amp; Emergency Care</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="442" y="272">Urgent &amp; Emergency C...</text>
+      </switch>
+    </g>
+    <ellipse cx="449.04" cy="190.79" fill="#ffffff" pointer-events="none" rx="16.790202369996702" ry="16.790202369996702" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 432.25 207.58 Q 463.73 207.58 463.73 228.57 Q 463.73 249.56 432.25 249.56 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,447.99,228.57)"/>
+    <path d="M 413.43 215.48 Q 440.65 215.48 440.65 228.08 Q 440.65 240.67 413.43 240.67 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,427.04,228.08)"/>
+    <rect fill="#ffffff" height="6.81" pointer-events="none" stroke="#0072ce" stroke-width="3" width="34.02" x="410.03" y="240.41"/>
+    <path d="M 420.54 230.75 C 419.67 226.97 420.75 222.78 423.06 220.98" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(15,425.34,228.08)"/>
+    <path d="M 446.32 225.04 L 450.86 225.04 L 450.86 220.5 L 453.13 220.5 L 453.13 225.04 L 457.66 225.04 L 457.66 227.3 L 453.13 227.3 L 453.13 231.84 L 450.86 231.84 L 450.86 227.3 L 446.32 227.3 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 262px; margin-left: 508px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Mental Health Care</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="572" y="266">Mental Health Care</text>
+      </switch>
+    </g>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" pointer-events="none" text-anchor="middle"/>
+    <ellipse cx="571.44" cy="191.19" fill="#ffffff" pointer-events="none" rx="17.193151195632876" ry="17.193151195632876" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 554.25 208.39 Q 586.75 208.39 586.75 229.88 Q 586.75 251.37 554.25 251.37 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,570.5,229.88)"/>
+    <path d="M 561.15 188.18 L 569.58 188.18 L 569.58 179.83 L 573.76 179.83 L 573.76 188.18 L 582.2 188.18 L 582.2 192.36 L 573.76 192.36 L 573.76 200.71 L 569.58 200.71 L 569.58 192.36 L 561.15 192.36 Z" fill="#0072ce" pointer-events="none" stroke="none"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 482px; margin-left: 353px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Neurosurgery</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="417" y="486">Neurosurgery</text>
+      </switch>
+    </g>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" pointer-events="none" text-anchor="middle"/>
+    <ellipse cx="418.99" cy="416" fill="#ffffff" pointer-events="none" rx="25" ry="25" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 410.52 424.47 Q 425.3 424.47 425.3 453.61 Q 425.3 482.75 410.52 482.75 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,417.91,453.61)"/>
+    <path d="M 439.87 415.98 C 439.87 417.79 439.17 419.43 438.04 420.65 C 437.84 423.23 436.23 425.4 433.99 426.38 L 433.99 426.41 C 431.25 428.02 429.62 430.78 429.12 434.1 L 426.59 434.1 L 426.59 426.41 C 426.61 424.01 427.35 422.48 428.9 421.53 C 429.47 421.2 429.99 420.82 430.43 420.4 C 431.59 420.82 432.61 421.64 433.26 422.82 C 433.39 423.05 433.64 423.18 433.88 423.18 C 433.99 423.18 434.11 423.15 434.22 423.09 C 434.57 422.89 434.69 422.45 434.5 422.11 L 434.49 422.11 C 433.77 420.79 432.66 419.82 431.4 419.24 C 432.04 418.24 432.4 417.04 432.39 415.6 C 432.39 415.59 432.4 415.59 432.4 415.57 C 432.4 414.92 432.3 414.29 432.13 413.7 C 433.61 413.41 434.91 412.65 435.87 411.58 C 436.13 411.28 436.11 410.82 435.82 410.56 C 435.53 410.29 435.09 410.32 434.82 410.6 C 433.99 411.53 432.86 412.16 431.58 412.33 C 430.56 410.39 428.64 409.02 426.4 408.77 C 426.54 407.54 427.09 406.45 427.91 405.61 C 428.18 405.33 428.18 404.88 427.91 404.6 C 427.64 404.31 427.18 404.31 426.9 404.6 C 425.85 405.67 425.15 407.09 424.97 408.68 C 422.34 408.34 420.31 406.07 420.31 403.3 C 420.31 402.91 419.98 402.58 419.61 402.58 C 419.21 402.58 418.89 402.91 418.89 403.3 C 418.89 403.77 418.94 404.22 419.02 404.66 C 418.03 405.53 416.78 405.97 415.54 405.97 C 414.92 405.97 414.31 405.86 413.73 405.65 C 413.73 405.65 413.72 405.64 413.71 405.64 C 412.99 405.38 412.33 404.97 411.77 404.38 C 411.5 404.11 411.04 404.11 410.76 404.38 C 410.48 404.66 410.48 405.12 410.76 405.4 C 411.35 405.99 412 406.45 412.7 406.78 C 412.56 408.57 411.54 410.1 410.1 410.97 C 409.27 409.69 408.03 408.68 406.5 408.19 C 406.12 408.07 405.72 408.28 405.6 408.65 C 405.5 409.03 405.69 409.43 406.07 409.55 C 407.2 409.92 408.11 410.63 408.77 411.54 C 408.33 411.66 407.88 411.72 407.39 411.72 C 407.39 411.72 407.39 411.72 407.39 411.72 L 407.32 411.72 C 405.51 411.72 403.84 412.46 402.62 413.66 C 402.33 413.94 402.33 414.39 402.61 414.67 C 402.74 414.82 402.93 414.89 403.12 414.89 C 403.28 414.89 403.46 414.82 403.6 414.69 C 404.56 413.73 405.88 413.16 407.32 413.16 L 407.4 413.16 L 407.4 413.16 L 407.41 413.16 C 410.81 413.16 413.64 410.58 414.09 407.24 C 414.57 407.35 415.05 407.41 415.55 407.41 C 416.93 407.41 418.32 406.97 419.5 406.11 C 419.93 407.11 420.61 407.98 421.43 408.65 C 420.59 409.7 420.09 410.95 419.96 412.22 C 419.61 412.16 419.24 412.13 418.87 412.13 C 417.8 412.13 416.72 412.39 415.71 412.94 C 415.36 413.13 415.23 413.56 415.41 413.91 C 415.54 414.15 415.79 414.29 416.04 414.29 C 416.16 414.29 416.26 414.26 416.37 414.2 C 417.18 413.77 418.03 413.56 418.87 413.56 C 419.24 413.56 419.61 413.61 419.96 413.68 C 420.12 415.14 420.74 416.56 421.8 417.69 C 421.94 417.84 422.13 417.91 422.31 417.91 C 422.48 417.91 422.66 417.85 422.8 417.71 C 423.09 417.44 423.1 416.98 422.82 416.7 L 422.82 416.7 C 421.87 415.68 421.37 414.39 421.34 413.09 C 421.34 413.07 421.34 413.05 421.34 413.03 C 421.34 413.01 421.34 412.98 421.34 412.95 C 421.34 411.69 421.77 410.43 422.62 409.43 C 423.52 409.88 424.55 410.15 425.63 410.15 C 425.63 410.15 425.64 410.15 425.65 410.15 C 425.65 410.15 425.65 410.15 425.66 410.15 C 428.6 410.16 430.97 412.57 430.98 415.55 C 430.42 415.4 429.85 415.33 429.26 415.33 C 428.42 415.33 427.57 415.48 426.75 415.83 C 426.38 415.98 426.21 416.4 426.36 416.76 C 426.51 417.12 426.91 417.3 427.28 417.15 C 427.94 416.89 428.6 416.76 429.27 416.76 C 429.8 416.76 430.33 416.84 430.83 416.99 C 430.65 417.8 430.31 418.44 429.79 419.02 C 429.75 419.05 429.71 419.09 429.68 419.14 C 429.28 419.54 428.79 419.91 428.19 420.28 C 426.15 421.49 425.16 423.7 425.19 426.39 L 425.19 434.08 L 422.77 434.08 L 422.77 426.79 C 422.77 424.1 421.11 421.56 419.02 420.65 C 418.03 420.26 416.99 419.6 416.23 418.74 C 415.15 419.48 413.86 419.92 412.46 419.92 C 411.07 419.92 409.77 419.49 408.7 418.75 C 407.64 419.47 406.35 419.88 404.97 419.88 C 401.18 419.88 398.12 416.76 398.12 412.92 C 398.12 410.05 399.83 407.59 402.28 406.53 C 402.94 403.47 405.61 401.18 408.83 401.18 C 409 401.18 409.16 401.19 409.32 401.2 C 410.53 399.4 412.57 398.22 414.87 398.22 C 416.01 398.22 417.09 398.51 418.03 399.03 C 419.09 398.31 420.36 397.89 421.73 397.89 C 423.48 397.89 425.09 398.59 426.29 399.72 C 426.79 399.59 427.31 399.52 427.85 399.52 C 430.57 399.52 432.92 401.18 433.96 403.56 C 436.72 404.41 438.72 407 438.72 410.07 C 438.72 410.69 438.64 411.29 438.49 411.85 C 439.35 413 439.87 414.42 439.87 415.98 Z" fill="#0072ce" pointer-events="none" stroke="none"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 619px; margin-left: 473px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Secure Forensic Mental Health Services</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="547" y="623">Secure Forensic Mental He...</text>
+      </switch>
+    </g>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" pointer-events="none" text-anchor="middle"/>
+    <ellipse cx="551.45" cy="537.95" fill="#ffffff" pointer-events="none" rx="17.94536207793178" ry="17.94536207793178" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 533.5 555.89 Q 567.16 555.89 567.16 578.33 Q 567.16 600.76 533.5 600.76 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,550.33,578.33)"/>
+    <path d="M 541.65 535.8 L 550.36 535.8 L 550.36 527.08 L 554.72 527.08 L 554.72 535.8 L 563.44 535.8 L 563.44 540.16 L 554.72 540.16 L 554.72 548.88 L 550.36 548.88 L 550.36 540.16 L 541.65 540.16 Z" fill="#0072ce" pointer-events="none" stroke="none"/>
+    <rect fill="#0072ce" height="18.18" pointer-events="none" stroke="#0072ce" stroke-width="3" width="24.24" x="558.8" y="579.82"/>
+    <path d="M 561.83 579.82 L 561.83 572.55 C 561.83 566.52 565.9 561.64 570.92 561.64 C 575.94 561.64 580.01 566.52 580.01 572.55 L 580.01 579.82" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 482px; margin-left: 483px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Transplants</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="547" y="486">Transplants</text>
+      </switch>
+    </g>
+    <ellipse cx="525.94" cy="407.72" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 509.22 424.43 Q 540.57 424.43 540.57 445.33 Q 540.57 466.22 509.22 466.22 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,524.89,445.33)"/>
+    <ellipse cx="569.94" cy="407.72" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 553.22 424.43 Q 584.57 424.43 584.57 445.33 Q 584.57 466.22 553.22 466.22 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,568.89,445.33)"/>
+    <path d="M 568.89 455.33 C 569.63 454.49 573.87 449.72 576.52 446.74 C 578.89 444.06 578.84 440.17 576.68 437.75 C 574.52 435.33 571.04 435.34 568.89 437.77 C 566.74 435.34 563.25 435.33 561.1 437.75 C 558.94 440.16 558.89 444.06 561.26 446.74 C 563.91 449.72 568.15 454.49 568.89 455.33 Z" fill="#e5f1fa" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 561 445 L 528.1 445" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 521.35 445 L 530.35 440.5 L 528.1 445 L 530.35 449.5 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g fill="#000000" font-family="Helvetica" font-size="12px" pointer-events="none" text-anchor="middle"/>
+    <ellipse cx="417.99" cy="549" fill="#ffffff" pointer-events="none" rx="25" ry="25" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 409.52 557.47 Q 424.3 557.47 424.3 586.61 Q 424.3 615.75 409.52 615.75 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,416.91,586.61)"/>
+    <path d="M 417.99 574 L 420.88 565 Q 423.77 556 432.13 557.25 L 440.49 558.5" fill="none" pointer-events="none" stroke="#0072ce" stroke-dasharray="2 6" stroke-miterlimit="10" stroke-width="2"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 615px; margin-left: 353px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Plastic Surgery</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="417" y="619">Plastic Surgery</text>
+      </switch>
+    </g>
+    <ellipse cx="409" cy="543" fill="#e5f1fa" pointer-events="none" rx="5" ry="5" stroke="#0072ce" stroke-dasharray="3 3" stroke-width="3"/>
+    <ellipse cx="428" cy="543" fill="#e5f1fa" pointer-events="none" rx="5" ry="5" stroke="#0072ce" stroke-dasharray="3 3" stroke-width="3"/>
+    <path d="M 417.75 574 L 415.87 566.5 Q 414 559 404.49 558.88 L 394.99 558.75" fill="none" pointer-events="none" stroke="#0072ce" stroke-dasharray="2 6" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M 440 574 L 425 560" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <rect fill="#ffffff" height="30" pointer-events="none" stroke="#0072ce" stroke-width="3" transform="rotate(-45,443,578)" width="10" x="438" y="563"/>
+    <path d="M 442 569 L 438.5 572.5 Q 435 576 438.5 572.5 L 442 569" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10"/>
+    <path d="M 451 578 L 447.5 581.5 Q 444 585 447.5 581.5 L 451 578" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10"/>
+    <path d="M 447 573 L 443 576.5 Q 439 580 443 576.5 L 447 573" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10"/>
+    <path d="M 461 595 L 453 589" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M 457 599 L 464 591" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 132px; height: 1px; padding-top: 482px; margin-left: 13px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <span style="font-size: 12px">District Nursing</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="79" y="485">District Nursing</text>
+      </switch>
+    </g>
+    <ellipse cx="79.06" cy="410.44" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 63.39 427.15 Q 94.73 427.15 94.73 448.05 Q 94.73 468.94 63.39 468.94 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,79.06,448.05)"/>
+    <path d="M 80.06 443.9 L 84.06 443.9 L 84.06 439.9 L 86.06 439.9 L 86.06 443.9 L 90.06 443.9 L 90.06 445.9 L 86.06 445.9 L 86.06 449.9 L 84.06 449.9 L 84.06 445.9 L 80.06 445.9 Z" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M 68.84 376 Q 89.28 376 89.28 391 Q 89.28 406 68.84 406 Q 79.06 391 68.84 376 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,79.06,391)"/>
+    <path d="M 74.06 387.72 L 78.06 387.72 L 78.06 383.72 L 80.06 383.72 L 80.06 387.72 L 84.06 387.72 L 84.06 389.72 L 80.06 389.72 L 80.06 393.72 L 78.06 393.72 L 78.06 389.72 L 74.06 389.72 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 132px; height: 1px; padding-top: 482px; margin-left: 153px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <span style="font-size: 12px">Health Visiting</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="219" y="485">Health Visiting</text>
+      </switch>
+    </g>
+    <ellipse cx="219.06" cy="410.44" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 203.39 427.15 Q 234.73 427.15 234.73 448.05 Q 234.73 468.94 203.39 468.94 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,219.06,448.05)"/>
+    <path d="M 220.06 443.9 L 224.06 443.9 L 224.06 439.9 L 226.06 439.9 L 226.06 443.9 L 230.06 443.9 L 230.06 445.9 L 226.06 445.9 L 226.06 449.9 L 224.06 449.9 L 224.06 445.9 L 220.06 445.9 Z" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M 208.84 376 Q 229.28 376 229.28 391 Q 229.28 406 208.84 406 Q 219.06 391 208.84 376 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,219.06,391)"/>
+    <path d="M 214.06 387.72 L 218.06 387.72 L 218.06 383.72 L 220.06 383.72 L 220.06 387.72 L 224.06 387.72 L 224.06 389.72 L 220.06 389.72 L 220.06 393.72 L 218.06 393.72 L 218.06 389.72 L 214.06 389.72 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10"/>
+    <path d="M 181.34 445.19 L 189.52 441 L 197.7 445.19 L 205.88 441 L 214.06 445.19 L 214.06 468.94 L 205.88 464.75 L 197.7 468.94 L 189.52 464.75 L 181.34 468.94 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M 197.7 445.19 L 197.7 468.94 M 189.52 441 L 189.52 464.75 M 205.88 441 L 205.88 464.75" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 138px; height: 1px; padding-top: 615px; margin-left: 13px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <span style="font-size: 12px">Child Health Services</span>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="82" y="618">Child Health Services</text>
+      </switch>
+    </g>
+    <ellipse cx="79.06" cy="543.44" fill="#ffffff" pointer-events="none" rx="16.716" ry="16.716" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 63.39 560.15 Q 94.73 560.15 94.73 581.05 Q 94.73 601.94 63.39 601.94 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,79.06,581.05)"/>
+    <ellipse cx="63.37" cy="575.49" fill="#ffffff" pointer-events="none" rx="7.554874680306905" ry="7.554874680306905" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 56.29 583.05 Q 70.45 583.05 70.45 592.5 Q 70.45 601.94 56.29 601.94 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,63.37,592.5)"/>
+    <path d="M 80.06 576.9 L 84.06 576.9 L 84.06 572.9 L 86.06 572.9 L 86.06 576.9 L 90.06 576.9 L 90.06 578.9 L 86.06 578.9 L 86.06 582.9 L 84.06 582.9 L 84.06 578.9 L 80.06 578.9 Z" fill="none" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M 68.84 509 Q 89.28 509 89.28 524 Q 89.28 539 68.84 539 Q 79.06 524 68.84 509 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,79.06,524)"/>
+    <path d="M 74.06 520.72 L 78.06 520.72 L 78.06 516.72 L 80.06 516.72 L 80.06 520.72 L 84.06 520.72 L 84.06 522.72 L 80.06 522.72 L 80.06 526.72 L 78.06 526.72 L 78.06 522.72 L 74.06 522.72 Z" fill="#0072ce" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10"/>
+    <g transform="translate(-0.5 -0.5)">
+      <switch>
+        <foreignObject height="100%" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;" width="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 139px; height: 1px; padding-top: 615px; margin-left: 168px;">
+            <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: normal; word-wrap: normal; ">Sexual Health Services</div>
+            </div>
+          </div>
+        </foreignObject>
+        <text fill="#000000" font-family="Helvetica" font-size="12px" font-weight="bold" text-anchor="middle" x="238" y="619">Sexual Health Services</text>
+      </switch>
+    </g>
+    <ellipse cx="208.09" cy="561.27" fill="#ffffff" pointer-events="none" rx="10.268400000000002" ry="10.268400000000002" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 197.82 571.54 Q 217.07 571.54 217.07 584.37 Q 217.07 597.21 197.82 597.21 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,207.45,584.37)"/>
+    <path d="M 224.85 571.54 Q 244.1 571.54 244.1 584.37 Q 244.1 597.21 224.85 597.21 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="10" stroke-width="3" transform="rotate(-90,234.47,584.37)"/>
+    <path d="M 215.13 557.54 C 203.17 550.39 202 538.62 212.46 530.58 C 222.93 522.55 241.45 521 254.86 527.04 C 268.27 533.08 272 544.64 263.39 553.51 C 254.78 562.37 236.77 565.52 222.17 560.71 C 218.88 566.67 213.59 570.45 207.78 571 C 211.43 567.72 214.04 562.96 215.13 557.54 Z" fill="#ffffff" pointer-events="none" stroke="#0072ce" stroke-miterlimit="15" stroke-width="3"/>
+    <ellipse cx="235.12" cy="561.27" fill="#ffffff" pointer-events="none" rx="10.268400000000002" ry="10.268400000000002" stroke="#0072ce" stroke-width="3"/>
+    <path d="M 219.75 549 C 220.32 548.35 223.61 544.65 225.66 542.34 C 227.5 540.27 227.46 537.25 225.79 535.37 C 224.12 533.5 221.41 533.51 219.75 535.39 C 218.09 533.51 215.38 533.5 213.71 535.37 C 212.04 537.25 212 540.27 213.84 542.34 C 215.89 544.65 219.17 548.35 219.75 549 Z" fill="#0072ce" pointer-events="none" stroke="none"/>
+    <path d="M 236.25 548 C 236.86 547.31 240.36 543.37 242.54 540.91 C 244.5 538.71 244.46 535.49 242.68 533.5 C 240.9 531.5 238.02 531.51 236.25 533.51 C 234.48 531.51 231.6 531.5 229.82 533.49 C 228.04 535.49 228 538.7 229.96 540.91 C 232.14 543.37 235.64 547.31 236.25 548 Z" fill="#0072ce" pointer-events="none" stroke="none"/>
+    <path d="M 252.75 549 C 253.32 548.35 256.61 544.65 258.66 542.34 C 260.5 540.27 260.46 537.25 258.79 535.37 C 257.12 533.5 254.41 533.51 252.75 535.39 C 251.09 533.51 248.38 533.5 246.71 535.37 C 245.04 537.25 245 540.27 246.84 542.34 C 248.89 544.65 252.17 548.35 252.75 549 Z" fill="#0072ce" pointer-events="none" stroke="none"/>
+  </g>
+  <switch>
+    <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+    <a target="_blank" transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems">
+      <text font-size="10px" text-anchor="middle" x="50%" y="100%">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>

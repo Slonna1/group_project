@@ -1,0 +1,466 @@
+---
+title: "R Notebook"
+output: 
+  html_document:
+    keep_md: yes
+    toc: true
+    toc_float: true
+    number_sections: true
+    df_print: paged
+    theme: cerulean #flatly #journal #cosmo
+  pdf_document: default
+---
+
+# Intro
+
+This markdown describes the data cleaning/wrangling steps to process and visualise the bed data from 2020 onwards.
+
+# Preamble
+
+## Call libraries
+```{r}
+library(tidyverse)
+library(janitor)
+library(here)
+library(lubridate)
+library(ggthemes)
+```
+
+
+## Set up colour palette
+```{r}
+# The palette as per SF:
+phs_palette <- c("#99DAF5", "#004785", "#C027B9", "#82BB25")
+
+# # To use for fills, add
+#   scale_fill_manual(values = phs_palette)
+# 
+# # To use for line and point colors, add
+#   scale_colour_manual(values = phs_palette)
+```
+
+
+# Number of beds - Data Wrangling
+
+## View bed data
+```{r}
+beds <- read_csv("data/beds_by_nhs_board_of_treatment_and_specialty.csv") 
+
+
+glimpse(beds)
+```
+
+
+
+### Check data  for NA values
+```{r}
+quarters_in_scope <- c("2020Q1", "2020Q2", "2020Q3", "2020Q4", "2021Q1", "2021Q2", "2021Q3")
+
+beds %>%
+  filter(Quarter %in% quarters_in_scope) %>%
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+### Keep data related to our time frame of interest 
+```{r}
+quarters_in_scope <- c("2020Q1", "2020Q2", "2020Q3", "2020Q4", "2021Q1", "2021Q2", "2021Q3")
+```
+
+
+```{r}
+beds <- beds %>%
+  filter(Quarter %in% quarters_in_scope)
+```
+
+
+
+```{r}
+glimpse(beds)
+```
+
+
+
+### How many HB items do we have?
+```{r}
+beds %>%
+  distinct(HB)
+```
+
+
+### Keep SpecialtyName == All Acute for the analysis
+```{r}
+beds <- beds %>%
+  filter(SpecialtyName == "All Acute")
+```
+
+
+## View health board data
+```{r}
+health_board_labels <- read_csv("data/hb14_hb19.csv") 
+
+glimpse(health_board_labels)
+```
+
+### Remove junk
+```{r}
+health_board_labels <- health_board_labels %>% 
+  select(HB, HBName)
+  
+
+glimpse(health_board_labels)
+```
+
+
+
+## View special health board data
+
+**Note:** I had to use the following arguments to read the csv file, because the "The Golden Jubilee National Hospital" in the SHName column had a special Unicode character that I couldn't get rid off (if I kept the unicode character, I couldn't ``glimpse`` the data).
+```{r}
+shb_labels <- read_csv("data/special-health-boards_19022021.csv", locale = locale(encoding = "ASCII")) 
+
+glimpse(shb_labels)
+```
+### Remove junk
+```{r}
+shb_labels <- shb_labels %>% 
+  select(SHB, SHBName)
+  
+
+glimpse(shb_labels)
+```
+
+
+
+### View country label data
+```{r}
+country_labels <- read_csv("data/geography_codes_and_labels_country.csv") 
+
+
+glimpse(country_labels)
+```
+
+
+# Join tables 
+
+## Join bed & special health board
+```{r}
+beds <- beds %>%
+  left_join(shb_labels, by = c("HB" = "SHB"))
+
+glimpse(beds)
+```
+
+```{r}
+beds %>%
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+
+
+## Joint bed & health board
+```{r}
+beds <- beds %>%
+  left_join(health_board_labels, "HB")
+
+glimpse(beds)
+```
+
+```{r}
+beds %>%
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+
+
+```{r}
+# beds <- beds %>% 
+#   mutate(Country = if_else(!is.na(Country.x), Country.x, Country.y)) %>% 
+#   select(-Country.x, -Country.y)
+# 
+# glimpse(beds) 
+```
+
+
+
+## Join bed & country labels
+```{r}
+beds <- beds %>%
+  left_join(country_labels, by = c("HB" = "Country"))
+
+glimpse(beds)
+```
+
+
+
+```{r}
+beds %>%
+  # filter(Quarter %in% quarters_in_scope) %>%
+  # filter(SpecialtyName == "All Acute") %>% 
+  summarise(across(.cols = everything(),
+                   .fns = ~sum(is.na(.x))))
+
+```
+
+##  Tidy up finalised bed table
+```{r}
+beds <- beds %>%
+  clean_names()
+
+glimpse(beds)
+```
+
+
+**Sanity Check - There should be on average 13,226 available staffed beds in Scotland during quarter ending September 2021 (PHS report)**
+```{r}
+beds %>%
+  filter(country_name == "Scotland")
+
+```
+
+
+
+# KPI plots (Scotland: 2020Q1 - 2021Q3)
+
+
+## Selected Geography: Scotland
+```{r}
+beds %>%
+  filter(country_name == "Scotland") %>% 
+  ggplot() +
+  aes(x = quarter, y = total_occupied_beds, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+
+beds %>%
+  filter(country_name == "Scotland") %>%
+  ggplot() +
+  aes(x = quarter, y = average_available_staffed_beds, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+
+beds %>%
+  filter(country_name == "Scotland") %>%
+  ggplot() +
+  aes(x = quarter, y = average_occupied_beds, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+beds %>%
+  filter(country_name == "Scotland") %>%
+  ggplot() +
+  aes(x = quarter, y = percentage_occupancy, group = country_name, colour = country_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+```
+
+### Sanity check No. 1. 
+
+Check if I pick in the location column the aggregated results of value S08000031 for NHS Greater Glasgow and S08000020 for Grampian
+```{r}
+beds %>%
+  # filter(hb_name == "NHS Greater Glasgow and Clyde") %>% 
+  filter(hb_name == "NHS Grampian") %>% 
+  filter(location == hb) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy))
+```
+
+
+
+```{r}
+beds %>%
+  # filter(hb_name == "NHS Greater Glasgow and Clyde" ) %>% 
+  filter(hb_name == "NHS Grampian" ) %>% 
+  group_by(location) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy)) 
+```
+
+## Selected Geography: NHS Board
+```{r}
+beds %>%
+  filter(hb_name == "NHS Greater Glasgow and Clyde") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = total_occupied_beds, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+
+beds %>%
+  filter(hb_name == "NHS Greater Glasgow and Clyde") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = average_available_staffed_beds, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+
+beds %>%
+  filter(hb_name == "NHS Greater Glasgow and Clyde") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = average_occupied_beds, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+beds %>%
+  filter(hb_name == "NHS Greater Glasgow and Clyde") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = percentage_occupancy, group = country_name, colour = hb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+```
+
+
+### Sanity check No. 2.
+Check to see if I pick in the location column the aggregated results of value SB0801 
+```{r}
+beds %>%
+  # filter(hb_name == "NHS Greater Glasgow and Clyde" ) %>% 
+  filter(shb_name == "The Golden Jubilee National Hospital" ) %>% 
+  group_by(location) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy)) 
+```
+
+```{r}
+beds %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>% 
+  summarise(avg_tot_occ_beds = mean(total_occupied_beds),
+            avg_avail_staffed_beds = mean(average_available_staffed_beds),
+            avg_occupied_beds = mean(average_occupied_beds),
+            avg_percentage_occupancy = mean(percentage_occupancy))
+```
+
+
+
+## Selected Geography: Special Health Board
+```{r}
+beds %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = total_occupied_beds, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+
+beds %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = average_available_staffed_beds, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+
+beds %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>% 
+  ggplot() +
+  aes(x = quarter, y = average_occupied_beds, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+
+beds %>%
+  filter(shb_name == "The Golden Jubilee National Hospital") %>%
+  filter(location == hb) %>%  
+  ggplot() +
+  aes(x = quarter, y = percentage_occupancy, group = country_name, colour = shb_name) +
+  geom_line() +
+  geom_point() +
+  scale_colour_manual(guide = "none", values = phs_palette[2]) +
+  ylim(c(0, NA))
+```
+
+
+# Save cleaned data
+
+Write updated beds data to a CSV file.
+```{r}
+ write_csv(beds, here("beds_clean.csv"))
+```
+
+
+
+
+# Doodles
+
+```{r}
+country_name_beds <- unique(beds$country_name) %>% 
+  discard(is.na)
+  
+```
+
+```{r}
+hb_name_beds <- unique(beds$hb_name) %>% 
+  discard(is.na)
+  
+```
+
+
+```{r}
+shb_name_beds <- unique(beds$shb_name) %>% 
+  discard(is.na)
+  
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
